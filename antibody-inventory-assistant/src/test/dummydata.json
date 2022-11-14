@@ -1,0 +1,21 @@
+{
+  "antibodies": [
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "BUV496",
+      "clone": "Company",
+      "company": "",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    }
+  ]
+}
