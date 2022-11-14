@@ -4,7 +4,1248 @@
       "marker": "CD24",
       "reactivity": "Mouse",
       "color": "BUV496",
-      "clone": "Company",
+      "clone": "M1/69",
+      "company": "BD",
+      "catalog": "564664",
+      "isotype": "\"Rat (DA) IgG2b, ?\"",
+      "DF": {
+        "Cytek": "800",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "TRUE",
+      "is_ic": "FALSE"
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "BUV395",
+      "clone": "H57-597",
+      "company": "BD",
+      "catalog": "742485",
+      "isotype": "\"Armenian Hamster IgG2, ?1\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "FALSE",
+      "is_ic": "TRUE"
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "BUV395",
+      "clone": "104",
+      "company": "BD",
+      "catalog": "564616",
+      "isotype": "\"Mouse SJL IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "BUV395",
+      "clone": "53-6.7",
+      "company": "BD",
+      "catalog": "563786",
+      "isotype": "\"Rat LOU IgG2a, ?\"",
+      "DF": {
+        "Cytek": "600",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11b",
+      "reactivity": "Mouse",
+      "color": "BUV395",
+      "clone": "M1/70",
+      "company": "BD",
+      "catalog": "563553",
+      "isotype": "\"Rat DA IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "BUV395",
+      "clone": "A20",
+      "company": "BD",
+      "catalog": "565212",
+      "isotype": "\"Mouse A.SW IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "BUV737",
+      "clone": "A20",
+      "company": "BD",
+      "catalog": "612811",
+      "isotype": "\"Mouse A.SW IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "BUV737",
+      "clone": "104",
+      "company": "BD",
+      "catalog": "612778",
+      "isotype": "\"Mouse SJL IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Mouse",
+      "color": "BUV737",
+      "clone": "17A2",
+      "company": "BD",
+      "catalog": "612803",
+      "isotype": "\"Rat SD IgG2b, ?\"",
+      "DF": {
+        "Cytek": "150",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "BUV737",
+      "clone": "H1.2F3",
+      "company": "BD",
+      "catalog": "612793",
+      "isotype": "\"Armenian Hamster IgG1, ?3\"",
+      "DF": {
+        "Cytek": "400",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "BUV805",
+      "clone": "104",
+      "company": "BD",
+      "catalog": "741957",
+      "isotype": "\"Mouse SJL IgG2a, ?\"",
+      "DF": {
+        "Cytek": "200",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD1d",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "1B1",
+      "company": "BioLegend",
+      "catalog": "123516",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "17A2",
+      "company": "eBioscience",
+      "catalog": "48-0032-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.1",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "OX-7",
+      "company": "BioLegend",
+      "catalog": "202522",
+      "isotype": "\"Mouse IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "GK1.5",
+      "company": "BioLegend",
+      "catalog": "100428",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "RM4-5",
+      "company": "BD",
+      "catalog": "558107",
+      "isotype": "\"Rat DA IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "MR1",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "26.1",
+      "company": "Unknown",
+      "catalog": "Unknown",
+      "isotype": "Unknown",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "GK1.5",
+      "company": "eBioscience",
+      "catalog": "48-0041-80",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD5",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "53-7.3",
+      "company": "eBioscience",
+      "catalog": "48-0051-80",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD199(CCR9)",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "CW-1.2",
+      "company": "eBioscience",
+      "catalog": "48-1991-82",
+      "isotype": "Mouse IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "53-6.7",
+      "company": "eBioscience",
+      "catalog": "48-0081-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45R(B220)",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "RA3-6B2",
+      "company": "eBioscience",
+      "catalog": "48-0452-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11b",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "M1/70",
+      "company": "eBioscience",
+      "catalog": "48-0112-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11c",
+      "reactivity": "Mouse",
+      "color": "v450",
+      "clone": "N418",
+      "company": "Tonbo",
+      "catalog": "75-0114-U025",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "M1/69",
+      "company": "eBioscience",
+      "catalog": "48-0242-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8b",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "H35-17.2",
+      "company": "eBioscience",
+      "catalog": "48-0083-80",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "A20",
+      "company": "BioLegend",
+      "catalog": "110722",
+      "isotype": "\"Mouse (A.SW) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "104",
+      "company": "BioLegend",
+      "catalog": "109820",
+      "isotype": "\"Mouse (SJL) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly108",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "330-AJ",
+      "company": "BioLegend",
+      "catalog": "134608",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "H1.2F3",
+      "company": "eBioscience",
+      "catalog": "48-0691-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "TM-B 1",
+      "company": "BD",
+      "catalog": "562960",
+      "isotype": "\"Sprague-Dawley (outbred) IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "TM-B 1",
+      "company": "BD",
+      "catalog": "562960",
+      "isotype": "\"Sprague-Dawley (outbred) IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "TM-b 1",
+      "company": "eBioscience",
+      "catalog": "48-1222-82",
+      "isotype": "Rat / IgG2b",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "A7434",
+      "company": "eBioscience",
+      "catalog": "57-1271-80 - DC",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD196(CCR6)",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "29-2L17",
+      "company": "BioLegend",
+      "catalog": "129817",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD279(PD-1)",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "29F.1A12",
+      "company": "BioLegend",
+      "catalog": "135217",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRgd",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "eBioGL3",
+      "company": "eBioscience",
+      "catalog": "48-5711-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "I-A/I-E",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "M5/114.15.2",
+      "company": "BioLegend",
+      "catalog": "107619",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "H-2Kb",
+      "reactivity": "Mouse",
+      "color": "Pacific Blue",
+      "clone": "AF6-88.5",
+      "company": "BioLegend",
+      "catalog": "116513",
+      "isotype": "\"Mouse (BALB/c) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "F4/80",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "BM8",
+      "company": "eBioscience",
+      "catalog": "48-4801-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-6D",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "49-H4",
+      "company": "eBioscience",
+      "catalog": "48-5974-80",
+      "isotype": "\"Rat IgG2c, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-6G",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "RB6-8C5",
+      "company": "eBioscience",
+      "catalog": "48-5931-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TER-119",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "TER-119",
+      "company": "eBioscience",
+      "catalog": "48-5921-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "eFluor 450",
+      "clone": "53-6.7",
+      "company": "eBioscience",
+      "catalog": "48-0081-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD335(NK p46)",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "29A1.4",
+      "company": "BioLegend",
+      "catalog": "137612",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "A7R34",
+      "company": "BioLegend",
+      "catalog": "135027",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "mCD1d",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "Unknown",
+      "company": "Unknown",
+      "catalog": "20954",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NKp46",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "29A1.4.9",
+      "company": "Miltenyi",
+      "catalog": "130-103-137",
+      "isotype": "rat IgG2a?",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-6C",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "HK1.4",
+      "company": "BioLegend",
+      "catalog": "128031",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49D",
+      "reactivity": "Mouse",
+      "color": "BV510",
+      "clone": "4.00E+05",
+      "company": "Miltenyi",
+      "catalog": "130-102-860",
+      "isotype": "rat IgG2a?",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-6C",
+      "reactivity": "Mouse",
+      "color": "BV510",
+      "clone": "1G7.G10",
+      "company": "Miltenyi",
+      "catalog": "130-102-930",
+      "isotype": "rat IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "BV510",
+      "clone": "RM4-5",
+      "company": "BioLegend",
+      "catalog": "100559",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "M1/69",
+      "company": "BioLegend",
+      "catalog": "101826",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "F4/80",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "BM8",
+      "company": "BioLegend",
+      "catalog": "123131",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "BV786",
+      "clone": "104",
+      "company": "BD",
+      "catalog": "563686",
+      "isotype": "\"Mouse SJL IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-6C",
+      "reactivity": "Mouse",
+      "color": "BV570",
+      "clone": "HK1.4",
+      "company": "BioLegend",
+      "catalog": "128029",
+      "isotype": "\"Rat IgG2c, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "H1.2F3",
+      "company": "BioLegend",
+      "catalog": "104530",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD27",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "LG.3A10",
+      "company": "BD",
+      "catalog": "563365",
+      "isotype": "\"Armenian Hamster IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD138 (Syndecan-1)",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "281-2",
+      "company": "BioLegend",
+      "catalog": "142515",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127(IL-7Ra)",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "A7R34",
+      "company": "BioLegend",
+      "catalog": "135025",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD355(NK p46)",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "29A1.4",
+      "company": "BioLegend",
+      "catalog": "137619",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD196(CCR6)",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "29-2L17",
+      "company": "BioLegend",
+      "catalog": "129819",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109230",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD199(CCR9)",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "CW-1.2",
+      "company": "BD",
+      "catalog": "565412",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109241",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD279(PD-1)",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "29F.1A12",
+      "company": "BioLegend",
+      "catalog": "135220",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Nk1.1",
+      "reactivity": "Mouse",
+      "color": "BV605",
+      "clone": "PK136",
+      "company": "BioLegend",
+      "catalog": "108735",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "M1/69",
+      "company": "BD",
+      "catalog": "563545",
+      "isotype": "\"DA/HA IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRgd",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "GL3",
+      "company": "BD",
+      "catalog": "563993",
+      "isotype": "\"Armenian Hamster IgG2, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.1",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "OX-7",
+      "company": "BioLegend",
+      "catalog": "202533",
+      "isotype": "\"Mouse IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Nk1.1",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "PK136",
+      "company": "BioLegend",
+      "catalog": "108735",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "A20",
+      "company": "BioLegend",
+      "catalog": "110735",
+      "isotype": "\"Mouse (A.SW) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD197(CCR7)",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "4B12",
+      "company": "BD",
+      "catalog": "564356",
+      "isotype": "\"Louvain, LOU/C, LOU/M IgG2a\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "mCD1d-PBS57",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "",
       "company": "",
       "catalog": "",
       "isotype": "",
@@ -16,6 +1257,5127 @@
       "emission_wavelength": "",
       "is_ec": "",
       "is_ic": ""
+    },
+    {
+      "marker": "CD27",
+      "reactivity": "Mouse",
+      "color": "BV650",
+      "clone": "LG.3A10",
+      "company": "BioLegend",
+      "catalog": "124233",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "BV711",
+      "clone": "53-6.7",
+      "company": "BioLegend",
+      "catalog": "100747",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "BV711",
+      "clone": "GK1.5",
+      "company": "BioLegend",
+      "catalog": "100447",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.2",
+      "reactivity": "Mouse",
+      "color": "BV711",
+      "clone": "30-H12",
+      "company": "Biolegend",
+      "catalog": "105349",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "KLRG1(MAFA)",
+      "reactivity": "Mouse",
+      "color": "BV711",
+      "clone": "2F1/KLRG1",
+      "company": "BioLegend",
+      "catalog": "138427",
+      "isotype": "Syrian hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse",
+      "color": "BV510",
+      "clone": "IM7",
+      "company": "BioLegend",
+      "catalog": "103043",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "BV711",
+      "clone": "H1.2F3",
+      "company": "BioLegend",
+      "catalog": "104537",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "mCD1d",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "",
+      "company": "",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD326(epcam)",
+      "reactivity": "Mouse",
+      "color": "BV510",
+      "clone": "G8.8",
+      "company": "BioLegend",
+      "catalog": "118231",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD335(NK p46)",
+      "reactivity": "Mouse",
+      "color": "BV785",
+      "clone": "29A1.4",
+      "company": "BioLegend",
+      "catalog": "137637",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "BV786",
+      "clone": "104",
+      "company": "BD",
+      "catalog": "563686",
+      "isotype": "\"Mouse SJL IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "F4/80",
+      "reactivity": "Mouse",
+      "color": "BV780",
+      "clone": "BM8",
+      "company": "eBioscience",
+      "catalog": "78-4801-80",
+      "isotype": "\"Rat / IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "BV421",
+      "clone": "GK1.5",
+      "company": "BioLegend",
+      "catalog": "100443",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3e",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "145-2C11",
+      "company": "BioLegend",
+      "catalog": "100312",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD199(CCR9)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "eBioCW-1.2 (CW1.2)",
+      "company": "eBioscience",
+      "catalog": "17-1991-82",
+      "isotype": "Mouse / IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "F4/80",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109212",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD5",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "53-7.3",
+      "company": "eBioscience",
+      "catalog": "17-0051-81",
+      "isotype": "\"Rat / IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11b - conjugated",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "M1/70",
+      "company": "eBioscience",
+      "catalog": "17-0112-81",
+      "isotype": "\"Rat / IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD19",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "6D5",
+      "company": "BioLegend",
+      "catalog": "115512",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "M1/69",
+      "company": "eBioscience",
+      "catalog": "17-0242-80",
+      "isotype": "\"Rat / IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD25",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "3C7",
+      "company": "BioLegend",
+      "catalog": "101910",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD26 (DPP-4)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "H194-112",
+      "company": "BioLegend",
+      "catalog": "137807",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD27",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "LG.3A10",
+      "company": "BD",
+      "catalog": "560691",
+      "isotype": "\"Armenian Hamster IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD38",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "90",
+      "company": "eBioscience",
+      "catalog": "17-0381-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "IM7",
+      "company": "BD",
+      "catalog": "559250",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "104",
+      "company": "eBioscience",
+      "catalog": "17-0454-82",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse ",
+      "color": "AF700",
+      "clone": "MEL-14",
+      "company": "BioLegend",
+      "catalog": "104426",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD68",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "FA-11",
+      "company": "BioLegend",
+      "catalog": "137007",
+      "isotype": "Rat IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "H1.2F3",
+      "company": "BioLegend",
+      "catalog": "104514",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD81",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "Eat-2",
+      "company": "BioLegend",
+      "catalog": "104909",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.1 (Thy-1.1)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "HIS51",
+      "company": "eBioscience",
+      "catalog": "17-0900-82",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.2",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "30-H12",
+      "company": "BioLegend",
+      "catalog": "105311",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD117 (c-Kit)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "2B8",
+      "company": "eBioscience",
+      "catalog": "17-1171-81",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "TM-b1",
+      "company": "eBioscience",
+      "catalog": "17-1222-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "A7R34",
+      "company": "eBioscience",
+      "catalog": "17-1271-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109212",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49G2",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "4D11",
+      "company": "BD",
+      "catalog": "555316",
+      "isotype": "\"Fischer, CDF IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49H",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "3D10",
+      "company": "eBioscience",
+      "catalog": "51-5886-81",
+      "isotype": "Unknown",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD161 (NK1.1)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "PK136",
+      "company": "eBioscience",
+      "catalog": "17-5941-82",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "H-2Kb",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "AF6-88.5",
+      "company": "BioLegend",
+      "catalog": "116517",
+      "isotype": "\"Mouse (BALB/c) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "a4B7",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "DATK32",
+      "company": "eBioscience",
+      "catalog": "17-5887-80",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "KLRG1(MAFA)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "2F1",
+      "company": "eBioscience",
+      "catalog": "17-5893-81",
+      "isotype": "Syrian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly49D",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "eBio4E5",
+      "company": "eBioscience",
+      "catalog": "51-5782-80",
+      "isotype": "Unknown",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD335(NK p46)",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "29A1.4",
+      "company": "BioLegend",
+      "catalog": "137607",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49E/F",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "CM4",
+      "company": "eBioscience",
+      "catalog": "17-5848-80",
+      "isotype": "Rat / IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CCR7",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "4B12",
+      "company": "eBioscience",
+      "catalog": "17-1971-63",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-108",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "eBio13G3-19D",
+      "company": "eBioscience",
+      "catalog": "17-1508-80",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.2",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "N/A",
+      "company": "Caltag",
+      "catalog": "MM2005",
+      "isotype": "Mouse IgG2b",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRgd",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "GL3",
+      "company": "BioLegend",
+      "catalog": "118116",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NKG2D",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "CX5",
+      "company": "eBioscience",
+      "catalog": "17-5882-81",
+      "isotype": "\"Rat IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD339 (Jagged 1)",
+      "reactivity": "Mouse",
+      "color": "Apc",
+      "clone": "HMJ1-29",
+      "company": "BioLegend",
+      "catalog": "130913",
+      "isotype": "Armenian hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "MEL-14",
+      "company": "eBioscience",
+      "catalog": "17-0621-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRVy1.1/Cr4",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "2.11",
+      "company": "BioLegend",
+      "catalog": "141107",
+      "isotype": "Armenian hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRVy2",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "UC3-10A6",
+      "company": "BioLegend",
+      "catalog": "137708",
+      "isotype": "Armenian hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Annexin V",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "",
+      "company": "BioLegend",
+      "catalog": "640920",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"CD1d (CD1.1, Ly38)\"",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "1B1",
+      "company": "BioLegend",
+      "catalog": "123512",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Cd1d",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "1B1",
+      "company": "BD",
+      "catalog": "564706",
+      "isotype": "\"Lewis IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD73",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "TY/11.8",
+      "company": "BioLegend",
+      "catalog": "127207",
+      "isotype": "\"Rat IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD184(CXCR4)",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "TG12/CXCR4",
+      "company": "BioLegend",
+      "catalog": "129201",
+      "isotype": "Rat IgG2b",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "H-2Dd",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "34-2-12",
+      "company": "BioLegend",
+      "catalog": "110612",
+      "isotype": "\"Mouse (C3H/HeJ) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Qa-2",
+      "reactivity": "Mouse",
+      "color": "AF647",
+      "clone": "695H1-9-9",
+      "company": "Biolegend",
+      "catalog": "121708",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "53-6.7",
+      "company": "BioLegend",
+      "catalog": "100714",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109220",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "TM-B1",
+      "company": "Biolegend",
+      "catalog": "123221",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3e",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "145-2C11",
+      "company": "BD",
+      "catalog": "561042",
+      "isotype": "\"Armenian Hamster IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "5-OP-RU",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "",
+      "company": "NIH",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "A20",
+      "company": "BioLegend",
+      "catalog": "110716",
+      "isotype": "\"Mouse (A.SW) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11b",
+      "reactivity": "Mouse/Human",
+      "color": "APC/Cy7",
+      "clone": "M1/70",
+      "company": "BioLegend",
+      "catalog": "101225",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "APC/750",
+      "clone": "M1/69",
+      "company": "BioLegend",
+      "catalog": "101839",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD161 (NK1.1)",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "PK136",
+      "company": "BioLegend",
+      "catalog": "108723",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109224",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD278 (ICOS)",
+      "reactivity": "Mouse/Human/Rat",
+      "color": "APC/Cy7",
+      "clone": "C398.4A",
+      "company": "BioLegend",
+      "catalog": "313529",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "I-A/I-E",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "M5/114.15.2",
+      "company": "BioLegend",
+      "catalog": "107622",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "GK1.5",
+      "company": "eBioscience",
+      "catalog": "56-0041-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "53-6.7",
+      "company": "BioLegend",
+      "catalog": "100730",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "M1/69",
+      "company": "BioLegend",
+      "catalog": "101835",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD25",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "PC61",
+      "company": "BioLegend",
+      "catalog": "102024",
+      "isotype": "\"Rat IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "RM4-5",
+      "company": "BD",
+      "catalog": "553051",
+      "isotype": "\"DA/HA IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45R(B220)",
+      "reactivity": "Mouse/Human",
+      "color": "AF700",
+      "clone": "RA3-6B2",
+      "company": "BioLegend",
+      "catalog": "103232",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "iL-17 RB",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "",
+      "company": "R&D Systems",
+      "catalog": "FAB10402N",
+      "isotype": "Unknown",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD64 (FcyR1)",
+      "reactivity": "Mouse",
+      "color": "PE/Cy7",
+      "clone": "X54-5/7.1",
+      "company": "BioLegend",
+      "catalog": "139313",
+      "isotype": "\"Mouse IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "APC/Cy7",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109220",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45R(B220)",
+      "reactivity": "Mouse/Human",
+      "color": "AF700",
+      "clone": "RA3-6B2",
+      "company": "eBioscience",
+      "catalog": "56-0452-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "APC-eFluor 780",
+      "clone": "M1/69",
+      "company": "eBioscience",
+      "catalog": "47-0242-80",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD161 (NK1.1)",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "PK136",
+      "company": "BD",
+      "catalog": "560515",
+      "isotype": "\"Mouse C3H x BALB/c IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "mMR1",
+      "reactivity": "Mouse",
+      "color": "F",
+      "clone": "",
+      "company": "NIH",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "mCD1d-PBS57",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "",
+      "company": "NIH",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "mCD1d unloaded",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "",
+      "company": "NIH",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"Rat IgG2a, ? Iso control\"",
+      "reactivity": "Rat",
+      "color": "APC",
+      "clone": "eBR2a",
+      "company": "eBioscience",
+      "catalog": "17-4321-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"CD1d (CD1.1, Ly38)\"",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "1B1",
+      "company": "BioLegend",
+      "catalog": "123507",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "RM4-5",
+      "company": "BioLegend",
+      "catalog": "100510",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD5 (Ly-1)",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "53-7.3",
+      "company": "BD",
+      "catalog": "553021",
+      "isotype": "\"LOU/M IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD16/32 (Fc block)",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "93",
+      "company": "eBioscience",
+      "catalog": "11-0161-81",
+      "isotype": "\"IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.2",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "104",
+      "company": "eBioscience",
+      "catalog": "11-0454-81",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "M1/69",
+      "company": "eBioscience",
+      "catalog": "11-0242-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse/Human",
+      "color": "FITC",
+      "clone": "IM7",
+      "company": "eBioscience",
+      "catalog": "11-0441-85",
+      "isotype": "\"IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "A20",
+      "company": "eBioscience",
+      "catalog": "11-0453-82",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD49b (Pan-NK cells)",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "DX5",
+      "company": "BD",
+      "catalog": "553857",
+      "isotype": "\"�Lewis IgM, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "MEL-14",
+      "company": "eBioscience",
+      "catalog": "11-0621-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD71",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "R17217",
+      "company": "BioLegend",
+      "catalog": "113805",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD86",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "GL1",
+      "company": "BD",
+      "catalog": "553691",
+      "isotype": "\"LOU/M IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.1 (Thy-1.1)",
+      "reactivity": "Mouse/Rat",
+      "color": "FITC",
+      "clone": "HIS51",
+      "company": "eBioscience",
+      "catalog": "11-0900-85",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD94",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "18d3",
+      "company": "eBioscience",
+      "catalog": "11-0941-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD106",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "429",
+      "company": "eBioscience",
+      "catalog": "11-1061-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD107a (LAMP-1)",
+      "reactivity": "Mouse",
+      "color": "AF 488",
+      "clone": "1D4B",
+      "company": "BioLegend",
+      "catalog": "121607",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122 ",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "TM-b1",
+      "company": "eBioscience",
+      "catalog": "11-1222-85",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CCR9 (CDw199)",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "eBioCW-1.2 (CW1.2)",
+      "company": "eBioscience",
+      "catalog": "11-1991-80",
+      "isotype": "Mouse / IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "H57-597",
+      "company": "eBioscience",
+      "catalog": "11-5961-82",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "GFP",
+      "reactivity": "none",
+      "color": "AF 488",
+      "clone": "FM264G",
+      "company": "BioLegend",
+      "catalog": "338007",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3e",
+      "reactivity": "Mouse",
+      "color": "AF 488",
+      "clone": "145-2C11",
+      "company": "BioLegend",
+      "catalog": "100321",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD95L",
+      "reactivity": "",
+      "color": "FITC",
+      "clone": "",
+      "company": "",
+      "catalog": "804-010F-T100",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly49G2",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "4D11",
+      "company": "BD",
+      "catalog": "555315",
+      "isotype": "\"at F344, also known as Fischer, CDF IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly49A",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "A1",
+      "company": "BD",
+      "catalog": "553677",
+      "isotype": "\"Mouse BALB/c IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "26.5",
+      "reactivity": "",
+      "color": "FITC",
+      "clone": "",
+      "company": "",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NK1.1",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "PK136",
+      "company": "eBioscience",
+      "catalog": "11-5941-85",
+      "isotype": "\"Mouse / IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vb7",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "TR310",
+      "company": "BD",
+      "catalog": "553215",
+      "isotype": "\"Rat F344, also known as Fischer, CDF IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"Vb8.1,8.2\"",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "MR5-2",
+      "company": "BD",
+      "catalog": "553185",
+      "isotype": "\"Mouse C57L IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "PBS57-CD1d",
+      "reactivity": "Mouse",
+      "color": "Fluorescein",
+      "clone": "",
+      "company": "",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "PBS57-CD1d (unloaded)",
+      "reactivity": "Mouse",
+      "color": "Fluorescein",
+      "clone": "",
+      "company": "",
+      "catalog": "",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Qa-2",
+      "reactivity": "Mouse",
+      "color": "FITC",
+      "clone": "695H1-9-9",
+      "company": "BioLegend",
+      "catalog": "121710",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8b",
+      "reactivity": "Mouse",
+      "color": "BB700",
+      "clone": "H35-17.2",
+      "company": "BD",
+      "catalog": "742198",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3e",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "145-2C11",
+      "company": "eBioscience",
+      "catalog": "45-0031-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vg1.1",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "2.11",
+      "company": "BioLegend",
+      "catalog": "141112",
+      "isotype": "Armenian hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD5",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "53-7.3",
+      "company": "BioLegend",
+      "catalog": "100623",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "M1/69",
+      "company": "BioLegend",
+      "catalog": "101824",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD25",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "PC61",
+      "company": "BioLegend",
+      "catalog": "102029",
+      "isotype": "\"Rat IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "IM7",
+      "company": "BioLegend",
+      "catalog": "103031",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "MEL-14",
+      "company": "BioLegend",
+      "catalog": "104431",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "MEL-14",
+      "company": "BioLegend",
+      "catalog": "104431",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Streptavidin",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "SAv-PerCP-Cy5.5",
+      "company": "BD",
+      "catalog": "551419",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "H1.2F3",
+      "company": "eBioscience",
+      "catalog": "45-0691-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NK1.1",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "PK136",
+      "company": "eBioscience",
+      "catalog": "45-5941-82",
+      "isotype": "\"Mouse / IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "H57-597",
+      "company": "eBioscience",
+      "catalog": "45-5961-82",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CCR7",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "4B12",
+      "company": "eBioscience",
+      "catalog": "45-1971-80",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "H57-597",
+      "company": "eBioscience",
+      "catalog": "45-5961-82",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "A7R34",
+      "company": "eBioscience",
+      "catalog": "45-1271-80",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "A7R34",
+      "company": "BioLegend",
+      "catalog": "135021",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly6G",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "1A8",
+      "company": "BioLegend",
+      "catalog": "127615",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vg2",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "UC3-10A6",
+      "company": "eBioscience",
+      "catalog": "46-5828-82",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CCR9 (CD199)",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "eBioCW-1.2 (CW1.2)",
+      "company": "eBioscience",
+      "catalog": "46-1991-80",
+      "isotype": "Mouse / IgG2a",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "M1/69",
+      "company": "eBioscience",
+      "catalog": "46-0242-80",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Va3.2",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "RR3-16",
+      "company": "eBioscience",
+      "catalog": "46-5799-80",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-6C",
+      "reactivity": "Mouse",
+      "color": "PerCP/Vio700",
+      "clone": "",
+      "company": "Miltenyi",
+      "catalog": "130-103-804",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "ICOS",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "7E.17G9",
+      "company": "BioLegend",
+      "catalog": "117423",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vg2",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "UC3-10A6",
+      "company": "eBioscience",
+      "catalog": "46-5828-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"Vb8.1,8.2\"",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "KJ16-133",
+      "company": "eBioscience",
+      "catalog": "46-5813-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRgd",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "eBioGL3",
+      "company": "eBioscience",
+      "catalog": "46-5711-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49G2",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "eBio4D11",
+      "company": "eBioscience",
+      "catalog": "46-5781-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11b",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "M1/70",
+      "company": "eBioscience",
+      "catalog": "15-0112-81",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD127",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "A7R34",
+      "company": "eBioscience",
+      "catalog": "15-1271-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "MEL-14",
+      "company": "eBioscience",
+      "catalog": "15-0621-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "PerCP/efluor710",
+      "clone": "TM-b1",
+      "company": "eBioscience",
+      "catalog": "46-1222-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "H1.2F3",
+      "company": "BioLegend",
+      "catalog": "104509",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD90.1",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "HIS51",
+      "company": "eBioscience",
+      "catalog": "15-0900-82",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "RM4-5",
+      "company": "eBioscience",
+      "catalog": "45-0042-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "ICOS",
+      "reactivity": "Mouse/Human/Rat",
+      "color": "PE-Cy5",
+      "clone": "C398.4A",
+      "company": "eBioscience",
+      "catalog": "15-9949-81",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "ICOS",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "15F9",
+      "company": "eBioscience",
+      "catalog": "15-9940-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD19",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "eBio1D3",
+      "company": "eBioscience",
+      "catalog": "15-0193-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "IM7",
+      "company": "BioLegend",
+      "catalog": "103009",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45R(B220)",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "RA3-6B2",
+      "company": "BD",
+      "catalog": "553091",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRgd",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "eBioGL3",
+      "company": "eBioscience",
+      "catalog": "15-5711-81",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "H57-597",
+      "company": "eBioscience",
+      "catalog": "15-5961-82",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"Rat IgG2a, ? Iso control\"",
+      "reactivity": "",
+      "color": "PE-Cy5",
+      "clone": "eBR2a",
+      "company": "eBioscience",
+      "catalog": "15-4321-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Syrian Hamster IgG Isotype Control",
+      "reactivity": "",
+      "color": "PE-Cy5",
+      "clone": "",
+      "company": "eBioscience",
+      "catalog": "155-4914-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Streptavidin",
+      "reactivity": "",
+      "color": "PE-Cy5",
+      "clone": "",
+      "company": "BD",
+      "catalog": "554062",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD5",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "53-7.3",
+      "company": "eBioscience",
+      "catalog": "25-0051-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vg2",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "UC3-10A6",
+      "company": "eBioscience",
+      "catalog": "25-5828-80",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "53-6.7",
+      "company": "eBioscience",
+      "catalog": "25-0081-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11a/CD18 (LFA-1)",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "H155-78",
+      "company": "BioLegend",
+      "catalog": "141011",
+      "isotype": "\"Rat IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "M1/69",
+      "company": "eBioscience",
+      "catalog": "25-0242-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD27",
+      "reactivity": "Mouse/Human/Rat",
+      "color": "PE-Cy7",
+      "clone": "LG.3A10",
+      "company": "BioLegend",
+      "catalog": "124216",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD28",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "E18",
+      "company": "BioLegend",
+      "catalog": "122014",
+      "isotype": "\"Mouse IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD31",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "390",
+      "company": "BioLegend",
+      "catalog": "102417",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse/Human",
+      "color": "PE-Cy7",
+      "clone": "IM7",
+      "company": "eBioscience",
+      "catalog": "25-0441-81",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45.1",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "A20",
+      "company": "BioLegend",
+      "catalog": "110730",
+      "isotype": "\"Mouse (A.SW) IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD62L",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "MEL-14",
+      "company": "eBioscience",
+      "catalog": "25-0621-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD69",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "H1.2F3",
+      "company": "BD",
+      "catalog": "552879",
+      "isotype": "\"Armenian Hamster IgG1, ?3\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD138 (Syndecan-1)",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "281-2",
+      "company": "BioLegend",
+      "catalog": "142513",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NK1.1",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "PK136",
+      "company": "eBioscience",
+      "catalog": "25-5941-82",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NKG2D (CD314)",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "CX5",
+      "company": "eBioscience",
+      "catalog": "25-5882-81",
+      "isotype": "\"Rat IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "ICOS",
+      "reactivity": "Mouse/Human/Rat",
+      "color": "PE-Cy7",
+      "clone": "C398.4A",
+      "company": "BioLegend",
+      "catalog": "313519",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Streptavidin",
+      "reactivity": "",
+      "color": "PE-Cy7",
+      "clone": "",
+      "company": "BioLegend",
+      "catalog": "405206",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "RM4-5",
+      "company": "BioLegend",
+      "catalog": "100527",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "GK1.5",
+      "company": "eBioscience",
+      "catalog": "25-0041-82",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD64 (FcyR1)",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "X54-5/7.1",
+      "company": "BioLegend",
+      "catalog": "139313",
+      "isotype": "\"Mouse IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD138 (Syndecan-1)",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "281-2",
+      "company": "BioLegend",
+      "catalog": "142513",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45R(B220)",
+      "reactivity": "Mouse/Human",
+      "color": "PE-Cy7",
+      "clone": "RA3-6B2",
+      "company": "BioLegend",
+      "catalog": "103222",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11c",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "N418",
+      "company": "BioLegend",
+      "catalog": "117317",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11c",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "N418",
+      "company": "BioLegend",
+      "catalog": "117317",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "FR4",
+      "reactivity": "Mouse",
+      "color": "PE-Cy7",
+      "clone": "eBio12A5",
+      "company": "eBioscience",
+      "catalog": "25-5445-80",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD49b (Integrin alpha 2)",
+      "reactivity": "Mouse",
+      "color": "PE/efluor610",
+      "clone": "DX5",
+      "company": "eBioscience",
+      "catalog": "61-5971-80",
+      "isotype": "\"Rat / IgM, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11b",
+      "reactivity": "Mouse/Human",
+      "color": "PE-CF594",
+      "clone": "M1/70",
+      "company": "BioLegend",
+      "catalog": "101255",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD117 (c-Kit)",
+      "reactivity": "Mouse",
+      "color": "PE-CF594",
+      "clone": "2B8",
+      "company": "BioLegend",
+      "catalog": "105834",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "PE-CF594",
+      "clone": "RM4-5",
+      "company": "BD",
+      "catalog": "562314",
+      "isotype": "\"Rat DA, also known as DA/HA IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Siglec-F",
+      "reactivity": "Mouse",
+      "color": "PE-CF594",
+      "clone": "E50-2440",
+      "company": "BD",
+      "catalog": "562757",
+      "isotype": "\"Rat LOU, also known as Louvain, LOU/C, LOU/M IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122 (IL-2RB)",
+      "reactivity": "Mouse",
+      "color": "PE-CF594",
+      "clone": "TM-B1",
+      "company": "BioLegend",
+      "catalog": "123217",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Streptavidin",
+      "reactivity": "",
+      "color": "PE-CF594",
+      "clone": "",
+      "company": "BD",
+      "catalog": "562318",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3e",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "145-2C11",
+      "company": "eBioscience",
+      "catalog": "12-0031-82",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD6",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "BX222",
+      "company": "BioLegend",
+      "catalog": "145103",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD103",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "2 E7",
+      "company": "eBioscience",
+      "catalog": "12-1031-81",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD11c",
+      "reactivity": "mouse",
+      "color": "PE",
+      "clone": "HL3",
+      "company": "BD",
+      "catalog": "557401",
+      "isotype": "\"Armenian Hamster IgG1, ?2\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD85k",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "H1.1",
+      "company": "BioLegend",
+      "catalog": "144903",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "RM4-5",
+      "company": "BD",
+      "catalog": "553049",
+      "isotype": "\"Rat DA, also known as DA/HA IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD25",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "PC61.5",
+      "company": "eBioscience",
+      "catalog": "12-0251-83",
+      "isotype": "\"Rat / IgG1,  ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD28",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "37.51",
+      "company": "eBioscience",
+      "catalog": "12-0281-81",
+      "isotype": "Syrian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD43",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "",
+      "company": "BD",
+      "catalog": "558762",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Cd1d",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "1B1",
+      "company": "BioLegend",
+      "catalog": "123509",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD49b",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "DX5",
+      "company": "eBioscience",
+      "catalog": "12-5971-81",
+      "isotype": "\"Rat / IgM, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD94",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "18d3",
+      "company": "eBioscience",
+      "catalog": "12-0941-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Syk",
+      "reactivity": "",
+      "color": "PE",
+      "clone": "5F5",
+      "company": "BioLegend",
+      "catalog": "646003",
+      "isotype": "\"Mouse IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD115",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "AFS98",
+      "company": "eBioscience",
+      "catalog": "12-1152-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD161 (NK1.1)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "PK136",
+      "company": "eBioscience",
+      "catalog": "12-5941-83",
+      "isotype": "\"Mouse / IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD170",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "1RNM44N",
+      "company": "eBioscience",
+      "catalog": "12-1702-80",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD178",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "MFL3",
+      "company": "eBioscience",
+      "catalog": "12-5911-81",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD197(CCR7)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "4B12",
+      "company": "eBioscience",
+      "catalog": "12-1971-82",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD195(CCR5)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "C34-3448",
+      "company": "BD",
+      "catalog": "559923",
+      "isotype": "\"Rat IgG2c, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD212",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "114",
+      "company": "BD",
+      "catalog": "551974",
+      "isotype": "\"Mouse IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD223",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "C9B7W",
+      "company": "BD",
+      "catalog": "552380",
+      "isotype": "\"Rat LEW, also known as Lewis IgG1, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD229(Ly-9)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "Ly9ab3",
+      "company": "BioLegend",
+      "catalog": "122905",
+      "isotype": "Armenian Hamster IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD124",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "mIL4R-M1",
+      "company": "BD",
+      "catalog": "552509",
+      "isotype": "\"Rat LEW, also known as Lewis IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "ICOS",
+      "reactivity": "Mouse/Human/Rat/Monkey",
+      "color": "PE",
+      "clone": "C398.4A",
+      "company": "eBioscience",
+      "catalog": "12-9949-81",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD122",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "5H4",
+      "company": "eBioscience",
+      "catalog": "12-1221-83",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD279(PD-1)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "J43",
+      "company": "eBioscience",
+      "catalog": "12-9985-81",
+      "isotype": "Armenian hamster / IgG",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD282(TLR2)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "6C2",
+      "company": "eBioscience",
+      "catalog": "12-9021-81",
+      "isotype": "\"Rat IgG2b, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD284(TLR4)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "MTS510",
+      "company": "eBioscience",
+      "catalog": "12-9924-81",
+      "isotype": "\"Rat IgG2a, ?\"",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD314(NKG2D)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "C7",
+      "company": "eBioscience",
+      "catalog": "12-5873-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD244.2",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "",
+      "company": "BD",
+      "catalog": "553306",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD121a",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "35F5",
+      "company": "BD",
+      "catalog": "557489",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "I-A(b)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "M5/114.15.2",
+      "company": "eBioscience",
+      "catalog": "12-5321-82",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "RT1b",
+      "reactivity": "Rat",
+      "color": "PE",
+      "clone": "",
+      "company": "BD",
+      "catalog": "554929",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49A",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "A1",
+      "company": "eBioscience",
+      "catalog": "12-5856-80",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49C",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "5 E6",
+      "company": "BD",
+      "catalog": "553277",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49I",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "YLI-90",
+      "company": "eBioscience",
+      "catalog": "12-5895-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly-49C/F/I/H",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "14B11",
+      "company": "BioLegend",
+      "catalog": "108207",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly108",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "330-AJ",
+      "company": "BioLegend",
+      "catalog": "134605",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "NK",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "14B11",
+      "company": "eBioscience",
+      "catalog": "12-5991-63",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "RAE-1g",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "CX1",
+      "company": "eBioscience",
+      "catalog": "12-5881-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "H57-597",
+      "company": "BD",
+      "catalog": "561081",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TER-119",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "",
+      "company": "BD",
+      "catalog": "553673",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "IL-23R",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "12B2B64",
+      "company": "BioLegend",
+      "catalog": "150903",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vb2",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "B20.6",
+      "company": "BioLegend",
+      "catalog": "127908",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vb7",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "TR310",
+      "company": "BD",
+      "catalog": "553216",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"Vb8.1,8.2\"",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "MR5-2",
+      "company": "BD",
+      "catalog": "553186",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vb8.3",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "",
+      "company": "BD",
+      "catalog": "553664",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Vd6.3",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "8F4H7B7",
+      "company": "BD",
+      "catalog": "555321",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly108",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "eBio13G3-19D",
+      "company": "eBioscience",
+      "catalog": "12-1508-80",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRgd",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "GL3",
+      "company": "BioLegend",
+      "catalog": "118107",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "S1c7a1(Cat-1/ERR)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "SA191.A10",
+      "company": "BioLegend",
+      "catalog": "150503",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "MERTK (Mer)",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "2B10C42",
+      "company": "BioLegend",
+      "catalog": "151505",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly108",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "330-AJ",
+      "company": "BioLegend",
+      "catalog": "134605",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD36",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "5-271",
+      "company": "BioLegend",
+      "catalog": "336202",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "OKT3",
+      "company": "BioLegend",
+      "catalog": "317302",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Human",
+      "color": "FITC",
+      "clone": "RPA-T4",
+      "company": "BioLegend",
+      "catalog": "300506",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8",
+      "reactivity": "Human",
+      "color": "PerCp-Cy5.5",
+      "clone": "SK1",
+      "company": "BioLegend",
+      "catalog": "344709",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Ly108",
+      "reactivity": "Human",
+      "color": "Ultra-LEAF-Purified",
+      "clone": "NT-7",
+      "company": "BioLegend",
+      "catalog": "317211",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD28",
+      "reactivity": "Human",
+      "color": "Ultra-LEAF-Purified",
+      "clone": "CD28.2",
+      "company": "BioLegend",
+      "catalog": "302933",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD150(SLAM)",
+      "reactivity": "Human",
+      "color": "Ultra-LEAF-Purified",
+      "clone": "A12(7D4)",
+      "company": "BioLegend",
+      "catalog": "306317",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "Ultra-LEAF-Purified",
+      "clone": "OKT3",
+      "company": "BioLegend",
+      "catalog": "317325",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD2",
+      "reactivity": "Human",
+      "color": "APC",
+      "clone": "TS1/8",
+      "company": "BioLegend",
+      "catalog": "309223",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "BV711",
+      "clone": "UCHT1",
+      "company": "BioLegend",
+      "catalog": "300463",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Human",
+      "color": "APC",
+      "clone": "SK3",
+      "company": "eBioscience",
+      "catalog": "17-0047-42",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD20",
+      "reactivity": "Human",
+      "color": "BV421",
+      "clone": "2H7",
+      "company": "BioLegend",
+      "catalog": "302329",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Va7.2",
+      "reactivity": "Human",
+      "color": "BV785",
+      "clone": "3C10",
+      "company": "BioLegend",
+      "catalog": "351721",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Va7.2",
+      "reactivity": "Human",
+      "color": "BV786",
+      "clone": "3C11",
+      "company": "BioLegend",
+      "catalog": "351721",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Va24-Ja18",
+      "reactivity": "Human",
+      "color": "BV421",
+      "clone": "6B11",
+      "company": "BioLegend",
+      "catalog": "342915",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "MR1",
+      "reactivity": "Mouse/Human/Rat",
+      "color": "APC",
+      "clone": "8F2.F9",
+      "company": "BioLegend",
+      "catalog": "396103",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD150(SLAM)",
+      "reactivity": "Human",
+      "color": "PE",
+      "clone": "A12(7D4)",
+      "company": "BioLegend",
+      "catalog": "306307",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD352(NT B-A)",
+      "reactivity": "Human",
+      "color": "PE",
+      "clone": "NT-7",
+      "company": "BioLegend",
+      "catalog": "317207",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD271(NGFR)",
+      "reactivity": "Human",
+      "color": "PE",
+      "clone": "ME20.4",
+      "company": "BioLegend",
+      "catalog": "345106",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Va7.2",
+      "reactivity": "Human",
+      "color": "PE/Cy7",
+      "clone": "3C10",
+      "company": "BioLegend",
+      "catalog": "351711",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Va24",
+      "reactivity": "Human",
+      "color": "PerCp-Cy5.5",
+      "clone": "C15/TCRVa24",
+      "company": "BioLegend",
+      "catalog": "360003",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD19",
+      "reactivity": "Human",
+      "color": "eFluor 450",
+      "clone": "HIB19",
+      "company": "eBioscience",
+      "catalog": "48-0199-42",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD14",
+      "reactivity": "Human",
+      "color": "eFluor 450",
+      "clone": "61D3",
+      "company": "eBioscience",
+      "catalog": "48-0149-42",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "OKT3",
+      "company": "eBioscience",
+      "catalog": "16-0037-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD28",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "CD28.2",
+      "company": "eBioscience",
+      "catalog": "16-0289-81",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Human",
+      "color": "FITC",
+      "clone": "RPA-T4",
+      "company": "BioLegend",
+      "catalog": "300506",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Human",
+      "color": "BV605",
+      "clone": "SK1",
+      "company": "BioLegend",
+      "catalog": "344741",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "eFluor 450",
+      "clone": "OKT3",
+      "company": "eBioscience",
+      "catalog": "48-0037-41",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "BV711",
+      "clone": "UCHT1",
+      "company": "BioLegend",
+      "catalog": "300463",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "AF488",
+      "clone": "OKT3",
+      "company": "BioLegend",
+      "catalog": "317310",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "\"HLA-A,B,C\"",
+      "reactivity": "Human",
+      "color": "PerCp-Cy5.5",
+      "clone": "W6/32",
+      "company": "BioLegend",
+      "catalog": "311419",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8",
+      "reactivity": "Human",
+      "color": "PerCp-Cy5.5",
+      "clone": "SK1",
+      "company": "BioLegend",
+      "catalog": "344709",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD45",
+      "reactivity": "Human",
+      "color": "AF594",
+      "clone": "HI30",
+      "company": "BioLegend",
+      "catalog": "304060",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD1a",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "OKT-6",
+      "company": "InVioMab",
+      "catalog": "BE0211",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD36",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "5-271",
+      "company": "BioLegend",
+      "catalog": "336202",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD3",
+      "reactivity": "Human",
+      "color": "Purified",
+      "clone": "OKT3",
+      "company": "BioLegend",
+      "catalog": "317302",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Nurr77",
+      "reactivity": "Mouse",
+      "color": "AF488",
+      "clone": "12.14",
+      "company": "eBioscience",
+      "catalog": "53-5965-80",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "BV570",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109231",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "APC-eFluor 780",
+      "clone": "H57-597",
+      "company": "eBioscience",
+      "catalog": "47-5961-82",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD279(PD-1)",
+      "reactivity": "Mouse",
+      "color": "SB436",
+      "clone": "J43",
+      "company": "eBioscience",
+      "catalog": "62-9985-80",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "IRF4",
+      "reactivity": "Mouse/Human",
+      "color": "eFluor 450",
+      "clone": "3 E4",
+      "company": "eBioscience",
+      "catalog": "48-9858-80",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "ICOS",
+      "reactivity": "Mouse",
+      "color": "PE-Cy5",
+      "clone": "15F9",
+      "company": "BioLegend",
+      "catalog": "107708",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "PLZF",
+      "reactivity": "Mouse",
+      "color": "PerCp-Cy5.5",
+      "clone": "9 E12",
+      "company": "BioLegend",
+      "catalog": "145807",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "TCRb",
+      "reactivity": "Mouse",
+      "color": "AF700",
+      "clone": "H57-597",
+      "company": "BioLegend",
+      "catalog": "109224",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "IL-17A",
+      "reactivity": "mouse",
+      "color": "AF700",
+      "clone": "TC11-18H10.1",
+      "company": "BioLegend",
+      "catalog": "506914",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "Egr2",
+      "reactivity": "Mouse",
+      "color": "PE",
+      "clone": "erongr2",
+      "company": "eBioscience",
+      "catalog": "12-6691-80",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "GATA3",
+      "reactivity": "Mouse/Human",
+      "color": "PE/Cy7",
+      "clone": "TWAJ",
+      "company": "eBioscience",
+      "catalog": "25-9966-41",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD8a",
+      "reactivity": "Mouse",
+      "color": "APC/Fire750",
+      "clone": "53-6.7",
+      "company": "BioLegend",
+      "catalog": "100765",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD44",
+      "reactivity": "Mouse",
+      "color": "BV480",
+      "clone": "Im7",
+      "company": "BD",
+      "catalog": "566200",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD24",
+      "reactivity": "Mouse",
+      "color": "BV510",
+      "clone": "M1/69",
+      "company": "BioLegend",
+      "catalog": "101831",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "CD4",
+      "reactivity": "Mouse",
+      "color": "APC",
+      "clone": "GK1.5",
+      "company": "BioLegend",
+      "catalog": "100412",
+      "isotype": "",
+      "DF": {
+        "Cytek": "",
+        "Fortessa": ""
+      },
+      "detector": "",
+      "emission_wavelength": "",
+      "is_ec": "",
+      "is_ic": ""
+    },
+    {
+      "marker": "",
+      "DF": {}
     }
   ]
 }

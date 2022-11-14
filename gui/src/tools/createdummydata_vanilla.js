@@ -1,11 +1,14 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import fs from "graceful-fs";
+import path from 'path';
 
 const splitChar = '\t';
 
-const data:string = fs.readFileSync(path.resolve("gui/src/test/Antibody_Lookup_V1.0.txt"), { 'encoding': "utf8" });
-const lines:string[] = data.split('\r\n').slice(1);//split on new line feed, skip first line.
-const antibodies: {}[] = [];
+let data = ''
+let lines = ['']
+let antibodies = [];
+data = fs.readFileSync(path.resolve("gui/src/test/Antibody_Lookup_V1.0.txt"), { 'encoding': "utf8" });
+
+lines = data.split('\r\n').slice(1); //split on new line feed, skip first line.
 
 lines.forEach(line=>{
     const tokens = line.split(splitChar);
@@ -33,3 +36,4 @@ const jsonOut = JSON.stringify({antibodies}, null, 2);
 console.log(jsonOut);
 
 fs.writeFileSync(path.resolve("gui/src/test/dummyData.json"), jsonOut);
+// console.log(data);
