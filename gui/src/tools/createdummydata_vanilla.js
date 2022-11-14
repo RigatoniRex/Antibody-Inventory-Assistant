@@ -36,4 +36,3 @@ const jsonOut = JSON.stringify({antibodies}, null, 2);
 console.log(jsonOut);
 
 fs.writeFileSync(path.resolve("gui/src/test/dummyData.json"), jsonOut);
-// console.log(data);
