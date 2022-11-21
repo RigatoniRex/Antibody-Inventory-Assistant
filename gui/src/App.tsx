@@ -2,7 +2,7 @@
 import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
-import { Antibody } from './@types/antibody.d';
+import { Antibody, AntibodyCollection } from './@types/antibody.d';
 import dummydata from './test/dummydata.json';
 import logo from './assets/logo.svg';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -11,7 +11,7 @@ import { Box } from '@mui/material';
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
-    const antibodies: Antibody[] = React.useMemo(() => {
+    const antibodies: AntibodyCollection = React.useMemo(() => {
         return getAntibodies();
     }, []);
     const theme = React.useMemo(
@@ -49,7 +49,7 @@ function App() {
     );
 }
 
-function getAntibodies(): Antibody[] {
+function getAntibodies(): AntibodyCollection {
     const antibodiesJSON: {
         marker: string;
         reactivity: string;
@@ -67,7 +67,7 @@ function getAntibodies(): Antibody[] {
         is_ec: string;
         is_ic: string;
     }[] = dummydata.antibodies;
-    return antibodiesJSON.map((antibody) => {
+    const antibodyMapping = antibodiesJSON.map((antibody) => {
         const newAntibody = new Antibody();
         newAntibody.marker = antibody.marker;
         newAntibody.reactivity = antibody.reactivity;
@@ -83,6 +83,7 @@ function getAntibodies(): Antibody[] {
         newAntibody.placeholder = antibody.is_ec ? 'Surface' : 'Intracellular';
         return newAntibody;
     });
+    return new AntibodyCollection(antibodyMapping);
 }
 
 export default App;
