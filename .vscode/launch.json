@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "preLaunchTask": "tsc.cmd",
-            "program": "${workspaceFolder}/gui/src/tools/createdummydata.ts",
+            "program": "${workspaceFolder}",
             "outFiles": [
                 "${workspaceFolder}/gui/dist/**/*.js"
             ]
