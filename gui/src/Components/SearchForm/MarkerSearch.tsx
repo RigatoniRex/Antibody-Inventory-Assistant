@@ -6,7 +6,7 @@ import { SelectableList } from './SelectableList';
 
 export function MarkerSearch(props: {
     markers: string[];
-    setMarkerSelected?: React.Dispatch<React.SetStateAction<string>>;
+    setMarkerSelected?: any;
 }) {
     const [filteredMarkers, setFilteredMarkers] = React.useState(props.markers);
     const handleSearchChange = (event: any) => {
