@@ -1,5 +1,5 @@
 {
-    "include": ["src/@types", "src/custom.d.ts"],
+    "include": ["src/custom.d.ts"],
     "compilerOptions": {
         "jsx": "react",
         /* Visit https://aka.ms/tsconfig to read more about this file */

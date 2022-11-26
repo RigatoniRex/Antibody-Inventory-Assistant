@@ -1,10 +1,9 @@
-/// <reference path ="./assets/logo.svg"/>
 import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
 import { Antibody, AntibodyCollection } from './@types/antibody.d';
 import dummydata from './test/dummydata.json';
-import logo from './assets/logo.svg';
+import { reactLogo } from './assets/assests';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { Box } from '@mui/material';
@@ -24,14 +23,14 @@ function App() {
         [darkMode]
     );
     return (
-        <div>
-            <MenuBar setDarkMode={setDarkMode} />
+        <>
             <ThemeProvider theme={theme}>
+                <MenuBar setDarkMode={setDarkMode} />
                 <SearchForm antibodies={antibodies} />
             </ThemeProvider>
-            <div className="App">
+            {/* <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={reactLogo} className="App-logo" alt="logo" />
                     <p>
                         Edit <code>src/App.tsx</code> and save to reload.
                     </p>
@@ -44,8 +43,8 @@ function App() {
                         Learn React
                     </a>
                 </header>
-            </div>
-        </div>
+            </div> */}
+        </>
     );
 }
 
