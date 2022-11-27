@@ -1,5 +1,4 @@
 import { Box, Grid, Paper, SxProps, TextField, Theme } from '@mui/material';
-import { Container, height } from '@mui/system';
 import React from 'react';
 import { Antibody, AntibodyCollection } from '../../@types/antibody';
 import { ComponentPaper } from './Helpers/ComponentPaper';
@@ -20,7 +19,7 @@ export function SearchForm(props: {
         React.useState<AntibodyCollection>(props.antibodies);
 
     const markers: string[] = React.useMemo(() => {
-        return filteredAntibodies.getMarkers();
+        return props.antibodies.getMarkers();
     }, [props.antibodies]);
     const colors: string[] = React.useMemo(() => {
         return filteredAntibodies.getColors();
@@ -86,8 +85,7 @@ export function SearchForm(props: {
             <Paper
                 elevation={20}
                 sx={{
-                    width: 0.8,
-                    height: 600,
+                    width: 0.6,
                     alignItems: 'center',
                     textAlign: 'center',
                     ...props.sx,
@@ -100,21 +98,21 @@ export function SearchForm(props: {
             >
                 <h1>SearchForm</h1>
                 <hr style={{ width: '100%' }} />
-                <Grid container spacing={2} height={1}>
-                    <Grid item xs={2}>
+                <Grid container spacing={2} height={500}>
+                    <Grid item xs={2} height={1}>
                         <MarkerSearch
                             markers={markers}
                             setMarkerSelected={handleMarkerChange}
                         />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={2} height={1}>
                         <ComponentPaper
                             title="Color"
                             items={markerSelected ? colors : []}
                             setSelectedItem={handleColorChange}
                         />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={2} height={1}>
                         <ComponentPaper
                             title="Clone"
                             items={colorSelected ? clones : []}
@@ -164,7 +162,7 @@ export function SearchForm(props: {
                             id="outlined-multiline-static"
                             multiline
                             sx={{ maxHeight: 1 }}
-                            rows={15}
+                            rows={16}
                             value={
                                 antibodySelected
                                     ? JSON.stringify(antibodySelected, null, 2)

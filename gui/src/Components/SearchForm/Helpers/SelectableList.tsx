@@ -65,17 +65,14 @@ export function SelectableList(props: {
         }
     };
     return (
-        <Box height={1} display={'flex'} sx={{ flexFlow: 'column' }}>
-            <List
-                sx={{
-                    overflow: 'auto',
-                    width: 0.9,
-                    height: 100,
-                    ...props.list_sx
-                }}
-            >
-                {showList()}
-            </List>
-        </Box>
+        <List
+            sx={{
+                overflow: 'auto',
+                width: 1,
+                ...props.list_sx
+            }}
+        >
+            {showList()}
+        </List>
     );
 }

@@ -1,4 +1,5 @@
 import { Box, Paper, Stack, SxProps } from '@mui/material';
+import { height } from '@mui/system';
 import React from 'react';
 import { SelectableList } from './SelectableList';
 
@@ -33,13 +34,11 @@ export function ComponentPaper(props: {
             >
                 <h2>{props.title}</h2>
                 <hr style={{ width: '75%' }} />
-                <Stack alignItems={'center'} spacing={2}>
-                    {props.children}
-                    <SelectableList
-                        items={props.items}
-                        setSelectedItem={props.setSelectedItem}
-                    />
-                </Stack>
+                {props.children}
+                <SelectableList
+                    items={props.items}
+                    setSelectedItem={props.setSelectedItem}
+                />
             </Paper>
         </Box>
     );

@@ -8,13 +8,6 @@
     pointer-events: none;
 }
 
-h1 {
-    font-size: 3vmin;
-}
-h2 {
-    font-size: 2vmin;
-}
-
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
