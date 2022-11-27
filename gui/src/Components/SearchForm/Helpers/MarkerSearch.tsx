@@ -1,12 +1,13 @@
 import React from 'react';
-import { TextField } from '@mui/material';
-import { Box } from '@mui/system';
+import { Stack, TextField } from '@mui/material';
+import { Box, SxProps } from '@mui/system';
 import { ComponentPaper } from './ComponentPaper';
 import { SelectableList } from './SelectableList';
 
 export function MarkerSearch(props: {
     markers: string[];
     setMarkerSelected?: any;
+    sx?: SxProps;
 }) {
     const [filteredMarkers, setFilteredMarkers] = React.useState(props.markers);
     const handleSearchChange = (event: any) => {
@@ -18,19 +19,17 @@ export function MarkerSearch(props: {
     };
 
     return (
-        <ComponentPaper>
-            <h1>Marker</h1>
-            <TextField label="Search" onChange={handleSearchChange} />
-            <Box display={'flex'} justifyContent={'center'}>
-                <SelectableList
-                    items={filteredMarkers}
-                    text_sx={{
-                        textAlign: 'center'
-                    }}
-                    list_sx={{ height: 500, overflow: 'auto', width: 1 }}
-                    setSelectedItem={props.setMarkerSelected}
-                />
-            </Box>
+        <ComponentPaper
+            title="Marker"
+            items={filteredMarkers}
+            setSelectedItem={props.setMarkerSelected}
+            sx={props.sx}
+        >
+            <TextField
+                label="Search"
+                sx={{ width: 0.8 }}
+                onChange={handleSearchChange}
+            />
         </ComponentPaper>
     );
 }

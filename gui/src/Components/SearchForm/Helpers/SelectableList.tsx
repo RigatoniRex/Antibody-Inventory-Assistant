@@ -1,11 +1,17 @@
 import React from 'react';
-import { List, ListItemText, ListItemButton, SxProps } from '@mui/material';
+import {
+    List,
+    ListItemText,
+    ListItemButton,
+    SxProps,
+    Box
+} from '@mui/material';
 
 export function SelectableList(props: {
     items: any[];
-    setSelectedItem?: React.Dispatch<React.SetStateAction<any>>;
     text_sx?: SxProps;
     list_sx?: SxProps;
+    setSelectedItem?: React.Dispatch<React.SetStateAction<any>>;
 }) {
     const [selectedIndex, setSelectedIndex] = React.useState<number>(-1);
 
@@ -47,7 +53,10 @@ export function SelectableList(props: {
                         selected={selectedIndex === i}
                         onClick={(event) => handleListItemClick(event, i)}
                     >
-                        <ListItemText primary={item} sx={props.text_sx} />
+                        <ListItemText
+                            primary={item}
+                            sx={{ textAlign: 'center', ...props.text_sx }}
+                        />
                     </ListItemButton>
                 );
             });
@@ -55,5 +64,15 @@ export function SelectableList(props: {
             return;
         }
     };
-    return <List sx={props.list_sx}>{showList()}</List>;
+    return (
+        <List
+            sx={{
+                overflow: 'auto',
+                width: 1,
+                ...props.list_sx
+            }}
+        >
+            {showList()}
+        </List>
+    );
 }

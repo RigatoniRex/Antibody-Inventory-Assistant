@@ -1,12 +1,13 @@
-import { Box, Grid, Paper, TextField } from '@mui/material';
+import { Box, Grid, Paper, SxProps, TextField, Theme } from '@mui/material';
 import React from 'react';
 import { Antibody, AntibodyCollection } from '../../@types/antibody';
-import { CloneSelect } from './CloneSelect';
-import { ColorSelect } from './ColorSelect';
-import { CompanySelect } from './CompanySelect';
-import { MarkerSearch } from './MarkerSearch';
+import { ComponentPaper } from './Helpers/ComponentPaper';
+import { MarkerSearch } from './Helpers/MarkerSearch';
 
-export function SearchForm(props: { antibodies: AntibodyCollection }) {
+export function SearchForm(props: {
+    antibodies: AntibodyCollection;
+    sx?: SxProps<Theme>;
+}) {
     const [markerSelected, setMarkerSelected] = React.useState<string>('');
     const [colorSelected, setColorSelected] = React.useState<string>('');
     const [cloneSelected, setCloneSelected] = React.useState<string>('');
@@ -18,7 +19,7 @@ export function SearchForm(props: { antibodies: AntibodyCollection }) {
         React.useState<AntibodyCollection>(props.antibodies);
 
     const markers: string[] = React.useMemo(() => {
-        return filteredAntibodies.getMarkers();
+        return props.antibodies.getMarkers();
     }, [props.antibodies]);
     const colors: string[] = React.useMemo(() => {
         return filteredAntibodies.getColors();
@@ -72,30 +73,57 @@ export function SearchForm(props: { antibodies: AntibodyCollection }) {
         );
     };
     return (
-        <Box sx={{ height: 1000, textAlign: 'center' }}>
-            <Paper variant="outlined" sx={{ height: 1000 }}>
+        <Box
+            sx={{
+                ...props.sx,
+                alignItems: 'center',
+                padding: 10,
+                display: 'flex',
+                flexFlow: 'column'
+            }}
+        >
+            <Paper
+                elevation={20}
+                sx={{
+                    width: 0.6,
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    ...props.sx,
+                    paddingLeft: 10,
+                    paddingRight: 10,
+                    paddingBottom: 10,
+                    display: 'flex',
+                    flexFlow: 'column'
+                }}
+            >
                 <h1>SearchForm</h1>
-                <Grid container spacing={2} height={1}>
-                    <Grid item xs={2}>
+                <hr style={{ width: '100%' }} />
+                <Grid container spacing={2} height={500}>
+                    <Grid item xs={2} height={1}>
                         <MarkerSearch
                             markers={markers}
                             setMarkerSelected={handleMarkerChange}
                         />
                     </Grid>
-                    <Grid item xs={2}>
-                        <ColorSelect
-                            colors={markerSelected ? colors : []}
-                            setColorSelected={handleColorChange}
+                    <Grid item xs={2} height={1}>
+                        <ComponentPaper
+                            title="Color"
+                            items={markerSelected ? colors : []}
+                            setSelectedItem={handleColorChange}
                         />
                     </Grid>
-                    <Grid item xs={2}>
-                        <CloneSelect
-                            clones={colorSelected ? clones : []}
-                            setCloneSelected={handleCloneChange}
+                    <Grid item xs={2} height={1}>
+                        <ComponentPaper
+                            title="Clone"
+                            items={colorSelected ? clones : []}
+                            setSelectedItem={handleCloneChange}
+                            sx={{ height: 0.5 }}
                         />
-                        <CompanySelect
-                            companies={cloneSelected ? companies : []}
-                            setCompanySelected={handleCompanyChange}
+                        <ComponentPaper
+                            title="Company"
+                            items={cloneSelected ? companies : []}
+                            setSelectedItem={handleCompanyChange}
+                            sx={{ height: 0.5 }}
                         />
                     </Grid>
                     {/* Output Text Fields */}
@@ -125,7 +153,7 @@ export function SearchForm(props: { antibodies: AntibodyCollection }) {
                             value={companySelected}
                         ></TextField>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={4}>
                         <TextField
                             margin={'normal'}
                             fullWidth
@@ -133,8 +161,8 @@ export function SearchForm(props: { antibodies: AntibodyCollection }) {
                             label="Antibody Selected"
                             id="outlined-multiline-static"
                             multiline
-                            rows={20}
-                            defaultValue="Default Value"
+                            sx={{ maxHeight: 1 }}
+                            rows={16}
                             value={
                                 antibodySelected
                                     ? JSON.stringify(antibodySelected, null, 2)
