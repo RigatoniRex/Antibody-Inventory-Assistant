@@ -30,9 +30,9 @@ jobs:
 
         steps:
             - name: setup
-                run: CI=false
+              run: CI=false
 
             - name: deploy to Github Pages
-                uses: JamesIves/github-pages-deploy-action@v4
-                with:
-                    folder: gui/build
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  folder: gui/build
