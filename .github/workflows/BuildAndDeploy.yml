@@ -17,9 +17,10 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: 18.x
-            - run: CI=false
 
             - name: Build
+              env:
+                  CI: ''
               run: |
                   cd gui
                   npm install
@@ -30,9 +31,6 @@ jobs:
         needs: build
 
         steps:
-            - name: setup
-              run: CI=false
-
             - name: deploy to Github Pages
               uses: JamesIves/github-pages-deploy-action@v4
               with:
