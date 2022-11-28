@@ -1,8 +1,7 @@
 import React from 'react';
-import { Stack, TextField } from '@mui/material';
-import { Box, SxProps } from '@mui/system';
+import { TextField } from '@mui/material';
+import { SxProps } from '@mui/system';
 import { ComponentPaper } from './ComponentPaper';
-import { SelectableList } from './SelectableList';
 
 export function MarkerSearch(props: {
     markers: string[];

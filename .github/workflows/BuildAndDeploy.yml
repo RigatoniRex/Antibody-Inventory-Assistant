@@ -2,6 +2,7 @@ name: Build And Deploy to Pages
 
 on:
     push:
+        # branches: ['main']
     pull_request:
         branches: ['main']
 permissions:

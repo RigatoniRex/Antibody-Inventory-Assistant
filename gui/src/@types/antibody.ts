@@ -1,5 +1,3 @@
-import { arrayBuffer } from 'stream/consumers';
-
 export class Antibody {
     marker: string = '';
     reactivity: string = '';
@@ -73,7 +71,7 @@ export class AntibodyCollection extends Array<Antibody> {
         color: string,
         clone: string,
         company: string
-    ): Antibody {
+    ): Antibody | undefined {
         return this.find(
             (antibody) =>
                 antibody.marker === marker &&

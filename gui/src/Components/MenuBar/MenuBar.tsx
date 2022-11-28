@@ -1,5 +1,4 @@
 import { AppBar, Box, Toolbar, Switch, FormControlLabel } from '@mui/material';
-import { green } from '@mui/material/colors';
 import React from 'react';
 
 export function MenuBar(props: {
