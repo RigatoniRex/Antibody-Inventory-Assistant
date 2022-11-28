@@ -1,0 +1,32 @@
+name: Build And Deploy to Pages
+
+on:
+    push:
+        branches: ['main']
+    pull_request:
+        branches: ['main']
+permissions:
+    contents: write
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Use Node.js 18.x
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18.x
+
+            - name: Build
+              env:
+                  CI: ''
+              run: |
+                  cd gui
+                  npm install
+                  npm run build
+
+            - name: deploy to Github Pages
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  folder: gui/build

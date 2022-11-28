@@ -1,5 +1,4 @@
-import { Box, Paper, Stack, SxProps } from '@mui/material';
-import { height } from '@mui/system';
+import { Box, Paper, SxProps } from '@mui/material';
 import React from 'react';
 import { SelectableList } from './SelectableList';
 

@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-    List,
-    ListItemText,
-    ListItemButton,
-    SxProps,
-    Box
-} from '@mui/material';
+import { List, ListItemText, ListItemButton, SxProps } from '@mui/material';
 
 export function SelectableList(props: {
     items: any[];

@@ -1,12 +1,11 @@
 import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
-import { Antibody, AntibodyCollection } from './@types/antibody.d';
+import { Antibody, AntibodyCollection } from './@types/antibody';
 import dummydata from './test/dummydata.json';
-import { reactLogo } from './assets/assests';
+// import { reactLogo } from './assets/assests';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
-import { Box } from '@mui/material';
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
