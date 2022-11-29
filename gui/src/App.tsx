@@ -6,6 +6,7 @@ import dummydata from './test/dummydata.json';
 // import { reactLogo } from './assets/assests';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
+import { CssBaseline } from '@mui/material';
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
@@ -25,6 +26,7 @@ function App() {
         <>
             <ThemeProvider theme={theme}>
                 <MenuBar setDarkMode={setDarkMode} />
+                <CssBaseline />
                 <SearchForm antibodies={antibodies} />
             </ThemeProvider>
             {/* <div className="App">

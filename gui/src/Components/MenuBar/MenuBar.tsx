@@ -9,7 +9,14 @@ export function MenuBar(props: {
             <AppBar sx={{ width: '100%' }}>
                 <Toolbar>
                     <FormControlLabel
-                        control={<Switch defaultChecked />}
+                        control={
+                            <Switch
+                                defaultChecked
+                                onChange={(_, checked) => {
+                                    props.setDarkMode(checked);
+                                }}
+                            />
+                        }
                         label="Dark Mode"
                     />
                 </Toolbar>
