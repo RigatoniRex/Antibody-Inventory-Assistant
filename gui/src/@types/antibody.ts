@@ -11,8 +11,8 @@ export class Antibody {
         Fortessa: 0
     };
     detector: string = '';
-    emission_wavelength: string = '';
-    placeholder: 'Surface' | 'Intracellular' = 'Surface';
+    laser: string = '';
+    epitopeLocation: 'Surface' | 'Intracellular' = 'Surface';
 }
 
 export class AntibodyCollection extends Array<Antibody> {
@@ -84,5 +84,5 @@ export class AntibodyCollection extends Array<Antibody> {
 
 export type DilutionFactor = {
     Cytek: number;
-    Fortessa: number | null;
+    Fortessa: number;
 };

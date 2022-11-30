@@ -79,8 +79,10 @@ function getAntibodies(): AntibodyCollection {
         newAntibody.dilutionFactor.Cytek = Number(antibody.DF.Cytek ?? 0);
         newAntibody.dilutionFactor.Fortessa = Number(antibody.DF.Fortessa ?? 0);
         newAntibody.detector = antibody.detector;
-        newAntibody.emission_wavelength = antibody.emission_wavelength;
-        newAntibody.placeholder = antibody.is_ec ? 'Surface' : 'Intracellular';
+        newAntibody.laser = antibody.emission_wavelength;
+        newAntibody.epitopeLocation = antibody.is_ec
+            ? 'Surface'
+            : 'Intracellular';
         return newAntibody;
     });
     return new AntibodyCollection(antibodyMapping);
