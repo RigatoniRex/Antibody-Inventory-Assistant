@@ -31,33 +31,49 @@ function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route
-                            path="/"
+                            path="Antibody-Inventory-Assistant"
                             element={<SearchForm antibodies={antibodies} />}
-                        />
-                        <Route
-                            path="/login"
-                            element={
-                                <h1 style={{ position: 'absolute', top: 200 }}>
-                                    ToDo: Build Login Page
-                                </h1>
-                            }
-                        />
-                        <Route
-                            path="/about"
-                            element={
-                                <h1 style={{ position: 'absolute', top: 200 }}>
-                                    ToDo: Build About Page
-                                </h1>
-                            }
-                        />
-                        <Route
-                            path="/docs"
-                            element={
-                                <h1 style={{ position: 'absolute', top: 200 }}>
-                                    ToDo: Build Docs Page
-                                </h1>
-                            }
-                        />
+                        >
+                            <Route
+                                path="login"
+                                element={
+                                    <h1
+                                        style={{
+                                            position: 'absolute',
+                                            top: 200
+                                        }}
+                                    >
+                                        ToDo: Build Login Page
+                                    </h1>
+                                }
+                            />
+                            <Route
+                                path="about"
+                                element={
+                                    <h1
+                                        style={{
+                                            position: 'absolute',
+                                            top: 200
+                                        }}
+                                    >
+                                        ToDo: Build About Page
+                                    </h1>
+                                }
+                            />
+                            <Route
+                                path="docs"
+                                element={
+                                    <h1
+                                        style={{
+                                            position: 'absolute',
+                                            top: 200
+                                        }}
+                                    >
+                                        ToDo: Build Docs Page
+                                    </h1>
+                                }
+                            />
+                        </Route>
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>
