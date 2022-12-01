@@ -7,7 +7,7 @@
         "serve": "npm run build && firebase emulators:start --only functions",
         "shell": "npm run build && firebase functions:shell",
         "start": "npm run shell",
-        "deploy": "firebase deploy --force --only functions",
+        "deploy": "firebase deploy --token '$FIREBASE_TOKEN' --force --only functions",
         "logs": "firebase functions:log"
     },
     "engines": {
