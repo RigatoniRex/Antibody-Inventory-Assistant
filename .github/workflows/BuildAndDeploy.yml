@@ -28,7 +28,7 @@ jobs:
           cd api/functions
           npm install -g firebase-tools
           npm install
-          npm deploy
+          npm run deploy
 
   build-and-deploy-gui:
     runs-on: ubuntu-latest
