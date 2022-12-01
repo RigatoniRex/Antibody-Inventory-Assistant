@@ -7,7 +7,7 @@ import dummydata from './test/dummydata.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
-import { Route } from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
@@ -28,18 +28,38 @@ function App() {
             <ThemeProvider theme={theme}>
                 <MenuBar setDarkMode={setDarkMode} />
                 <CssBaseline />
-                <Route path="/">
-                    <SearchForm antibodies={antibodies} />
-                </Route>
-                <Route path="/login">
-                    <h1>ToDo: Build Login Page</h1>
-                </Route>
-                <Route path="/about">
-                    <h1>ToDo: Build About Page</h1>
-                </Route>
-                <Route path="/docs">
-                    <h1>ToDo: Build Docs Page</h1>
-                </Route>
+                <BrowserRouter>
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={<SearchForm antibodies={antibodies} />}
+                        />
+                        <Route
+                            path="/login"
+                            element={
+                                <h1 style={{ position: 'absolute', top: 200 }}>
+                                    ToDo: Build Login Page
+                                </h1>
+                            }
+                        />
+                        <Route
+                            path="/about"
+                            element={
+                                <h1 style={{ position: 'absolute', top: 200 }}>
+                                    ToDo: Build About Page
+                                </h1>
+                            }
+                        />
+                        <Route
+                            path="/docs"
+                            element={
+                                <h1 style={{ position: 'absolute', top: 200 }}>
+                                    ToDo: Build Docs Page
+                                </h1>
+                            }
+                        />
+                    </Routes>
+                </BrowserRouter>
             </ThemeProvider>
             {/* <div className="App">
                 <header className="App-header">
