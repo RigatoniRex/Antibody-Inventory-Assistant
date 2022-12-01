@@ -25,6 +25,7 @@ jobs:
           CI: ''
         run: |
           cd api/functions
+          npm install -g firebase-tools
           npm install
           npm run deploy
 
