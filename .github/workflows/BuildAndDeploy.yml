@@ -1,32 +1,52 @@
 name: Build And Deploy to Pages
 
 on:
-    push:
-        branches: ['main']
-    pull_request:
-        branches: ['main']
+  push:
+    branches: ['main']
+
 permissions:
-    contents: write
+  contents: write
+
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
+  build-and-deploy-api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-            - name: Use Node.js 18.x
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18.x
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
 
-            - name: Build
-              env:
-                  CI: ''
-              run: |
-                  cd gui
-                  npm install
-                  npm run build
+      - name: Build
+        env:
+          CI: ''
+          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
+        run: |
+          cd api/functions
+          npm install -g firebase-tools
+          npm install
+          npm run deploy
 
-            - name: deploy to Github Pages
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  folder: gui/build
+  build-and-deploy-gui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Build and Deploy
+        env:
+          CI: ''
+        run: |
+          cd gui
+          npm install
+          npm run build
+
+      - name: deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: gui/build
