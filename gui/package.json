@@ -22,10 +22,10 @@
         "sonarlint": "^1.1.0"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "start": "npm run buildLib && react-scripts start",
+        "build": "npm run buildLib && react-scripts build",
+        "test": "npm run buildLib && react-scripts test",
+        "buildLib": "npm run build --prefix ../libs/antibody-library"
     },
     "eslintConfig": {
         "extends": [
