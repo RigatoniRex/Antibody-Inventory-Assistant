@@ -2,6 +2,7 @@ import * as functions from 'firebase-functions';
 import * as express from 'express';
 import * as admin from 'firebase-admin';
 import { type Express } from 'express';
+//import { Antibody } from '../../../libs/antibody-library/antibody';
 
 const app: Express = express();
 
@@ -16,14 +17,14 @@ export const hey = functions.https.onRequest((_, response) => {
 
 export const api = functions.https.onRequest(app);
 
-const db = admin.firestore();
+const firestore = admin.firestore();
 const labsCollection = 'labs';
 const antibodiesCollection = 'antibodies';
 
 //TODO: get all antibodies
 app.get('/antibody', async (req, res) => {
     try {
-        const userQuerySnapshot = await db
+        const userQuerySnapshot = await firestore
             .collection(labsCollection)
             .doc(req.body.lab)
             .collection(antibodiesCollection)
@@ -42,8 +43,33 @@ app.get('/antibody', async (req, res) => {
 });
 
 //TODO: add antibody
-app.post('/antibody', (req, resp) => {
-    resp.status(200).send('Test, no action taken - POST antibody');
+app.post('/antibody', async (req, resp) => {
+    try {
+        // const antibody: Antibody = {
+        //     marker: req.body.antibody.marker,
+        //     reactivity: req.body.antibody.reactivity,
+        //     color: req.body.antibody.color,
+        //     clone: req.body.antibody.clone,
+        //     company: req.body.antibody.company,
+        //     catalog: req.body.antibody.catalog,
+        //     isotype: req.body.antibody.isotype,
+        //     dilutionFactor: {
+        //         Cytek: req.body.antibody.dilutionFactor.Cytek,
+        //         Fortessa: req.body.antibody.dilutionFactor.Fortessa
+        //     },
+        //     detector: req.body.antibody.detector,
+        //     laser: req.body.antibody.laser,
+        //     epitopeLocation: req.body.antibody.epitopeLocation
+        // };
+        await firestore
+            .collection(labsCollection)
+            .doc(req.body.lab)
+            .collection(antibodiesCollection)
+            .add({ test: 'hello' });
+        resp.status(200);
+    } catch (error) {
+        resp.status(500).send(error);
+    }
 });
 
 //TODO: delete antibody
