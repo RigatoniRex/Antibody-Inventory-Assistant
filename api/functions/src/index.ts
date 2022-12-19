@@ -42,19 +42,31 @@ app.get('/antibody', async (req, res) => {
 });
 
 //TODO: add antibody
-app.post('/antibody', (req, resp) => {});
+app.post('/antibody', (req, resp) => {
+    resp.status(200).send('Test, no action taken - POST antibody');
+});
 
 //TODO: delete antibody
-app.delete('/antibody', (req, resp) => {});
+app.delete('/antibody', (req, resp) => {
+    resp.status(200).send('Test, no action taken - DELETE antibody');
+});
 
 //TODO: edit antibody
-app.put('/antibody', (req, resp) => {});
+app.put('/antibody', (req, resp) => {
+    resp.status(200).send('Test, no action taken - PUT antibody');
+});
 
 //TODO: add lab
-app.post('/lab', (req, resp) => {});
+app.post('/lab', (req, resp) => {
+    resp.status(200).send('Test, no action taken - POST lab');
+});
 
 //TODO: delete lab
-app.delete('/lab', (req, resp) => {});
+app.delete('/lab', (req, resp) => {
+    resp.status(200).send('Test, no action taken - POST lab');
+});
 
 //TODO: edit labname
-app.put('lab', (req, resp) => {});
+app.put('lab', (req, resp) => {
+    resp.status(200).send('Test, no action taken - PUT lab');
+});
