@@ -11,9 +11,9 @@ const app: Express = express();
 
 admin.initializeApp(functions.config().firebase);
 
-export const hey = functions.https.onRequest((_, response) => {
-    response.send('Hi there');
-});
+// export const hey = functions.https.onRequest((_, response) => {
+//     response.send('Hi there');
+// });
 
 export const api = functions.https.onRequest(app);
 
@@ -33,7 +33,7 @@ app.get('/antibody', async (req, res) => {
         userQuerySnapshot.forEach((antibodyDoc) => {
             antibodies.push({
                 id: antibodyDoc.id,
-                antibody: antibodyDoc.data()
+                marker: antibodyDoc.get('marker')
             });
         });
         res.status(200).json(antibodies);
@@ -45,28 +45,15 @@ app.get('/antibody', async (req, res) => {
 //TODO: add antibody
 app.post('/antibody', async (req, resp) => {
     try {
-        // const antibody: Antibody = {
-        //     marker: req.body.antibody.marker,
-        //     reactivity: req.body.antibody.reactivity,
-        //     color: req.body.antibody.color,
-        //     clone: req.body.antibody.clone,
-        //     company: req.body.antibody.company,
-        //     catalog: req.body.antibody.catalog,
-        //     isotype: req.body.antibody.isotype,
-        //     dilutionFactor: {
-        //         Cytek: req.body.antibody.dilutionFactor.Cytek,
-        //         Fortessa: req.body.antibody.dilutionFactor.Fortessa
-        //     },
-        //     detector: req.body.antibody.detector,
-        //     laser: req.body.antibody.laser,
-        //     epitopeLocation: req.body.antibody.epitopeLocation
-        // };
-        await firestore
+        const doc: admin.firestore.DocumentReference = await firestore
             .collection(labsCollection)
             .doc(req.body.lab)
             .collection(antibodiesCollection)
-            .add({ test: 'hello' });
-        resp.status(200);
+            .add(req.body.antibody);
+        resp.status(200).send({
+            msg: 'document added',
+            doc: doc.id
+        });
     } catch (error) {
         resp.status(500).send(error);
     }
