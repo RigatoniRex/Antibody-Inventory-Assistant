@@ -1,5 +1,6 @@
 import { firestore } from 'firebase-admin';
-import { db, antibodiesCollection, labsCollection } from './database';
+import { antibodiesCollection, labsCollection } from '../config/database';
+import { db } from './index';
 
 export class LabHandler {
     private _lab: string = '';
@@ -34,9 +35,10 @@ export class LabHandler {
 
     //TODO: REMOVE THIS AND MODIFY TO HASHING
     async checkPassword(password: string) {
-        const labData: firestore.DocumentData = await this.labRef.get();
-        const validPassword: string = labData.get('password');
-        return validPassword === password;
+        return true; //always pass for now... during testing
+        // const labData: firestore.DocumentData = await this.labRef.get();
+        // const validPassword: string = labData.get('password');
+        // return validPassword === password;
     }
 
     // authenticate(password: string) {}

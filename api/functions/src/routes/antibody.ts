@@ -44,10 +44,21 @@ AntibodyRouter.get('/search', async (req, res) => {
         const antibodyDocs = await labHandler.antibodyCollectionRef.get();
         const antibodies: any[] = [];
         antibodyDocs.forEach((antibodyDoc) => {
-            antibodies.push({
-                id: antibodyDoc.id,
-                marker: antibodyDoc.get(req.body.field ?? 'marker')
-            });
+            interface ReturnAntibody {
+                id: string;
+                [key: string]: any;
+            }
+            const returnAntibody: ReturnAntibody = {
+                id: antibodyDoc.id
+            };
+            if (req.body.fields && req.body.fields.count) {
+                req.body.fields.forEach((field: string) => {
+                    returnAntibody[field] = antibodyDoc.get(field);
+                });
+            } else {
+                returnAntibody.marker = antibodyDoc.get('marker');
+            }
+            antibodies.push(returnAntibody);
         });
         res.status(200).json(antibodies);
     } catch (error) {
