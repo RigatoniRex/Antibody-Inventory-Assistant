@@ -2,9 +2,9 @@
     "name": "functions",
     "scripts": {
         "lint": "eslint --ext .js,.ts .",
-        "build": "tsc",
+        "build": "tsc --build",
         "build:watch": "tsc --watch",
-        "serve": "npm run build && firebase emulators:start --only functions",
+        "serve": "npm run build && firebase emulators:start",
         "shell": "npm run build && firebase functions:shell",
         "start": "npm run shell",
         "deploy": "firebase deploy --force --only functions",
@@ -15,19 +15,22 @@
     },
     "main": "lib/index.js",
     "dependencies": {
+        "cookie-parser": "1.4.6",
+        "express": "^4.18.2",
         "firebase-admin": "^11.3.0",
-        "firebase-functions": "^4.1.0",
-        "express": "^4.18.2"
+        "firebase-functions": "^4.1.0"
     },
     "devDependencies": {
+        "@types/cookie-parser": "^1.4.3",
+        "@types/express": "4.17.14",
+        "@types/node": "^18.11.18",
         "@typescript-eslint/eslint-plugin": "^5.12.0",
         "@typescript-eslint/parser": "^5.12.0",
         "eslint": "^8.9.0",
         "eslint-config-google": "^0.14.0",
         "eslint-plugin-import": "^2.25.4",
         "firebase-functions-test": "^0.2.0",
-        "typescript": "^4.5.4",
-        "@types/express": "4.17.14"
+        "typescript": "^4.5.4"
     },
     "private": true
 }

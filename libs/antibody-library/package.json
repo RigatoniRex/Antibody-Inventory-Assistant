@@ -1,0 +1,10 @@
+{
+    "name": "antibody-library",
+    "version": "1.0.0",
+    "description": "Shared library which provides antibody functionality",
+    "author": "Keaton Foster",
+    "license": "ISC",
+    "scripts": {
+        "build": "tsc"
+    }
+}

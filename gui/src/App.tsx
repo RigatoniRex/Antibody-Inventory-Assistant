@@ -1,7 +1,7 @@
 import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
-import { Antibody, AntibodyCollection } from './@types/antibody';
+import { Antibody, AntibodyCollection } from 'antibody-library/antibody';
 import dummydata from './test/dummydata.json';
 // import { reactLogo } from './assets/assests';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -115,21 +115,22 @@ function getAntibodies(): AntibodyCollection {
         is_ic: string;
     }[] = dummydata.antibodies;
     const antibodyMapping = antibodiesJSON.map((antibody) => {
-        const newAntibody = new Antibody();
-        newAntibody.marker = antibody.marker;
-        newAntibody.reactivity = antibody.reactivity;
-        newAntibody.color = antibody.color;
-        newAntibody.clone = antibody.clone;
-        newAntibody.company = antibody.company;
-        newAntibody.catalog = antibody.catalog;
-        newAntibody.isotype = antibody.isotype;
-        newAntibody.dilutionFactor.Cytek = Number(antibody.DF.Cytek ?? 0);
-        newAntibody.dilutionFactor.Fortessa = Number(antibody.DF.Fortessa ?? 0);
-        newAntibody.detector = antibody.detector;
-        newAntibody.laser = antibody.emission_wavelength;
-        newAntibody.epitopeLocation = antibody.is_ec
-            ? 'Surface'
-            : 'Intracellular';
+        const newAntibody: Antibody = {
+            marker: antibody.marker,
+            reactivity: antibody.reactivity,
+            color: antibody.color,
+            clone: antibody.clone,
+            company: antibody.company,
+            catalog: antibody.catalog,
+            isotype: antibody.isotype,
+            dilutionFactor: {
+                Cytek: Number(antibody.DF.Cytek ?? 0),
+                Fortessa: Number(antibody.DF.Fortessa ?? 0)
+            },
+            detector: antibody.detector,
+            laser: antibody.emission_wavelength,
+            epitopeLocation: antibody.is_ec ? 'Surface' : 'Intracellular'
+        };
         return newAntibody;
     });
     return new AntibodyCollection(antibodyMapping);

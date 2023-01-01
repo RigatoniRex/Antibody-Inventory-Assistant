@@ -1,18 +1,15 @@
-export class Antibody {
-    marker: string = '';
-    reactivity: string = '';
-    color: string = '';
-    clone: string = '';
-    company: string = '';
-    catalog: string = '';
-    isotype: string = '';
-    dilutionFactor: DilutionFactor = {
-        Cytek: 0,
-        Fortessa: 0
-    };
-    detector: string = '';
-    laser: string = '';
-    epitopeLocation: 'Surface' | 'Intracellular' = 'Surface';
+export interface Antibody {
+    marker: string;
+    reactivity: string;
+    color: string;
+    clone: string;
+    company: string;
+    catalog: string;
+    isotype: string;
+    dilutionFactor: DilutionFactor;
+    detector: string;
+    laser: string;
+    epitopeLocation: 'Surface' | 'Intracellular';
 }
 
 export class AntibodyCollection extends Array<Antibody> {

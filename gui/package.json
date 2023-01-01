@@ -15,17 +15,19 @@
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.4.4",
         "react-scripts": "5.0.1",
-        "web-vitals": "^2.1.4"
+        "web-vitals": "^2.1.4",
+        "antibody-library": "file:../libs/antibody-library"
     },
     "devDependencies": {
         "@types/node": "^18.11.9",
-        "sonarlint": "^1.1.0"
+        "sonarlint": "^1.1.0",
+        "webpack-shell-plugin": "^0.5.0"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "start": "npm run buildLib && react-scripts start",
+        "build": "npm run buildLib && react-scripts build",
+        "test": "npm run buildLib && react-scripts test",
+        "buildLib": "npm run build --prefix ../libs/antibody-library"
     },
     "eslintConfig": {
         "extends": [

@@ -1,12 +1,16 @@
+import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions';
-// import * as express from 'express';
-// import { type Express } from 'express';
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import { type Express } from 'express';
+import AntibodyRouter from './routes/antibody';
+import LabRouter from './routes/lab';
 
-//const app: Express = express();
+export const app: Express = express();
 
-// // Start writing functions
-// https://firebase.google.com/docs/functions/typescript
+admin.initializeApp(functions.config().firebase);
+app.use(cookieParser());
+app.use('/antibody', AntibodyRouter);
+app.use('/lab', LabRouter);
 
-export const hey = functions.https.onRequest((_, response) => {
-    response.send('Hi there');
-});
+export const api = functions.https.onRequest(app);
