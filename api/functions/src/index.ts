@@ -9,7 +9,7 @@ import LabRouter from './routes/lab';
 
 export const app: Express = express();
 
-admin.initializeApp(functions.config().firebase);
+admin.initializeApp();
 app.use(cookieParser());
 app.use('/antibody', AntibodyRouter);
 app.use('/lab', LabRouter);
