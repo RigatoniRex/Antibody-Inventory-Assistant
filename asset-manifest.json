@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Antibody-Inventory-Assistant/static/css/main.9bb7f296.css",
-    "main.js": "/Antibody-Inventory-Assistant/static/js/main.cb6b68ea.js",
+    "main.js": "/Antibody-Inventory-Assistant/static/js/main.df2e4379.js",
     "static/js/787.7719cbdc.chunk.js": "/Antibody-Inventory-Assistant/static/js/787.7719cbdc.chunk.js",
     "index.html": "/Antibody-Inventory-Assistant/index.html",
     "main.9bb7f296.css.map": "/Antibody-Inventory-Assistant/static/css/main.9bb7f296.css.map",
-    "main.cb6b68ea.js.map": "/Antibody-Inventory-Assistant/static/js/main.cb6b68ea.js.map",
+    "main.df2e4379.js.map": "/Antibody-Inventory-Assistant/static/js/main.df2e4379.js.map",
     "787.7719cbdc.chunk.js.map": "/Antibody-Inventory-Assistant/static/js/787.7719cbdc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bb7f296.css",
-    "static/js/main.cb6b68ea.js"
+    "static/js/main.df2e4379.js"
   ]
 }
