@@ -11,6 +11,17 @@ export const app: Express = express();
 
 admin.initializeApp();
 app.use(cookieParser());
+//Verify body
+app.use('*', (req, res, next) => {
+    if (!req.body.lab) {
+        res.status(400).send({
+            msg: 'Bad Request',
+            rsn: 'Lab Missing'
+        });
+        return; //skip the call to next();
+    }
+    next();
+});
 app.use('/antibody', AntibodyRouter);
 app.use('/lab', LabRouter);
 
