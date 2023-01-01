@@ -1,5 +1,6 @@
 import { firestore } from 'firebase-admin';
-import { db, antibodiesCollection, labsCollection } from './database';
+import { antibodiesCollection, labsCollection } from '../config/database';
+import { db } from './index';
 
 export class LabHandler {
     private _lab: string = '';
