@@ -1,5 +1,9 @@
 import { firestore } from 'firebase-admin';
-import { antibodiesCollection, labsCollection } from '../config/database';
+import {
+    antibodiesCollection,
+    labsCollection,
+    sessionsCollection
+} from '../config/database';
 import Crypto from './auth';
 import { db } from './index';
 
@@ -24,6 +28,12 @@ export class LabHandler {
         if (this._antibodyCollectionRef) return this._antibodyCollectionRef;
         else throw new Error('Antibody Reference not set');
     }
+    private _sessionCollectionRef: firestore.CollectionReference | null = null;
+    public get sessionCollectionRef(): firestore.CollectionReference {
+        if (this._sessionCollectionRef) return this._sessionCollectionRef;
+        else throw new Error('Session Reference not set');
+    }
+
     public constructor(labName: string);
     public constructor(labName: string, labRef: firestore.DocumentReference);
     public constructor(labName: string, labRef?: firestore.DocumentReference) {
@@ -35,6 +45,7 @@ export class LabHandler {
     public async setReferences() {
         await this.setLabReference();
         this.setAntibodiesReference();
+        this.setSessionReference();
     }
     public static async addLab(
         labName: string,
@@ -87,7 +98,7 @@ export class LabHandler {
         }
     }
     private async setLabReference() {
-        if (this.labRef) {
+        if (this._labRef) {
             const validLabRef = await this.verifyLabReference();
             this._exists = validLabRef;
             if (validLabRef) return;
@@ -113,6 +124,14 @@ export class LabHandler {
                 this.labRef.collection(antibodiesCollection);
         } else {
             this._antibodyCollectionRef = null;
+        }
+    }
+    private setSessionReference() {
+        if (this.exists) {
+            this._sessionCollectionRef =
+                this.labRef.collection(sessionsCollection);
+        } else {
+            this._sessionCollectionRef = null;
         }
     }
     public async checkPassword(password: string) {
