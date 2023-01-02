@@ -1,41 +1,16 @@
 import { LabHandler } from '../labHandler';
 import * as express from 'express';
+import { Authenticate } from '../auth';
 
 const AntibodyRouter = express.Router();
 
 //Check for common message body
 AntibodyRouter.use('*', (req, res, next) => {
-    if (!req.body.lab) {
-        res.status(400).send({
-            msg: 'Bad Request',
-            rsn: 'Lab Missing'
-        });
-        return; //skip the call to next();
-    }
-    if (!req.body.password) {
-        res.status(401).send({
-            msg: 'Unauthorized',
-            rsn: 'Password Missing'
-        });
-        return; //skip the call to next();
-    }
     next();
 });
 
 //Authenticate
-AntibodyRouter.use('*', async (req, res, next) => {
-    const labHandler = new LabHandler(req.body.lab);
-    const validPassword = await labHandler.checkPassword(req.body.password);
-    if (!validPassword) {
-        res.status(401).send({
-            msg: 'Unauthorized',
-            rsn: 'Invalid Password'
-        });
-    } else {
-        res.locals.labHandler = labHandler;
-        next();
-    }
-});
+AntibodyRouter.use(Authenticate);
 
 //get all antibodies as a condensed response.
 AntibodyRouter.get('/search', async (req, res) => {
@@ -47,10 +22,11 @@ AntibodyRouter.get('/search', async (req, res) => {
             interface ReturnAntibody {
                 id: string;
                 [key: string]: any;
-            }
+            } //This interface allows for new properties to be added dynamically
             const returnAntibody: ReturnAntibody = {
                 id: antibodyDoc.id
             };
+            //If fields are specified
             if (req.body.fields && req.body.fields.count) {
                 req.body.fields.forEach((field: string) => {
                     returnAntibody[field] = antibodyDoc.get(field);
@@ -73,7 +49,11 @@ AntibodyRouter.get('/:id', async (req, res) => {
         const doc = await labHandler.antibodyCollectionRef
             .doc(req.params.id)
             .get();
-        res.status(200).json(doc.data());
+        if (doc.exists) {
+            res.status(200).json(doc.data());
+        } else {
+            res.sendStatus(404);
+        }
     } catch (error) {
         res.status(500).send(error);
     }

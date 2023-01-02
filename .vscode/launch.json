@@ -8,14 +8,16 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
+            "skipFiles": ["<node_internals>/**"],
             "preLaunchTask": "tsc.cmd",
             "program": "${workspaceFolder}",
-            "outFiles": [
-                "${workspaceFolder}/gui/dist/**/*.js"
-            ]
+            "outFiles": ["${workspaceFolder}/gui/dist/**/*.js"]
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Debug Functions",
+            "port": 9229
         }
     ]
 }
