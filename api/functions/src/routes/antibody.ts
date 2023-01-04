@@ -5,9 +5,9 @@ import { Authenticate } from '../auth';
 const AntibodyRouter = express.Router();
 
 //Check for common message body
-AntibodyRouter.use('*', (req, res, next) => {
-    next();
-});
+// AntibodyRouter.use('*', (req, res, next) => {
+//     next();
+// });
 
 //Authenticate
 AntibodyRouter.use(Authenticate);
