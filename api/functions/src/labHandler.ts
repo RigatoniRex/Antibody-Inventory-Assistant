@@ -1,9 +1,5 @@
 import { firestore } from 'firebase-admin';
-import {
-    antibodiesCollection,
-    labsCollection,
-    sessionsCollection
-} from '../config/database';
+import { antibodiesCollection, labsCollection } from '../config/database';
 import Crypto from './auth';
 import { db } from './index';
 
@@ -28,11 +24,6 @@ export class LabHandler {
         if (this._antibodyCollectionRef) return this._antibodyCollectionRef;
         else throw new Error('Antibody Reference not set');
     }
-    private _sessionCollectionRef: firestore.CollectionReference | null = null;
-    public get sessionCollectionRef(): firestore.CollectionReference {
-        if (this._sessionCollectionRef) return this._sessionCollectionRef;
-        else throw new Error('Session Reference not set');
-    }
 
     public constructor(labName: string);
     public constructor(labName: string, labRef: firestore.DocumentReference);
@@ -45,7 +36,11 @@ export class LabHandler {
     public async setReferences() {
         await this.setLabReference();
         this.setAntibodiesReference();
-        this.setSessionReference();
+    }
+    public static async create(lab: string): Promise<LabHandler> {
+        const labHandler = new LabHandler(lab);
+        await labHandler.setReferences();
+        return labHandler;
     }
     public static async addLab(
         labName: string,
@@ -126,14 +121,6 @@ export class LabHandler {
             this._antibodyCollectionRef = null;
         }
     }
-    private setSessionReference() {
-        if (this.exists) {
-            this._sessionCollectionRef =
-                this.labRef.collection(sessionsCollection);
-        } else {
-            this._sessionCollectionRef = null;
-        }
-    }
     public async checkPassword(password: string) {
         if (this.exists) {
             const labData: firestore.DocumentData = await this.labRef.get();
@@ -142,10 +129,4 @@ export class LabHandler {
         }
         return false;
     }
-
-    // authenticate(password: string) {}
-
-    // hashPassword(password: string) {}
-
-    // getHashedPassword(lab: string) {}
 }
