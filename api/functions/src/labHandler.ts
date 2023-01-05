@@ -56,6 +56,18 @@ export class LabHandler {
         });
         return new LabHandler(labName, labRef);
     }
+    public static async getLabs(): Promise<{ id: string; lab: string }[]> {
+        const labSnapshot = await db.collection(labsCollection).get();
+        const labs: { id: string; lab: string }[] = labSnapshot.docs.map(
+            (doc) => {
+                return {
+                    id: doc.id,
+                    lab: doc.get('name') as string
+                };
+            }
+        );
+        return labs;
+    }
     public static async checkExists(labName: string): Promise<{
         exists: boolean;
         snapshot: firestore.QuerySnapshot<firestore.DocumentData>;

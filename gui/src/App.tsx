@@ -3,11 +3,15 @@ import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
 import { Antibody, AntibodyCollection } from 'antibody-library/antibody';
 import dummydata from './test/dummydata.json';
-// import { reactLogo } from './assets/assests';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
 import { Route, HashRouter, Routes } from 'react-router-dom';
+import { LoginForm } from './Components/Login/Login';
+import axios from 'axios';
+
+axios.defaults.baseURL =
+    'http://127.0.0.1:5001/antibody-inventory-assistant/us-central1/api';
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
@@ -34,19 +38,7 @@ function App() {
                             path="/"
                             element={<SearchForm antibodies={antibodies} />}
                         />
-                        <Route
-                            path="login"
-                            element={
-                                <h1
-                                    style={{
-                                        position: 'absolute',
-                                        top: 200
-                                    }}
-                                >
-                                    ToDo: Build Login Page
-                                </h1>
-                            }
-                        />
+                        <Route path="login" element={<LoginForm />} />
                         <Route
                             path="about"
                             element={
@@ -76,22 +68,6 @@ function App() {
                     </Routes>
                 </HashRouter>
             </ThemeProvider>
-            {/* <div className="App">
-                <header className="App-header">
-                    <img src={reactLogo} className="App-logo" alt="logo" />
-                    <p>
-                        Edit <code>src/App.tsx</code> and save to reload.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header>
-            </div> */}
         </>
     );
 }

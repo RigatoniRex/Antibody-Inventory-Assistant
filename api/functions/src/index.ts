@@ -12,6 +12,10 @@ export const app: Express = express();
 
 admin.initializeApp();
 app.use(cookieParser());
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
 
 app.get('/login', Authenticate);
 app.use('/antibody', AntibodyRouter);
