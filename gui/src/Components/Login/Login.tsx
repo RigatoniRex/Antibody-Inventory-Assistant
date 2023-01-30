@@ -1,16 +1,22 @@
 import {
+    Alert,
     Box,
     Button,
     CircularProgress,
+    IconButton,
     Paper,
+    Snackbar,
     SxProps,
     TextField,
     Theme
 } from '@mui/material';
-import { Science, Lock } from '@mui/icons-material';
+import Slide, { SlideProps } from '@mui/material/Slide';
+import { Science, Lock, Close } from '@mui/icons-material';
 import axios from 'axios';
 import React, { useEffect } from 'react';
 import CatFact from './CatFact';
+
+type TransitionProps = Omit<SlideProps, 'direction'>;
 
 export function LoginForm(props: { sx?: SxProps<Theme> }) {
     const [firstRender, setFirstRender] = React.useState(true);
@@ -28,12 +34,17 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
         value: true,
         reason: ''
     });
+    const [openSnackBar, setOpenSnackBar] = React.useState(false);
+    const [snackBarMessage, setSnackBarMessage] = React.useState('');
+    const [snackBarSeverity, setSnackBarSeverity] = React.useState<
+        'error' | 'warning' | 'info' | 'success'
+    >('info');
 
     useEffect(() => {
         setFirstRender(false);
     }, []);
 
-    async function onSubmitClick() {
+    async function onSubmitLabClick() {
         const invalidLab = !lab;
         const invalidPassword = !password && labAvailable !== 'not set';
         if (invalidLab || invalidPassword) {
@@ -53,16 +64,42 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
             return;
         }
         setChecking(true);
-        const response = await axios.get('/lab', {});
-        const labs = response.data as { id: string; lab: string }[];
-        console.log(labs);
-        const matches = labs.find((labResponse) => labResponse.lab === lab);
-        if (matches) {
-            setLabAvailable('available');
-        } else {
-            setLabAvailable('not available');
+        try {
+            const response = await axios.get('/lab', { timeout: 5000 });
+            const labs = response.data as { id: string; lab: string }[];
+            console.log(labs);
+            const matches = labs.find((labResponse) => labResponse.lab === lab);
+            if (matches) {
+                setLabAvailable('available');
+            } else {
+                setLabAvailable('not available');
+            }
+            setChecking(false);
+        } catch (error) {
+            setOpenSnackBar(true);
+            setSnackBarMessage(error.message);
+            setSnackBarSeverity('error');
+            setChecking(false);
         }
-        setChecking(false);
+    }
+
+    async function onLoginClick() {}
+
+    async function onCreateClick() {}
+
+    function chooseClickHandler() {
+        switch (labAvailable) {
+            case 'not set':
+                return onSubmitLabClick;
+            case 'available':
+                return onLoginClick;
+            case 'not available':
+                return onCreateClick;
+        }
+    }
+
+    function TransitionRight(props: TransitionProps) {
+        return <Slide {...props} direction="left" />;
     }
 
     function handleLabChange(event: any) {
@@ -77,13 +114,14 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
         setLab('');
         setLabAvailable('not set');
     }
-
+    function handleSnackbarClose() {
+        setOpenSnackBar(false);
+    }
     return (
         <Box
             sx={{
                 ...props.sx,
                 minHeight: 800,
-                marginTop: 20,
                 height: '60vh',
                 display: 'flex',
                 alignItems: 'center',
@@ -154,11 +192,19 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
                         />
                     </Box>
                 )}
+                {labAvailable == 'not available' && (
+                    <Box sx={{ color: 'green' }}>
+                        <p>Lab doesn't exist, enter a password to create.</p>
+                    </Box>
+                )}
                 <Box sx={{ display: 'flex', flexFlow: 'column', gap: 2 }}>
                     {checking ? (
                         <CircularProgress />
                     ) : (
-                        <Button variant="outlined" onClick={onSubmitClick}>
+                        <Button
+                            variant="outlined"
+                            onClick={chooseClickHandler()}
+                        >
                             {labAvailable === 'not available'
                                 ? 'Create'
                                 : 'Login'}
@@ -172,6 +218,20 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
                 </Box>
             </Paper>
             <CatFact update={checking || firstRender} />
+            <Snackbar
+                open={openSnackBar}
+                autoHideDuration={5000}
+                onClose={handleSnackbarClose}
+                TransitionComponent={TransitionRight}
+            >
+                <Alert
+                    onClose={handleSnackbarClose}
+                    severity={snackBarSeverity}
+                    sx={{ width: '100%' }}
+                >
+                    {snackBarMessage}
+                </Alert>
+            </Snackbar>
         </Box>
     );
 }
