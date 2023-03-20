@@ -16,44 +16,20 @@ export async function Authenticate(
     res: Response,
     next: NextFunction
 ) {
-    let labHandler: LabHandler | null = null;
     if (req.cookies?.session) {
-        labHandler = await CookieHandler.checkSession(req.cookies.session);
-        if (labHandler) {
-            //set labHandler
-            res.locals.labHandler = labHandler;
-            // Session cookie verified
-            next();
-        } else {
-            res.status(401).json({
-                msg: 'Unauthorized',
-                rsn: 'Invalid session, likely expired'
-            });
-        }
+        await handleCookie(req, res, next);
     } else {
         if (verifyHeader(req, res)) {
-            labHandler = await LabHandler.create(req.body.lab as string);
+            const labHandler = await LabHandler.create(req.body.lab as string);
             if (labHandler.exists) {
                 if (req.headers.authorization) {
-                    const validPassword = await labHandler.checkPassword(
-                        req.headers.authorization
+                    handleAuthorization(
+                        req.headers.authorization,
+                        labHandler,
+                        req,
+                        res,
+                        next
                     );
-                    if (!validPassword) {
-                        res.status(401).json({
-                            msg: 'Unauthorized',
-                            rsn: 'Invalid Password'
-                        });
-                    } else {
-                        res.locals.labHandler = labHandler;
-                        //User logged in, create session for them and add cookie to response.
-                        const expires = CookieHandler.createExpiresDate();
-                        const sessionDoc = await CookieHandler.createSession(
-                            labHandler,
-                            expires
-                        );
-                        CookieHandler.createCookie(res, sessionDoc.id, expires);
-                        next();
-                    }
                 } else {
                     res.status(401).json({
                         msg: 'Unauthorized',
@@ -67,7 +43,45 @@ export async function Authenticate(
         }
     }
 }
-
+async function handleCookie(req: Request, res: Response, next: NextFunction) {
+    const labHandler = await CookieHandler.checkSession(req.cookies.session);
+    if (labHandler) {
+        //set labHandler
+        res.locals.labHandler = labHandler;
+        // Session cookie verified
+        next();
+    } else {
+        res.status(401).json({
+            msg: 'Unauthorized',
+            rsn: 'Invalid session, likely expired'
+        });
+    }
+}
+async function handleAuthorization(
+    password: string,
+    labHandler: LabHandler,
+    req: Request,
+    res: Response,
+    next: NextFunction
+) {
+    const validPassword = await labHandler.checkPassword(password);
+    if (!validPassword) {
+        res.status(401).json({
+            msg: 'Unauthorized',
+            rsn: 'Invalid Password'
+        });
+    } else {
+        res.locals.labHandler = labHandler;
+        //User logged in, create session for them and add cookie to response.
+        const expires = CookieHandler.createExpiresDate();
+        const sessionDoc = await CookieHandler.createSession(
+            labHandler,
+            expires
+        );
+        CookieHandler.createCookie(res, sessionDoc.id, expires);
+        next();
+    }
+}
 export function verifyHeader(req: Request, res: Response): boolean {
     if (!req.body.lab) {
         res.status(400).send({

@@ -62,6 +62,7 @@ export function SelectableList(props: {
         <List
             sx={{
                 overflow: 'auto',
+                maxHeight: '100%',
                 width: 1,
                 ...props.list_sx
             }}

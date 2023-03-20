@@ -3,7 +3,6 @@ import {
     Box,
     Button,
     CircularProgress,
-    IconButton,
     Paper,
     Snackbar,
     SxProps,
@@ -11,14 +10,23 @@ import {
     Theme
 } from '@mui/material';
 import Slide, { SlideProps } from '@mui/material/Slide';
-import { Science, Lock, Close } from '@mui/icons-material';
-import axios from 'axios';
+import { Science, Lock } from '@mui/icons-material';
+import axios, { AxiosResponse } from 'axios';
 import React, { useEffect } from 'react';
 import CatFact from './CatFact';
+import { useNavigate } from 'react-router-dom';
 
 type TransitionProps = Omit<SlideProps, 'direction'>;
 
-export function LoginForm(props: { sx?: SxProps<Theme> }) {
+function TransitionRight(props: TransitionProps) {
+    return <Slide {...props} direction="left" />;
+}
+
+export function LoginForm(props: {
+    setLoggedIn: (loggedIn: boolean) => void;
+    sx?: SxProps<Theme>;
+}) {
+    const navigate = useNavigate();
     const [firstRender, setFirstRender] = React.useState(true);
     const [labAvailable, setLabAvailable] = React.useState<
         'available' | 'not available' | 'not set'
@@ -39,7 +47,6 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
     const [snackBarSeverity, setSnackBarSeverity] = React.useState<
         'error' | 'warning' | 'info' | 'success'
     >('info');
-
     useEffect(() => {
         setFirstRender(false);
     }, []);
@@ -76,16 +83,61 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
             }
             setChecking(false);
         } catch (error) {
-            setOpenSnackBar(true);
-            setSnackBarMessage(error.message);
-            setSnackBarSeverity('error');
+            setSnackbarError(error.message);
             setChecking(false);
         }
     }
 
-    async function onLoginClick() {}
+    async function onLoginClick() {
+        try {
+            const login = await axios.post(
+                '/login',
+                { lab: lab },
+                {
+                    headers: { Authorization: password }
+                }
+            );
+            if (login.status === 200) {
+                props.setLoggedIn(true);
+                navigate('/');
+            } else {
+                throw new Error('Unexpected Login Success Path');
+            }
+        } catch (error) {
+            if (error.response && error.response.status) {
+                switch (error.response.status) {
+                    case 400: //Invalid body in request
+                    case 401: //Invalid password
+                    case 404: //Lab not found
+                    default:
+                        if (error.response.data && error.response.data.rsn) {
+                            const response = error.response.data as {
+                                msg: string;
+                                rsn: string;
+                            };
+                            setSnackbarError(response.rsn);
+                        } else {
+                            setSnackbarError('Failed to login');
+                        }
+                        break;
+                }
+            }
+        }
+    }
 
-    async function onCreateClick() {}
+    async function onCreateClick() {
+        const create = await axios.post('/lab', {
+            lab: lab,
+            password: password
+        });
+        if (create.status === 200) {
+            setSnackbarSuccess(`${lab} Lab Created!`);
+            setPassword('');
+            setLabAvailable('available');
+        } else {
+            setSnackbarError(create.data);
+        }
+    }
 
     function chooseClickHandler() {
         switch (labAvailable) {
@@ -98,10 +150,6 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
         }
     }
 
-    function TransitionRight(props: TransitionProps) {
-        return <Slide {...props} direction="left" />;
-    }
-
     function handleLabChange(event: any) {
         setLab(event.target.value);
         setValidLab({
@@ -109,9 +157,19 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
             reason: ''
         });
     }
-
+    function setSnackbarError(errorMessage: string) {
+        setOpenSnackBar(true);
+        setSnackBarMessage(errorMessage);
+        setSnackBarSeverity('error');
+    }
+    function setSnackbarSuccess(successMessage: string) {
+        setOpenSnackBar(true);
+        setSnackBarMessage(successMessage);
+        setSnackBarSeverity('success');
+    }
     function handleCancelClick() {
         setLab('');
+        setPassword('');
         setLabAvailable('not set');
     }
     function handleSnackbarClose() {
@@ -189,10 +247,11 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
                                 validPassword.value ? '' : validPassword.reason
                             }
                             onChange={(e) => setPassword(e.target.value)}
+                            value={password}
                         />
                     </Box>
                 )}
-                {labAvailable == 'not available' && (
+                {labAvailable === 'not available' && (
                     <Box sx={{ color: 'green' }}>
                         <p>Lab doesn't exist, enter a password to create.</p>
                     </Box>

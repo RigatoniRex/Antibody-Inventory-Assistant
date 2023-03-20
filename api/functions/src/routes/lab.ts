@@ -29,9 +29,6 @@ LabRouter.post('/', async (req, res) => {
 });
 
 LabRouter.use(Authenticate);
-LabRouter.get('/login', async (req, res) => {
-    res.status(200).send('Logged In');
-});
 LabRouter.delete('/', async (req, res) => {
     try {
         const labHandler = res.locals.labHandler as LabHandler;

@@ -6,7 +6,7 @@ import dummydata from './test/dummydata.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
-import { Route, HashRouter, Routes } from 'react-router-dom';
+import { Route, HashRouter, Routes, Navigate } from 'react-router-dom';
 import { LoginForm } from './Components/Login/Login';
 import axios from 'axios';
 
@@ -15,6 +15,7 @@ axios.defaults.baseURL =
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
+    const [loggedIn, setLoggedIn] = React.useState<boolean>(false);
     const antibodies: AntibodyCollection = React.useMemo(() => {
         return getAntibodies();
     }, []);
@@ -27,6 +28,9 @@ function App() {
             }),
         [darkMode]
     );
+    const login = axios
+        .post('/login')
+        .then(() => setLoggedIn(login.status === 200));
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -36,9 +40,18 @@ function App() {
                     <Routes>
                         <Route
                             path="/"
-                            element={<SearchForm antibodies={antibodies} />}
+                            element={
+                                loggedIn ? (
+                                    <SearchForm antibodies={antibodies} />
+                                ) : (
+                                    <Navigate to="/login" />
+                                )
+                            }
                         />
-                        <Route path="login" element={<LoginForm />} />
+                        <Route
+                            path="login"
+                            element={<LoginForm setLoggedIn={setLoggedIn} />}
+                        />
                         <Route
                             path="about"
                             element={
