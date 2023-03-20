@@ -25,6 +25,7 @@ export function ComponentPaper(props: {
                 sx={{
                     margin: 1,
                     height: 1,
+                    maxHeight: '97%',
                     paddingTop: 1,
                     alignItems: 'center',
                     display: 'flex',

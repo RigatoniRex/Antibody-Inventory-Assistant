@@ -1,26 +1,26 @@
-import { AppBar, Box, Toolbar, Switch, FormControlLabel } from '@mui/material';
+import { AppBar, Toolbar, Switch, FormControlLabel } from '@mui/material';
 import React from 'react';
 
 export function MenuBar(props: {
     setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
+    function onSwitchChange(
+        _: React.ChangeEvent<HTMLElement>,
+        checked: boolean
+    ) {
+        props.setDarkMode(checked);
+    }
+
     return (
-        <Box position={'sticky'} sx={{ flexGrow: 1, zIndex: 1 }}>
-            <AppBar sx={{ width: '100%' }}>
-                <Toolbar>
-                    <FormControlLabel
-                        control={
-                            <Switch
-                                defaultChecked
-                                onChange={(_, checked) => {
-                                    props.setDarkMode(checked);
-                                }}
-                            />
-                        }
-                        label="Dark Mode"
-                    />
-                </Toolbar>
-            </AppBar>
-        </Box>
+        <AppBar position="sticky" sx={{ width: '100%' }}>
+            <Toolbar>
+                <FormControlLabel
+                    control={
+                        <Switch defaultChecked onChange={onSwitchChange} />
+                    }
+                    label="Dark Mode"
+                />
+            </Toolbar>
+        </AppBar>
     );
 }
