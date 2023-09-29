@@ -4,7 +4,8 @@
         "lint": "eslint --ext .js,.ts .",
         "build": "tsc --build",
         "build:watch": "tsc --build --watch",
-        "serve": "npm run build && firebase emulators:start --inspect-functions",
+        "serve": "npm run kill && npm run build && firebase emulators:start --inspect-functions",
+        "kill": "npx kill-port 5000 5001",
         "shell": "npm run build && firebase functions:shell",
         "start": "npm run shell",
         "deploy": "firebase deploy --force --only functions",
@@ -16,6 +17,7 @@
     "main": "lib/src/index.js",
     "dependencies": {
         "cookie-parser": "1.4.6",
+        "cors": "2.8.5",
         "express": "^4.18.2",
         "firebase-admin": "^11.3.0",
         "firebase-functions": "^4.1.1"

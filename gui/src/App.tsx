@@ -10,8 +10,14 @@ import { Route, HashRouter, Routes, Navigate } from 'react-router-dom';
 import { LoginForm } from './Components/Login/Login';
 import axios from 'axios';
 
-axios.defaults.baseURL =
+export const baseURL = //'https://us-central1-antibody-inventory-assistant.cloudfunctions.net/api';
     'http://127.0.0.1:5001/antibody-inventory-assistant/us-central1/api';
+
+axios.defaults.baseURL = baseURL;
+axios.defaults.maxRedirects = 0;
+axios.defaults.validateStatus = function (status) {
+    return status <= 302; // Reject only if the status code is greater than 302
+};
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
@@ -29,8 +35,11 @@ function App() {
         [darkMode]
     );
     const login = axios
-        .post('/login')
-        .then(() => setLoggedIn(login.status === 200));
+        .post('/login', { withCredentials: true })
+        .then(() => setLoggedIn(login.status === 200))
+        .catch(() => {
+            //Do nothing
+        });
     return (
         <>
             <ThemeProvider theme={theme}>
