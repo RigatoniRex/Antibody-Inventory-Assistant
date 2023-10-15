@@ -33,7 +33,7 @@ export function SearchForm(props: {
     const handleMarkerChange = (selectedMarker: string) => {
         setFilteredAntibodies(
             selectedMarker
-                ? props.antibodies.filterOnMarker(selectedMarker)
+                ? props.antibodies.filterOnSelection({ marker: selectedMarker })
                 : props.antibodies
         );
         setMarkerSelected(selectedMarker);
@@ -41,10 +41,10 @@ export function SearchForm(props: {
     const handleColorChange = (selectedColor: string) => {
         if (selectedColor) {
             setFilteredAntibodies(
-                props.antibodies.filterOnMarkerAndColor(
-                    markerSelected,
-                    selectedColor
-                )
+                props.antibodies.filterOnSelection({
+                    marker: markerSelected,
+                    color: selectedColor
+                })
             );
         }
         setColorSelected(selectedColor);
@@ -52,11 +52,11 @@ export function SearchForm(props: {
     const handleCloneChange = (selectedClone: string) => {
         if (selectedClone) {
             setFilteredAntibodies(
-                props.antibodies.filterOnMarkerAndColorAndClone(
-                    markerSelected,
-                    colorSelected,
-                    selectedClone
-                )
+                props.antibodies.filterOnSelection({
+                    marker: markerSelected,
+                    color: colorSelected,
+                    clone: selectedClone
+                })
             );
         }
         setCloneSelected(selectedClone);
@@ -165,7 +165,7 @@ export function SearchForm(props: {
                             rows={18}
                             value={
                                 antibodySelected
-                                    ? JSON.stringify(antibodySelected, null, 2)
+                                    ? JSON.stringify(antibodySelected, null, 4)
                                     : ''
                             }
                         ></TextField>

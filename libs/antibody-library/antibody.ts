@@ -1,15 +1,30 @@
 export interface Antibody {
+    /**Marker */
     marker: string;
+    /**Alternate Name */
+    alt_name: string;
+    /**Species Reactivity */
     reactivity: string;
+    /**Fluorophore Color */
     color: string;
+    /**Clone */
     clone: string;
+    /**Company */
     company: string;
+    /**Catalog Number */
     catalog: string;
-    isotype: string;
-    dilutionFactor: DilutionFactor;
+    /**Dilution */
+    dilution?: string;
+    /**Peak Detector */
     detector: string;
-    laser: string;
-    epitopeLocation: 'Surface' | 'Intracellular';
+    /**Isotype */
+    isotype?: string;
+    /**Location */
+    location?: string;
+    /**Number of tubes in stock */
+    num_tubes_in_stock?: number;
+    /**Comments */
+    comments: string;
 }
 
 export class AntibodyCollection extends Array<Antibody> {
@@ -31,36 +46,16 @@ export class AntibodyCollection extends Array<Antibody> {
     getCompanies(): string[] {
         return Array.from(new Set(this.map((antibody) => antibody.company)));
     }
-    filterOnMarker(marker: string): AntibodyCollection {
-        return this.filter(
-            (antibody) => antibody.marker === marker
-        ) as AntibodyCollection;
-    }
-    filterOnColor(color: string): AntibodyCollection {
-        return this.filter(
-            (antibody) => antibody.color === color
-        ) as AntibodyCollection;
-    }
-    filterOnClone(clone: string): AntibodyCollection {
-        return this.filter(
-            (antibody) => antibody.clone === clone
-        ) as AntibodyCollection;
-    }
-    filterOnMarkerAndColor(marker: string, color: string): AntibodyCollection {
-        return this.filter(
-            (antibody) => antibody.marker === marker && antibody.color === color
-        ) as AntibodyCollection;
-    }
-    filterOnMarkerAndColorAndClone(
-        marker: string,
-        color: string,
-        clone: string
-    ): AntibodyCollection {
+    filterOnSelection(filters: {
+        marker?: string;
+        color?: string;
+        clone?: string;
+    }): AntibodyCollection {
         return this.filter(
             (antibody) =>
-                antibody.marker === marker &&
-                antibody.color === color &&
-                antibody.clone === clone
+                (filters.marker ? antibody.marker === filters.marker : true) &&
+                (filters.color ? antibody.color === filters.color : true) &&
+                (filters.clone ? antibody.clone === filters.clone : true)
         ) as AntibodyCollection;
     }
     findSelection(
@@ -78,8 +73,3 @@ export class AntibodyCollection extends Array<Antibody> {
         );
     }
 }
-
-export type DilutionFactor = {
-    Cytek: number;
-    Fortessa: number;
-};
