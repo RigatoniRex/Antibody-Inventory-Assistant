@@ -6,8 +6,10 @@ import dummydata from './test/dummydata.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
-import { Route, HashRouter, Routes, Navigate } from 'react-router-dom';
+import { Route, HashRouter, Routes } from 'react-router-dom';
 import { LoginForm } from './Components/Login/Login';
+import { RequireAuth } from './Components/Login/AuthRoute';
+
 import axios from 'axios';
 import { baseURL } from './baseurl';
 
@@ -19,7 +21,6 @@ axios.defaults.validateStatus = function (status) {
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
-    const [loggedIn, setLoggedIn] = React.useState<boolean>(false);
     const antibodies: AntibodyCollection = React.useMemo(() => {
         return getAntibodies();
     }, []);
@@ -32,12 +33,6 @@ function App() {
             }),
         [darkMode]
     );
-    const login = axios
-        .post('/login', { withCredentials: true })
-        .then(() => setLoggedIn(login.status === 200))
-        .catch(() => {
-            //Do nothing
-        });
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -48,17 +43,12 @@ function App() {
                         <Route
                             path="/"
                             element={
-                                loggedIn ? (
+                                <RequireAuth>
                                     <SearchForm antibodies={antibodies} />
-                                ) : (
-                                    <Navigate to="/login" />
-                                )
+                                </RequireAuth>
                             }
                         />
-                        <Route
-                            path="login"
-                            element={<LoginForm setLoggedIn={setLoggedIn} />}
-                        />
+                        <Route path="login" element={<LoginForm />} />
                         <Route
                             path="about"
                             element={

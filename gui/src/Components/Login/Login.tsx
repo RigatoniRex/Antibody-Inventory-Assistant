@@ -12,10 +12,9 @@ import {
 import Slide, { SlideProps } from '@mui/material/Slide';
 import { Science, Lock } from '@mui/icons-material';
 import axios from 'axios';
-import React, { KeyboardEvent, useEffect, useRef } from 'react';
+import React, { KeyboardEvent, useEffect } from 'react';
 import CatFact from './CatFact';
 import { useNavigate } from 'react-router-dom';
-import { baseURL } from '../../App';
 
 type TransitionProps = Omit<SlideProps, 'direction'>;
 
@@ -23,10 +22,7 @@ function TransitionRight(props: TransitionProps) {
     return <Slide {...props} direction="left" />;
 }
 
-export function LoginForm(props: {
-    setLoggedIn: (loggedIn: boolean) => void;
-    sx?: SxProps<Theme>;
-}) {
+export function LoginForm(props: { sx?: SxProps<Theme> }) {
     const navigate = useNavigate();
     const [firstRender, setFirstRender] = React.useState(true);
     const [labAvailable, setLabAvailable] = React.useState<
@@ -90,42 +86,30 @@ export function LoginForm(props: {
 
     async function onLoginClick() {
         try {
-            const loginFetch = await fetch(baseURL + '/login', {
-                method: 'post',
-                credentials: 'include',
-                headers: {
-                    Authorization: password,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    lab: lab
-                })
-            });
-            // const login = await axios.post(
-            //     '/login',
-            //     { lab: lab },
-            //     {
-            //         headers: { Authorization: password }
-            //         //withCredentials: true
-            //     }
-            // );
-            if (loginFetch.status === 200) {
-                props.setLoggedIn(true);
+            //Clear session
+            document.cookie =
+                'session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            const login = await axios.post(
+                '/login',
+                { lab: lab },
+                {
+                    headers: { Authorization: password },
+                    withCredentials: true
+                }
+            );
+            if (login.status === 200) {
                 navigate('/');
-                // const cookie = loginFetch.headers.getSetCookie();
-                // console.log(cookie);
-                // debugger;
             } else {
                 throw new Error('Unexpected Login Success Path');
             }
         } catch (error) {
-            if (error.response && error.response.status) {
+            if (error.response?.status) {
                 switch (error.response.status) {
                     case 400: //Invalid body in request
                     case 401: //Invalid password
                     case 404: //Lab not found
                     default:
-                        if (error.response.data && error.response.data.rsn) {
+                        if (error.response.data?.rsn) {
                             const response = error.response.data as {
                                 msg: string;
                                 rsn: string;

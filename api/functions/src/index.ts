@@ -11,6 +11,7 @@ import cookieParser from 'cookie-parser';
 import AntibodyRouter from './routes/antibody';
 import LabRouter from './routes/lab';
 import { Authenticate } from './auth';
+import asyncHandler from 'express-async-handler'
 
 export const app: Express = express();
 
@@ -31,7 +32,7 @@ app.use(cookieParser());
 app.options('*', (_, res: Response) => {
     res.sendStatus(200);
 });
-app.post('/login', Authenticate, (_, res: Response) => {
+app.post('/login', asyncHandler(Authenticate), (_, res: Response) => {
     res.status(200).json('Logged In');
 });
 app.use('/antibody', AntibodyRouter);
