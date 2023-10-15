@@ -37,6 +37,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+      
+      - name: Set Base URL
+        run: |
+          cd gui/src
+          echo "export const baseURL = https://us-central1-antibody-inventory-assistant.cloudfunctions.net/api" > baseurl.ts
+          cd ../..
 
       - name: Build and Deploy
         env:

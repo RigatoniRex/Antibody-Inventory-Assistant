@@ -16,31 +16,48 @@ export async function Authenticate(
     res: Response,
     next: NextFunction
 ) {
-    if (req.cookies?.session) {
-        await handleCookie(req, res, next);
-    } else {
-        if (verifyHeader(req, res)) {
-            const labHandler = await LabHandler.create(req.body.lab as string);
-            if (labHandler.exists) {
-                if (req.headers.authorization) {
-                    handleAuthorization(
-                        req.headers.authorization,
-                        labHandler,
-                        req,
-                        res,
-                        next
-                    );
-                } else {
-                    res.status(401).json({
-                        msg: 'Unauthorized',
-                        rsn: 'Password Missing'
-                    });
-                }
-            } else {
-                //lab doesn't exist
-                res.status(404).json({ msg: 'Lab not found' });
-            }
+    // Prioritize auth over session cookie
+    const passwordHandled =
+        req.headers.authorization && (await handlePassword(req, res, next));
+    if (!passwordHandled) {
+        if (req.cookies?.session) {
+            await handleCookie(req, res, next);
+        } else {
+            res.status(401).json({
+                msg: 'Unauthorized',
+                rsn: 'Neither Auth nor Session Cookie available'
+            });
         }
+    }
+}
+
+async function handlePassword(req: Request, res: Response, next: NextFunction) {
+    if (verifyHeader(req, res)) {
+        const labHandler = await LabHandler.create(req.body.lab as string);
+        if (labHandler.exists) {
+            if (req.headers.authorization) {
+                handleAuthorization(
+                    req.headers.authorization,
+                    labHandler,
+                    req,
+                    res,
+                    next
+                );
+                return true;
+            } else {
+                res.status(401).json({
+                    msg: 'Unauthorized',
+                    rsn: 'Password Missing'
+                });
+                return false;
+            }
+        } else {
+            //lab doesn't exist
+            res.status(404).json({ msg: 'Lab not found' });
+            return false;
+        }
+    } else {
+        return false;
     }
 }
 async function handleCookie(req: Request, res: Response, next: NextFunction) {
@@ -83,7 +100,7 @@ async function handleAuthorization(
     }
 }
 export function verifyHeader(req: Request, res: Response): boolean {
-    if (!req.body.lab) {
+    if (!req.body.lab && !req.cookies?.session) {
         res.status(400).send({
             msg: 'Bad Request',
             rsn: 'Lab Missing'
@@ -99,7 +116,12 @@ class CookieHandler {
         sessionId: string,
         expires: Date
     ) {
-        res.cookie('session', sessionId, { expires: expires });
+        res.cookie('session', sessionId, {
+            expires: expires,
+            sameSite: 'none',
+            secure: true,
+            httpOnly: true
+        });
     }
     public static async checkSession(
         sessionId: string

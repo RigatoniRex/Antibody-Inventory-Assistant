@@ -11,8 +11,8 @@ import {
 } from '@mui/material';
 import Slide, { SlideProps } from '@mui/material/Slide';
 import { Science, Lock } from '@mui/icons-material';
-import axios, { AxiosResponse } from 'axios';
-import React, { useEffect } from 'react';
+import axios from 'axios';
+import React, { KeyboardEvent, useEffect } from 'react';
 import CatFact from './CatFact';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,10 +22,7 @@ function TransitionRight(props: TransitionProps) {
     return <Slide {...props} direction="left" />;
 }
 
-export function LoginForm(props: {
-    setLoggedIn: (loggedIn: boolean) => void;
-    sx?: SxProps<Theme>;
-}) {
+export function LoginForm(props: { sx?: SxProps<Theme> }) {
     const navigate = useNavigate();
     const [firstRender, setFirstRender] = React.useState(true);
     const [labAvailable, setLabAvailable] = React.useState<
@@ -74,7 +71,6 @@ export function LoginForm(props: {
         try {
             const response = await axios.get('/lab', { timeout: 5000 });
             const labs = response.data as { id: string; lab: string }[];
-            console.log(labs);
             const matches = labs.find((labResponse) => labResponse.lab === lab);
             if (matches) {
                 setLabAvailable('available');
@@ -90,27 +86,30 @@ export function LoginForm(props: {
 
     async function onLoginClick() {
         try {
+            //Clear session
+            document.cookie =
+                'session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
             const login = await axios.post(
                 '/login',
                 { lab: lab },
                 {
-                    headers: { Authorization: password }
+                    headers: { Authorization: password },
+                    withCredentials: true
                 }
             );
             if (login.status === 200) {
-                props.setLoggedIn(true);
                 navigate('/');
             } else {
                 throw new Error('Unexpected Login Success Path');
             }
         } catch (error) {
-            if (error.response && error.response.status) {
+            if (error.response?.status) {
                 switch (error.response.status) {
                     case 400: //Invalid body in request
                     case 401: //Invalid password
                     case 404: //Lab not found
                     default:
-                        if (error.response.data && error.response.data.rsn) {
+                        if (error.response.data?.rsn) {
                             const response = error.response.data as {
                                 msg: string;
                                 rsn: string;
@@ -156,6 +155,13 @@ export function LoginForm(props: {
             value: true,
             reason: ''
         });
+    }
+    function handleEnterKey(event: KeyboardEvent) {
+        if (event.code === 'Enter') {
+            chooseClickHandler()();
+        } else if (event.code === 'Escape') {
+            handleCancelClick();
+        }
     }
     function setSnackbarError(errorMessage: string) {
         setOpenSnackBar(true);
@@ -216,7 +222,13 @@ export function LoginForm(props: {
                     <TextField
                         id="Lab"
                         onChange={handleLabChange}
+                        onKeyUp={handleEnterKey}
                         label="Lab"
+                        inputRef={(input) => {
+                            if (input !== null && labAvailable === 'not set') {
+                                input.focus();
+                            }
+                        }}
                         autoComplete="off"
                         type={'search'}
                         value={lab}
@@ -226,31 +238,37 @@ export function LoginForm(props: {
                         disabled={labAvailable !== 'not set'}
                     />
                 </Box>
-                {labAvailable !== 'not set' && (
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            width: 250,
-                            flexFlow: 'row',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            gap: 1
-                        }}
-                    >
-                        <Lock />
-                        <TextField
-                            label="Password"
-                            type={'password'}
-                            sx={{ width: 250 }}
-                            error={!validPassword.value}
-                            helperText={
-                                validPassword.value ? '' : validPassword.reason
+
+                <Box
+                    sx={{
+                        display: labAvailable === 'not set' ? 'none' : 'flex',
+                        width: 250,
+                        flexFlow: 'row',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        gap: 1
+                    }}
+                >
+                    <Lock />
+                    <TextField
+                        label="Password"
+                        inputRef={(input) => {
+                            if (input !== null && labAvailable !== 'not set') {
+                                input.focus();
                             }
-                            onChange={(e) => setPassword(e.target.value)}
-                            value={password}
-                        />
-                    </Box>
-                )}
+                        }}
+                        type={'password'}
+                        sx={{ width: 250 }}
+                        error={!validPassword.value}
+                        helperText={
+                            validPassword.value ? '' : validPassword.reason
+                        }
+                        onChange={(e) => setPassword(e.target.value)}
+                        onKeyUp={handleEnterKey}
+                        value={password}
+                    />
+                </Box>
+
                 {labAvailable === 'not available' && (
                     <Box sx={{ color: 'green' }}>
                         <p>Lab doesn't exist, enter a password to create.</p>

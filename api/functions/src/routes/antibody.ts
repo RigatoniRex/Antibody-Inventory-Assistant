@@ -1,6 +1,7 @@
 import { LabHandler } from '../labHandler';
 import * as express from 'express';
 import { Authenticate } from '../auth';
+import asyncHandler from 'express-async-handler'
 
 const AntibodyRouter = express.Router();
 
@@ -10,10 +11,10 @@ const AntibodyRouter = express.Router();
 // });
 
 //Authenticate
-AntibodyRouter.use(Authenticate);
+AntibodyRouter.use(asyncHandler(Authenticate));
 
 //get all antibodies as a condensed response.
-AntibodyRouter.get('/search', async (req, res) => {
+AntibodyRouter.get('/search', asyncHandler(async (req, res) => {
     try {
         const labHandler = res.locals.labHandler as LabHandler;
         const antibodyDocs = await labHandler.antibodyCollectionRef.get();
@@ -27,7 +28,7 @@ AntibodyRouter.get('/search', async (req, res) => {
                 id: antibodyDoc.id
             };
             //If fields are specified
-            if (req.body.fields && req.body.fields.count) {
+            if (req.body.fields?.count) {
                 req.body.fields.forEach((field: string) => {
                     returnAntibody[field] = antibodyDoc.get(field);
                 });
@@ -40,10 +41,10 @@ AntibodyRouter.get('/search', async (req, res) => {
     } catch (error) {
         res.status(500).send(error);
     }
-});
+}));
 
 //Get antibody by id
-AntibodyRouter.get('/:id', async (req, res) => {
+AntibodyRouter.get('/:id', asyncHandler(async (req, res) => {
     try {
         const labHandler = res.locals.labHandler as LabHandler;
         const doc = await labHandler.antibodyCollectionRef
@@ -57,10 +58,10 @@ AntibodyRouter.get('/:id', async (req, res) => {
     } catch (error) {
         res.status(500).send(error);
     }
-});
+}));
 
 //TODO: add antibody
-AntibodyRouter.post('/', async (req, res) => {
+AntibodyRouter.post('/', asyncHandler(async (req, res) => {
     try {
         const labHandler = res.locals.labHandler as LabHandler;
         const doc = await labHandler.antibodyCollectionRef.add(
@@ -73,10 +74,10 @@ AntibodyRouter.post('/', async (req, res) => {
     } catch (error) {
         res.status(500).send(error);
     }
-});
+}));
 
 //TODO: delete antibody
-AntibodyRouter.delete('/:id', async (req, res) => {
+AntibodyRouter.delete('/:id', asyncHandler(async (req, res) => {
     try {
         const labHandler = res.locals.labHandler as LabHandler;
         const doc = labHandler.antibodyCollectionRef.doc(req.params.id);
@@ -88,10 +89,10 @@ AntibodyRouter.delete('/:id', async (req, res) => {
     } catch (error) {
         res.status(500).send(error);
     }
-});
+}));
 
 //update antibody
-AntibodyRouter.put('/:id', async (req, res) => {
+AntibodyRouter.put('/:id', asyncHandler(async (req, res) => {
     try {
         const labHandler = res.locals.labHandler as LabHandler;
         const doc = labHandler.antibodyCollectionRef.doc(req.params.id);
@@ -103,6 +104,6 @@ AntibodyRouter.put('/:id', async (req, res) => {
     } catch (error) {
         res.status(500).send(error);
     }
-});
+}));
 
 export default AntibodyRouter;

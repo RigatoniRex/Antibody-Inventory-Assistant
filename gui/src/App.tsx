@@ -6,17 +6,21 @@ import dummydata from './test/dummydata.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
-import { Route, HashRouter, Routes, Navigate } from 'react-router-dom';
+import { Route, HashRouter, Routes } from 'react-router-dom';
 import { LoginForm } from './Components/Login/Login';
-import axios from 'axios';
+import { RequireAuth } from './Components/Login/AuthRoute';
 
-axios.defaults.baseURL =
-    'https://us-central1-antibody-inventory-assistant.cloudfunctions.net/api';
-//'http://127.0.0.1:5001/antibody-inventory-assistant/us-central1/api';
+import axios from 'axios';
+import { baseURL } from './baseurl';
+
+axios.defaults.baseURL = baseURL;
+axios.defaults.maxRedirects = 0;
+axios.defaults.validateStatus = function (status) {
+    return status <= 302; // Reject only if the status code is greater than 302
+};
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
-    const [loggedIn, setLoggedIn] = React.useState<boolean>(false);
     const antibodies: AntibodyCollection = React.useMemo(() => {
         return getAntibodies();
     }, []);
@@ -29,9 +33,6 @@ function App() {
             }),
         [darkMode]
     );
-    const login = axios
-        .post('/login')
-        .then(() => setLoggedIn(login.status === 200));
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -42,17 +43,12 @@ function App() {
                         <Route
                             path="/"
                             element={
-                                loggedIn ? (
+                                <RequireAuth>
                                     <SearchForm antibodies={antibodies} />
-                                ) : (
-                                    <Navigate to="/login" />
-                                )
+                                </RequireAuth>
                             }
                         />
-                        <Route
-                            path="login"
-                            element={<LoginForm setLoggedIn={setLoggedIn} />}
-                        />
+                        <Route path="login" element={<LoginForm />} />
                         <Route
                             path="about"
                             element={
