@@ -1,7 +1,8 @@
 import { firestore } from 'firebase-admin';
-import { antibodiesCollection, labsCollection } from '../config/database';
-import Crypto from './auth';
-import { db } from './index';
+import { antibodiesCollection, labsCollection } from '../../config/database';
+import Crypto from '../auth';
+import { db } from '../index';
+import AntibodyHelper from './AntibodyHelper';
 
 export class LabHandler {
     private _exists: boolean = false;
@@ -19,8 +20,8 @@ export class LabHandler {
         if (this._labRef) return this._labRef;
         else throw new Error('Lab Reference not set');
     }
-    private _antibodyCollectionRef: firestore.CollectionReference | null = null;
-    public get antibodyCollectionRef(): firestore.CollectionReference {
+    private _antibodyCollectionRef: AntibodyHelper | null = null;
+    public get antibodyHelper(): AntibodyHelper {
         if (this._antibodyCollectionRef) return this._antibodyCollectionRef;
         else throw new Error('Antibody Reference not set');
     }
@@ -86,7 +87,7 @@ export class LabHandler {
             .where('name', '==', labName);
         return await query.get();
     }
-    public async changeLabName(newLabName: String) {
+    public async changeLabName(newLabName: string) {
         if (this.exists) {
             this.labRef.update({
                 name: newLabName
@@ -127,8 +128,9 @@ export class LabHandler {
     }
     private setAntibodiesReference() {
         if (this.exists) {
-            this._antibodyCollectionRef =
-                this.labRef.collection(antibodiesCollection);
+            this._antibodyCollectionRef = new AntibodyHelper(
+                this.labRef.collection(antibodiesCollection)
+            );
         } else {
             this._antibodyCollectionRef = null;
         }

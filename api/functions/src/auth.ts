@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from 'express';
 import { firestore } from 'firebase-admin';
 import { db } from '.';
 import { sessionsCollection } from '../config/database';
-import { LabHandler } from './labHandler';
+import { LabHandler } from './helpers/LabHandler';
 
 export default class Crypto {
     public static createHash(secret: string): string {

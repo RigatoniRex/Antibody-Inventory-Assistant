@@ -5,14 +5,15 @@
         }
     ],
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "CommonJS",
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "outDir": "lib",
         "sourceMap": true,
         "strict": true,
         "esModuleInterop": true,
-        "target": "es2017"
+        "target": "es2017",
+        "composite": true
     },
     "compileOnSave": true,
     "include": ["src", "config/database.ts"]

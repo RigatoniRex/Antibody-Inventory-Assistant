@@ -73,3 +73,114 @@ export class AntibodyCollection extends Array<Antibody> {
         );
     }
 }
+
+export function verifyAntibody(antibody: any): {
+    check: boolean;
+    reasons: string[];
+} {
+    const output: { check: boolean; reasons: string[] } = {
+        check: false,
+        reasons: []
+    };
+    if (!antibody) {
+        output.reasons.push('Null or undefined object');
+    }
+    const conditions: boolean[] = [];
+    if (antibody.marker && isString(antibody.marker)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid marker type');
+    }
+    if (antibody.alt_name && isString(antibody.alt_name)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid alt_name type');
+    }
+    if (antibody.reactivity && isString(antibody.reactivity)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid reactivity type');
+    }
+    if (antibody.color && isString(antibody.color)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid color type');
+    }
+    if (antibody.clone && isString(antibody.clone)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid clone type');
+    }
+    if (antibody.company && isString(antibody.company)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid company type');
+    }
+    if (antibody.catalog && isString(antibody.catalog)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid catalog type');
+    }
+    if (antibody.dilution && isString(antibody.dilution)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid dilution type');
+    }
+    if (antibody.detector && isString(antibody.detector)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid detector type');
+    }
+    if (antibody.dilution === undefined ? true : isString(antibody.dilution)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid dilution type');
+    }
+    if (antibody.isotype === undefined ? true : isString(antibody.isotype)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid isotype type');
+    }
+    if (antibody.location === undefined ? true : isString(antibody.location)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid location type');
+    }
+    if (antibody.num_tubes_in_stock && isNumber(antibody.num_tubes_in_stock)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid num_tubes_in_stock type');
+    }
+    if (antibody.comments && isString(antibody.comments)) {
+        conditions.push(true);
+    } else {
+        conditions.push(false);
+        output.reasons.push('Invalid comments type');
+    }
+    output.check = conditions.every((condition) => condition);
+    return output;
+}
+
+export function test(): false {
+    return false;
+}
+
+function isString(value: any) {
+    return typeof value === 'string';
+}
+function isNumber(value: any) {
+    return typeof value === 'number';
+}
