@@ -1,0 +1,11 @@
+# Ignore node_modules
+node_modules/
+
+# file types to ignore
+*.json
+*.csv
+
+# Except
+!package.json
+!package-lock.json
+
