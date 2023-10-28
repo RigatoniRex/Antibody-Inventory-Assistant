@@ -2,7 +2,7 @@ import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
 import { Antibody, AntibodyCollection } from 'antibody-library/antibody';
-import dummydata from './test/dummydata2.json';
+import berg_antibodies from './test/berg_antibodies.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
@@ -83,7 +83,7 @@ function App() {
 }
 
 function getAntibodies(): AntibodyCollection {
-    const antibodiesJSON: Antibody[] = dummydata.antibodies;
+    const antibodiesJSON: Antibody[] = berg_antibodies;
     const antibodyMapping = antibodiesJSON.map((antibody) => {
         const newAntibody: Antibody = JSON.parse(
             JSON.stringify(antibody)

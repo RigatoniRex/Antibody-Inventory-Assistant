@@ -1,0 +1,4278 @@
+[
+    {
+        "marker": "1-A/1-E",
+        "color": "PerCp",
+        "reactivity": "Mouse",
+        "detector": "B8",
+        "clone": "M5/114.15.2",
+        "company": "Biolegend",
+        "catalog": "107624"
+    },
+    {
+        "marker": "AKT",
+        "alt_name": "pS473",
+        "color": "PE-CF594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "M89-61",
+        "company": "BD Biosciences",
+        "catalog": "562465"
+    },
+    {
+        "marker": "Bc1-2",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "BCL/10C4",
+        "company": "Biolegend",
+        "catalog": "633512"
+    },
+    {
+        "marker": "BLIMP1",
+        "color": "R718",
+        "reactivity": "Mouse",
+        "clone": "6D3",
+        "company": "BD Biosciences",
+        "catalog": "567764"
+    },
+    {
+        "marker": "BrDU",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "3D4",
+        "company": "Biolegend",
+        "catalog": "364103"
+    },
+    {
+        "marker": "CCR4",
+        "alt_name": "CD194",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "2G12",
+        "company": "Biolegend",
+        "catalog": "131217"
+    },
+    {
+        "marker": "CCR6",
+        "alt_name": "CD196",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "29-2L17",
+        "company": "Biolegend",
+        "catalog": "129819"
+    },
+    {
+        "marker": "CCR7",
+        "alt_name": "CD197",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "4B12",
+        "company": "eBioscience",
+        "catalog": "17-1971-81"
+    },
+    {
+        "marker": "CCR7",
+        "alt_name": "CD197",
+        "color": "BUV661",
+        "reactivity": "Mouse",
+        "detector": "UV11",
+        "clone": "4B12",
+        "company": "BD Biosciences",
+        "catalog": "741677"
+    },
+    {
+        "marker": "CCR7",
+        "alt_name": "CD197",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "4B12",
+        "company": "Biolegend",
+        "catalog": "120127",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CCR7",
+        "alt_name": "CD197",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "4B12",
+        "company": "eBioscience",
+        "catalog": "25-1971-82",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CCR9",
+        "alt_name": "CD199",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "CW-1.2",
+        "company": "eBioscience",
+        "catalog": "17-1991-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CCR9",
+        "alt_name": "CD199",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "CW-1.2",
+        "company": "eBioscience",
+        "catalog": "25-1991-82"
+    },
+    {
+        "marker": "CD103",
+        "color": "Alexa Fluor 647",
+        "reactivity": "Mouse",
+        "detector": "R2",
+        "clone": "2E7",
+        "company": "Biolegend",
+        "catalog": "121409"
+    },
+    {
+        "marker": "CD103",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "2E7",
+        "company": "eBioscience",
+        "catalog": "17-1031-82"
+    },
+    {
+        "marker": "CD103",
+        "color": "APC-Cy7",
+        "reactivity": "Mouse",
+        "clone": "2E7",
+        "company": "Biolegend",
+        "catalog": "121432"
+    },
+    {
+        "marker": "CD103",
+        "alt_name": "Integrin alpha E",
+        "color": "BV563",
+        "reactivity": "Mouse",
+        "clone": "2E7",
+        "company": "Invitrogen",
+        "catalog": "365-1031-80",
+        "comments": "Check that this isnt BUV563"
+    },
+    {
+        "marker": "CD103",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "2.00E+07",
+        "company": "Biolegend",
+        "catalog": "121419"
+    },
+    {
+        "marker": "CD107a",
+        "alt_name": "LAMP-1",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "1D4B",
+        "company": "BD Biosciences",
+        "catalog": "564347"
+    },
+    {
+        "marker": "CD107a",
+        "alt_name": "LAMP-1",
+        "color": "BV711",
+        "reactivity": "Mouse",
+        "detector": "V13",
+        "clone": "1D4B",
+        "company": "Biolegend",
+        "catalog": "121631"
+    },
+    {
+        "marker": "CD107a",
+        "alt_name": "LAMP-1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "1D4B",
+        "company": "BD Biosciences",
+        "catalog": "553793",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD107b",
+        "alt_name": "LAMP-2",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "ABL-93",
+        "company": "BD Biosciences",
+        "catalog": "564249"
+    },
+    {
+        "marker": "CD107b",
+        "alt_name": "LAMP-2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "eBioABL-93",
+        "company": "eBioscience",
+        "catalog": "11-1072-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD117",
+        "color": "PE-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "YG7",
+        "clone": "2B8",
+        "company": "eBioscience",
+        "catalog": "35-1171-81"
+    },
+    {
+        "marker": "CD11a",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "M17/4",
+        "company": "Biolegend",
+        "catalog": "101123"
+    },
+    {
+        "marker": "CD11b",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "M1/70",
+        "company": "Tonbo Biosciences",
+        "catalog": "20-0112-U100",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD11b",
+        "color": "APC-Vio770",
+        "reactivity": "Mouse",
+        "detector": "R7",
+        "clone": "REA592",
+        "company": "Miltenyi Biotec",
+        "catalog": "130-113-803"
+    },
+    {
+        "marker": "CD11b",
+        "color": "BV510",
+        "reactivity": "Mouse/Human",
+        "detector": "V7",
+        "clone": "M1/70",
+        "company": "Biolegend",
+        "catalog": "101245"
+    },
+    {
+        "marker": "CD11b",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "M1-70",
+        "company": "eBioscience",
+        "catalog": "45-0112-82"
+    },
+    {
+        "marker": "CD11c",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "N418",
+        "company": "eBioscience",
+        "catalog": "17-0114-82"
+    },
+    {
+        "marker": "CD11c",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "HL3",
+        "company": "BD Biosciences",
+        "catalog": "550261"
+    },
+    {
+        "marker": "CD11c",
+        "color": "BUV737",
+        "reactivity": "Mouse",
+        "detector": "UV14",
+        "clone": "HL3",
+        "company": "BD Biosciences",
+        "catalog": "612796"
+    },
+    {
+        "marker": "CD11c",
+        "color": "BV711",
+        "reactivity": "Mouse",
+        "detector": "V13",
+        "clone": "N418",
+        "company": "Biolegend",
+        "catalog": "117349"
+    },
+    {
+        "marker": "CD122",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "TM-b1",
+        "company": "eBioscience",
+        "catalog": "17-1222-82"
+    },
+    {
+        "marker": "CD122",
+        "color": "Biotin",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "TM-b1",
+        "company": "Invitrogen",
+        "catalog": "13-1222-82"
+    },
+    {
+        "marker": "CD122",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "TM-b1",
+        "company": "BD Biosciences",
+        "catalog": "566301"
+    },
+    {
+        "marker": "CD122",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "none",
+        "company": "BD Biosciences",
+        "catalog": "554452"
+    },
+    {
+        "marker": "CD122",
+        "alt_name": "IL-2Rb",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "TM-b1",
+        "company": "Biolegend",
+        "catalog": "123216",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD122",
+        "alt_name": "IL-2Rb",
+        "color": "PE-Dazzle 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "TM-b1",
+        "company": "Biolegend",
+        "catalog": "123218"
+    },
+    {
+        "marker": "CD122",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "TM-b1",
+        "company": "eBioscience",
+        "catalog": "46-1222-82"
+    },
+    {
+        "marker": "CD127",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "A7R34",
+        "company": "eBioscience",
+        "catalog": "17-1271-82"
+    },
+    {
+        "marker": "CD127",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "A7R34",
+        "company": "eBioscience",
+        "catalog": "11-1271-85",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD127",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "A7R34",
+        "company": "eBioscience",
+        "catalog": "15-1271-83",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD127",
+        "alt_name": "IL-7Ra",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "A7R34",
+        "company": "Biolegend",
+        "catalog": "135014"
+    },
+    {
+        "marker": "CD127",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "A7R34",
+        "company": "eBioscience",
+        "catalog": "45-1271-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD132",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "TUGm2",
+        "company": "Biolegend",
+        "catalog": "132308"
+    },
+    {
+        "marker": "CD138",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "281-2",
+        "company": "BD Biosciences",
+        "catalog": "553714"
+    },
+    {
+        "marker": "CD150",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "9D1",
+        "company": "eBioscience",
+        "catalog": "17-1501-81"
+    },
+    {
+        "marker": "CD150",
+        "alt_name": "SLAM",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "9D1",
+        "company": "eBioscience",
+        "catalog": "11-1501-1255"
+    },
+    {
+        "marker": "CD150",
+        "alt_name": "SLAM",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "TC15-12F12.2",
+        "company": "Biolegend",
+        "catalog": "115914"
+    },
+    {
+        "marker": "CD154",
+        "alt_name": "CD40L",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "MR1",
+        "company": "eBioscience",
+        "catalog": "17-1541-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD155",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "TX56",
+        "company": "eBioscience",
+        "catalog": "17-1551-80"
+    },
+    {
+        "marker": "CD16/CD32",
+        "alt_name": "Fcy III/II",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "2.4G2",
+        "company": "BD Biosciences",
+        "catalog": "558636",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD160",
+        "color": "PE-CF594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "CNX46-3",
+        "company": "BD Biosciences",
+        "catalog": "562512",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD160",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "7H1",
+        "company": "Biolegend",
+        "catalog": "143010"
+    },
+    {
+        "marker": "CD160",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "CNX46-3",
+        "company": "BD Biosciences",
+        "catalog": "562218",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD162",
+        "color": "BV480",
+        "reactivity": "Mouse",
+        "detector": "V5",
+        "clone": "2PH1",
+        "company": "BD Biosciences",
+        "catalog": "746749"
+    },
+    {
+        "marker": "CD162",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "2PH1",
+        "company": "BD Biosciences",
+        "catalog": "563448"
+    },
+    {
+        "marker": "CD178",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "MFL3",
+        "company": "eBioscience",
+        "catalog": "25-5911-82"
+    },
+    {
+        "marker": "CD183",
+        "alt_name": "CXCR3",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "CXCR3-173",
+        "company": "eBioscience",
+        "catalog": "45-1831-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD185",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "SPRCL5",
+        "company": "eBioscience",
+        "catalog": "46-7185-82"
+    },
+    {
+        "marker": "CD186",
+        "alt_name": "CXCR6",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "SA051D1",
+        "company": "Biolegend",
+        "catalog": "151120"
+    },
+    {
+        "marker": "CD19",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "6D5",
+        "company": "Biolegend",
+        "catalog": "115521"
+    },
+    {
+        "marker": "CD19",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "1D3",
+        "company": "Tonbo Biosciences",
+        "catalog": "20-0193-U100",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD19",
+        "color": "Pe-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "6D5",
+        "company": "Biolegend",
+        "catalog": "115510"
+    },
+    {
+        "marker": "CD19",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "1D3",
+        "company": "Tonbo Biosciences",
+        "catalog": "60-0193-U100"
+    },
+    {
+        "marker": "CD19",
+        "color": "PE-Dazzle 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "6D5",
+        "company": "Biolegend",
+        "catalog": "11554"
+    },
+    {
+        "marker": "CD19",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "eBio1D3",
+        "company": "eBioscience",
+        "catalog": "45-0193-82"
+    },
+    {
+        "marker": "CD19",
+        "color": "violetFluor 450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "1D3",
+        "company": "Tonbo Biosciences",
+        "catalog": "75-0193-U100"
+    },
+    {
+        "marker": "CD196",
+        "alt_name": "CCR6",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "R6H1",
+        "company": "eBioscience",
+        "catalog": "11-1969-42"
+    },
+    {
+        "marker": "CD197",
+        "alt_name": "CCR7",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "4B12",
+        "company": "eBioscience",
+        "catalog": "45-1971-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD199",
+        "alt_name": "CCR9",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "eBioCW-1.2(CW1.2)",
+        "company": "Invitrogen",
+        "catalog": "46-1991-80"
+    },
+    {
+        "marker": "CD2",
+        "color": "BUV395",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "RM2-5",
+        "company": "BD Biosciences",
+        "catalog": "740212"
+    },
+    {
+        "marker": "CD2",
+        "color": "BUV563",
+        "reactivity": "Mouse",
+        "detector": "UV9",
+        "clone": "RM2-5",
+        "company": "BD Biosciences",
+        "catalog": "741223"
+    },
+    {
+        "marker": "CD223",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "eBioC9B7W",
+        "company": "eBioscience",
+        "catalog": "46-2231-82"
+    },
+    {
+        "marker": "CD226",
+        "alt_name": "DNAM-1",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "TX42.1",
+        "company": "Biolegend",
+        "catalog": "133615",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD24",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "M1/69",
+        "company": "Biolegend",
+        "catalog": "101825"
+    },
+    {
+        "marker": "CD24",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "M(1/69)",
+        "company": "BD Biosciences",
+        "catalog": "553261",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD24",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "M1/69",
+        "company": "eBioscience",
+        "catalog": "46-0242-82"
+    },
+    {
+        "marker": "CD244.2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "244F4",
+        "company": "eBioscience",
+        "catalog": "17-2441-82"
+    },
+    {
+        "marker": "CD244.2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "2B4",
+        "company": "eBioscience",
+        "catalog": "11-2441-82"
+    },
+    {
+        "marker": "CD25",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "3C7",
+        "company": "Biolegend",
+        "catalog": "101910",
+        "num_tubes_in_stock": 1
+    },
+    {
+        "marker": "CD25",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "PC61",
+        "company": "BD Biosciences",
+        "catalog": "557192"
+    },
+    {
+        "marker": "CD25",
+        "color": "APC-Cy7",
+        "reactivity": "Mouse",
+        "clone": "PC61",
+        "company": "Biolegend",
+        "catalog": "102026"
+    },
+    {
+        "marker": "CD25",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "PC61",
+        "company": "Biolegend",
+        "catalog": "102036"
+    },
+    {
+        "marker": "CD25",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "PC61",
+        "company": "Biolegend",
+        "catalog": "102051"
+    },
+    {
+        "marker": "CD25",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "PC61",
+        "company": "Biolegend",
+        "catalog": "102051"
+    },
+    {
+        "marker": "CD25",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "7D4",
+        "company": "BD Biosciences",
+        "catalog": "553072"
+    },
+    {
+        "marker": "CD25",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "PC61.5",
+        "company": "Invitrogen",
+        "catalog": "15-0251-81",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD25",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "PC61.5",
+        "company": "eBioscience",
+        "catalog": "25-0251-82"
+    },
+    {
+        "marker": "CD25",
+        "color": "PerCp",
+        "reactivity": "Mouse",
+        "detector": "B8",
+        "clone": "PC61",
+        "company": "Biolegend",
+        "catalog": "102028"
+    },
+    {
+        "marker": "CD25",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "45-0251",
+        "company": "Invitrogen",
+        "catalog": "45-0251-82"
+    },
+    {
+        "marker": "CD27",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "LG.3A10",
+        "company": "BD Biosciences",
+        "catalog": "563365"
+    },
+    {
+        "marker": "CD27",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "LG.759",
+        "company": "eBioscience",
+        "catalog": "46-0271-82"
+    },
+    {
+        "marker": "CD27",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "LG.7F9",
+        "company": "eBioscience",
+        "catalog": "46-0271-82"
+    },
+    {
+        "marker": "CD273",
+        "alt_name": "PD-1.2",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "TY25",
+        "company": "Biolegend",
+        "catalog": "107213"
+    },
+    {
+        "marker": "CD279",
+        "alt_name": "PD1",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "29F.1A12",
+        "company": "Biolegend",
+        "catalog": "135208"
+    },
+    {
+        "marker": "CD3",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "17A2",
+        "company": "Tonbo Biosciences",
+        "catalog": "20-0032-U100"
+    },
+    {
+        "marker": "CD3",
+        "color": "BUV737",
+        "reactivity": "Mouse",
+        "detector": "UV14",
+        "clone": "17A2",
+        "company": "BD Biosciences",
+        "catalog": "612803"
+    },
+    {
+        "marker": "CD3",
+        "color": "Spark YG 570",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "17A2",
+        "company": "Biolegend",
+        "catalog": "100265"
+    },
+    {
+        "marker": "CD3e",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "145-2C11",
+        "company": "Biolegend",
+        "catalog": "100341"
+    },
+    {
+        "marker": "CD3e",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "145-2C11",
+        "company": "Biolegend",
+        "catalog": "100353"
+    },
+    {
+        "marker": "CD3e",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "145-2C11",
+        "company": "eBioscience",
+        "catalog": "11-0031-82"
+    },
+    {
+        "marker": "CD3e",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "553062",
+        "company": "BD Biosciences",
+        "catalog": "553062"
+    },
+    {
+        "marker": "CD3e",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "145-2C11",
+        "company": "Invitrogen",
+        "catalog": "12-0031-83"
+    },
+    {
+        "marker": "CD3e",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "145-2C11",
+        "company": "Tonbo Biosciences",
+        "catalog": "55-0031-U100"
+    },
+    {
+        "marker": "CD3e",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "145.2C11",
+        "company": "Biolegend",
+        "catalog": "45-0031-82"
+    },
+    {
+        "marker": "CD4",
+        "color": "Alexa Fluor 647",
+        "reactivity": "Mouse",
+        "detector": "R2",
+        "clone": "RM4-5",
+        "company": "Biolegend",
+        "catalog": "100530"
+    },
+    {
+        "marker": "CD4",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "RM4-5",
+        "company": "eBioscience",
+        "catalog": "17-0042-82"
+    },
+    {
+        "marker": "CD4",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "GK1.5",
+        "company": "eBioscience",
+        "catalog": "17-0041-83"
+    },
+    {
+        "marker": "CD4",
+        "color": "APC/Fire 810",
+        "reactivity": "Mouse",
+        "detector": "R8",
+        "clone": "GK1.5",
+        "company": "Biolegend",
+        "catalog": "100480",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD4",
+        "color": "APC-Cy7",
+        "reactivity": "Mouse",
+        "clone": "RM4-5",
+        "company": "Tonbo Biosciences",
+        "catalog": "25-0042-U100"
+    },
+    {
+        "marker": "CD4",
+        "color": "BUV395",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "GK1.5",
+        "company": "BD Biosciences",
+        "catalog": "563790"
+    },
+    {
+        "marker": "CD4",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "GK1.5",
+        "company": "Biolegend",
+        "catalog": "100449",
+        "num_tubes_in_stock": 1
+    },
+    {
+        "marker": "CD4",
+        "color": "BV750",
+        "reactivity": "Mouse",
+        "detector": "V14",
+        "clone": "GK1.5",
+        "company": "Biolegend",
+        "catalog": "100467"
+    },
+    {
+        "marker": "CD4",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "RM4-5",
+        "company": "BD Biosciences",
+        "catalog": "553050",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD4",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "GK1.5",
+        "company": "eBioscience",
+        "catalog": "25-0041-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD4",
+        "color": "PE-eFluor610",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "RM4-5",
+        "company": "eBioscience",
+        "catalog": "61-0042-82"
+    },
+    {
+        "marker": "CD4",
+        "color": "PerCP",
+        "reactivity": "Mouse",
+        "detector": "B8",
+        "clone": "GK1.5",
+        "company": "Biolegend",
+        "catalog": "100431"
+    },
+    {
+        "marker": "CD4",
+        "color": "PerCp",
+        "reactivity": "Mouse",
+        "detector": "B8",
+        "clone": "GK1.5",
+        "company": "BioLegend",
+        "catalog": "100431"
+    },
+    {
+        "marker": "CD4",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "RM4-5",
+        "company": "BD Biosciences",
+        "catalog": "550954"
+    },
+    {
+        "marker": "CD43",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "1B11",
+        "company": "Biolegend",
+        "catalog": "121218"
+    },
+    {
+        "marker": "CD43",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "121224",
+        "company": "Biolegend",
+        "catalog": "121224"
+    },
+    {
+        "marker": "CD44",
+        "color": "Alexa Fluor 700",
+        "reactivity": "Mouse",
+        "detector": "R4",
+        "clone": "IM7",
+        "company": "Biolegend",
+        "catalog": "103026",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD44",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "IM7",
+        "company": "eBioscience",
+        "catalog": "17-0441-82"
+    },
+    {
+        "marker": "CD44",
+        "color": "APC/Fire 750",
+        "reactivity": "Mouse",
+        "detector": "R7",
+        "clone": "IM7",
+        "company": "Biolegend",
+        "catalog": "103061",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD44",
+        "color": "BUV395",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "IM7",
+        "company": "BD Biosciences",
+        "catalog": "740215",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD44",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "IM7",
+        "company": "Biolegend",
+        "catalog": "103044"
+    },
+    {
+        "marker": "CD44",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "IM7",
+        "company": "BD Biosciences",
+        "catalog": "553135"
+    },
+    {
+        "marker": "CD44",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "IM7",
+        "company": "Tonbo Biosciences",
+        "catalog": "60-0441-U100"
+    },
+    {
+        "marker": "CD44",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse/Human",
+        "detector": "B9",
+        "clone": "IM7",
+        "company": "Biolegend",
+        "catalog": "103032"
+    },
+    {
+        "marker": "CD45",
+        "color": "APC-Cy7",
+        "reactivity": "Mouse",
+        "clone": "30-F11",
+        "company": "103115",
+        "catalog": "103115"
+    },
+    {
+        "marker": "CD45",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "103132",
+        "company": "Biolegend",
+        "catalog": "103132"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "A20",
+        "company": "eBioscience",
+        "catalog": "17-0453-81"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "APC/Fire 750",
+        "reactivity": "Mouse",
+        "clone": "A20",
+        "company": "Biolegend",
+        "catalog": "110752"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "A20",
+        "company": "BD Biosciences",
+        "catalog": "565278"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "BV570",
+        "reactivity": "Mouse",
+        "detector": "V8",
+        "clone": "A20",
+        "company": "Biolegend",
+        "catalog": "110733"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "09624D",
+        "company": "Becton Dickinson",
+        "catalog": "553775"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "A20",
+        "company": "eBioscience",
+        "catalog": "25-0453-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD45.1",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "A20",
+        "company": "BD Biosciences",
+        "catalog": "560578"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "PerCp",
+        "reactivity": "Mouse",
+        "detector": "B8",
+        "clone": "A20",
+        "company": "Biolegend",
+        "catalog": "110726"
+    },
+    {
+        "marker": "CD45.2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "104",
+        "company": "Biolegend",
+        "catalog": "109813"
+    },
+    {
+        "marker": "CD45.2",
+        "color": "BUV805",
+        "reactivity": "Mouse",
+        "detector": "UV16",
+        "clone": "104",
+        "company": "BD Biosciences",
+        "catalog": "741957"
+    },
+    {
+        "marker": "CD45.2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "104",
+        "company": "BD Biosciences",
+        "catalog": "553772",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD45.2",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "104",
+        "company": "Tonbo Biosciences",
+        "catalog": "65-0454-U100"
+    },
+    {
+        "marker": "CD45.2",
+        "color": "Spark NIR 685",
+        "reactivity": "Mouse",
+        "clone": "104",
+        "company": "Biolegend",
+        "catalog": "109864",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD45R",
+        "alt_name": "B220",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "RA3-6B2",
+        "company": "BD Biosciences",
+        "catalog": "553092",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD45R",
+        "alt_name": "B220",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "RA3-6B2",
+        "company": "BD Biosciences",
+        "catalog": "552772",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD45R",
+        "alt_name": "B220",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "RA3-6B2",
+        "company": "eBioscience",
+        "catalog": "25-0452-81"
+    },
+    {
+        "marker": "CD45R/B220",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "RA3-6B2",
+        "company": "BD Biosciences",
+        "catalog": "553088"
+    },
+    {
+        "marker": "CD45RB",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "C363.16A",
+        "company": "eBioscience",
+        "catalog": "11-0455-82"
+    },
+    {
+        "marker": "CD49b",
+        "alt_name": "pan-NK cells",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "DX5",
+        "company": "eBioscience",
+        "catalog": "17-5971-81",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD49b",
+        "alt_name": "pan-NK cells",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "DX5",
+        "company": "eBioscience",
+        "catalog": "25-5971-82"
+    },
+    {
+        "marker": "CD49d",
+        "color": "BV480",
+        "reactivity": "Mouse",
+        "detector": "V5",
+        "clone": "R1-2",
+        "company": "BD Biosciences",
+        "catalog": "746526"
+    },
+    {
+        "marker": "CD49d",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "R1-2",
+        "company": "eBioscience",
+        "catalog": "11-0492-81"
+    },
+    {
+        "marker": "CD49d",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "R1-2",
+        "company": "Biolegend",
+        "catalog": "103617"
+    },
+    {
+        "marker": "CD49d",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "R1-2",
+        "company": "eBioscience",
+        "catalog": "46-0492-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Cd49e",
+        "color": "BV786",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "5H10-27",
+        "company": "BD Biosciences",
+        "catalog": "740863"
+    },
+    {
+        "marker": "CD5",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "53-7.3",
+        "company": "Tonbo Biosciences",
+        "catalog": "35-0051-U025"
+    },
+    {
+        "marker": "CD54",
+        "alt_name": "ICAM-1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "3.00E+02",
+        "company": "Becton Dickinson",
+        "catalog": "553252",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD62L",
+        "color": "Alexa Fluor 700",
+        "reactivity": "Mouse",
+        "detector": "R4",
+        "clone": "MEL-14",
+        "company": "Invitrogen",
+        "catalog": "56-0621-82",
+        "num_tubes_in_stock": 1
+    },
+    {
+        "marker": "CD62L",
+        "color": "APC-Cy7",
+        "reactivity": "Mouse",
+        "clone": "MEL-14",
+        "company": "Biolegend",
+        "catalog": "104428"
+    },
+    {
+        "marker": "CD62L",
+        "color": "BUV395",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "MEL-14",
+        "company": "BD Biosciences",
+        "catalog": "740218"
+    },
+    {
+        "marker": "CD62L",
+        "color": "BV570",
+        "reactivity": "Mouse",
+        "detector": "V8",
+        "clone": "MEL-14",
+        "company": "Biolegend",
+        "catalog": "104433",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD62L",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "MEL-14",
+        "company": "Biolegend",
+        "catalog": "104437"
+    },
+    {
+        "marker": "CD62L",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "MEL-14",
+        "company": "BD Biosciences",
+        "catalog": "553150",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD62L",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "MEL-14",
+        "company": "Invitrogen",
+        "catalog": "25-0621-82"
+    },
+    {
+        "marker": "CD62L",
+        "color": "PerCp",
+        "reactivity": "Mouse",
+        "detector": "B8",
+        "clone": "MEL-14",
+        "company": "Biolegend",
+        "catalog": "104429"
+    },
+    {
+        "marker": "CD62L",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "MEL-14",
+        "company": "eBioscience",
+        "catalog": "45-0621-82"
+    },
+    {
+        "marker": "CD62L",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "MEL-14",
+        "company": "eBioscience",
+        "catalog": "45-0621-82"
+    },
+    {
+        "marker": "CD64",
+        "alt_name": "FcyR1",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "X54-5/7.1",
+        "company": "Biolegend",
+        "catalog": "139323"
+    },
+    {
+        "marker": "CD69",
+        "color": "BUV805",
+        "reactivity": "Mouse",
+        "detector": "UV16",
+        "clone": "H1.2F3",
+        "company": "BD Biosciences",
+        "catalog": "741927",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD69",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "H1.2F3",
+        "company": "Biolegend",
+        "catalog": "104528"
+    },
+    {
+        "marker": "CD69",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "H1.2F3",
+        "company": "Biolegend",
+        "catalog": "104532",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD69",
+        "color": "BV711",
+        "reactivity": "Mouse",
+        "detector": "V13",
+        "clone": "H1.2F3",
+        "company": "Biolegend",
+        "catalog": "104537"
+    },
+    {
+        "marker": "CD69",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "H1.2F3",
+        "company": "Biolegend",
+        "catalog": "104543"
+    },
+    {
+        "marker": "CD69",
+        "color": "eFlour 450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "H1.2F3",
+        "company": "Invitrogen",
+        "catalog": "48-0691-82"
+    },
+    {
+        "marker": "CD69",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "H1.2F3",
+        "company": "eBioscience",
+        "catalog": "11-0691-85"
+    },
+    {
+        "marker": "CD69",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "H1.2F3",
+        "company": "eBioscience",
+        "catalog": "25-0691-82"
+    },
+    {
+        "marker": "CD69",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "H1.2F3",
+        "company": "BD Biosciences",
+        "catalog": "552879"
+    },
+    {
+        "marker": "CD71",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "C2",
+        "company": "BD Biosciences",
+        "catalog": "553266"
+    },
+    {
+        "marker": "CD73",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "TY/11.8",
+        "company": "Biolegend",
+        "catalog": "127217"
+    },
+    {
+        "marker": "CD8",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "53-6.7",
+        "company": "eBioscience",
+        "catalog": "11-0081-85",
+        "num_tubes_in_stock": 4
+    },
+    {
+        "marker": "CD80",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "16-10A1",
+        "company": "Biolegend",
+        "catalog": "104734"
+    },
+    {
+        "marker": "CD83",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "Michel-17",
+        "company": "eBioscience",
+        "catalog": "11-0831-82"
+    },
+    {
+        "marker": "CD8a",
+        "color": "BUV395",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "53-6.7",
+        "company": "BD Biosciences",
+        "catalog": "563786"
+    },
+    {
+        "marker": "CD8a",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "53-6.7",
+        "company": "Biolegend",
+        "catalog": "100751",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD8a",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "53-6.7",
+        "company": "Biolegend",
+        "catalog": "100744"
+    },
+    {
+        "marker": "CD8a",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "2.43",
+        "company": "Tonbo Biosciences",
+        "catalog": "20-1886-U100"
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE/Fire 700",
+        "reactivity": "Mouse",
+        "clone": "53-6.7",
+        "company": "Biolegend",
+        "catalog": "100791"
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "53-6.7",
+        "company": "Invitrogen",
+        "catalog": "15-0081-82"
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "53-6.7",
+        "company": "BD Biosciences",
+        "catalog": "552877"
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "53-6.7",
+        "company": "Invitrogen",
+        "catalog": "25-0081-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE-Dazzle 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "53-6.7",
+        "company": "Biolegend",
+        "catalog": "100762",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE-eFluor610",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "53-6.7",
+        "company": "Invitrogen",
+        "catalog": "61-0081-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE-eFluor650NC",
+        "reactivity": "Mouse",
+        "clone": "53-6.7",
+        "company": "eBioscience",
+        "catalog": "95-0081-42",
+        "comments": "Discontinued color"
+    },
+    {
+        "marker": "CD8a",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "53-6.7",
+        "company": "BD Biosciences",
+        "catalog": "551162"
+    },
+    {
+        "marker": "CD8b",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "H35-17.2",
+        "company": "eBioscience",
+        "catalog": "17-0083-81"
+    },
+    {
+        "marker": "CD8b",
+        "color": "BUV395",
+        "reactivity": "Mouse",
+        "detector": "UV2",
+        "clone": "H35-17.2",
+        "company": "BD Biosciences",
+        "catalog": "740278"
+    },
+    {
+        "marker": "CD8b",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "YTS156.7.7",
+        "company": "Biolegend",
+        "catalog": "126605"
+    },
+    {
+        "marker": "CD9",
+        "color": "BUV805",
+        "reactivity": "Mouse",
+        "detector": "UV16",
+        "clone": "KMC8",
+        "company": "BD Biosciences",
+        "catalog": "741954"
+    },
+    {
+        "marker": "CD90.2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "53-2.1",
+        "company": "BD Biosciences",
+        "catalog": "553004"
+    },
+    {
+        "marker": "CD90.2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "30-H12",
+        "company": "Miltenyi Biotec",
+        "catalog": "130-120-175"
+    },
+    {
+        "marker": "CD93",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "45-5892-80",
+        "company": "eBioscience",
+        "catalog": "45-5892-80"
+    },
+    {
+        "marker": "CD94",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "18d3",
+        "company": "eBioscience",
+        "catalog": "11-0941-81"
+    },
+    {
+        "marker": "CD95",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "15A7",
+        "company": "eBioscience",
+        "catalog": "46-0951-82"
+    },
+    {
+        "marker": "CD95",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "15A7",
+        "company": "eBioscience",
+        "catalog": "46-0951-82"
+    },
+    {
+        "marker": "CD98",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "RL388",
+        "company": "Biolegend",
+        "catalog": "128213"
+    },
+    {
+        "marker": "CX3CR1",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "SA011F11",
+        "company": "Biolegend",
+        "catalog": "149029"
+    },
+    {
+        "marker": "CXCR3",
+        "alt_name": "CD183",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "126511",
+        "company": "Biolegend",
+        "catalog": "126511",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CXCR3",
+        "alt_name": "CD183",
+        "color": "BV711",
+        "reactivity": "Mouse",
+        "detector": "V13",
+        "clone": "CXCR3-173",
+        "company": "BD Biosciences",
+        "catalog": "740825"
+    },
+    {
+        "marker": "CXCR3",
+        "alt_name": "CD183",
+        "color": "PE/Fire 640",
+        "reactivity": "Mouse",
+        "clone": "S18001A",
+        "company": "Biolegend",
+        "catalog": "155921"
+    },
+    {
+        "marker": "CXCR4",
+        "alt_name": "CD184",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "2B11",
+        "company": "BD Biosciences",
+        "catalog": "558644",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CXCR4",
+        "alt_name": "CD184",
+        "color": "PE-eFluor610",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "2B11",
+        "company": "Invitrogen",
+        "catalog": "61-9991-82"
+    },
+    {
+        "marker": "Egr2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "erongr2",
+        "company": "eBioscience",
+        "catalog": "17-6691-82"
+    },
+    {
+        "marker": "Eomesodermin",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "Dan11mag",
+        "company": "Invitrogen",
+        "catalog": "53-4875-82"
+    },
+    {
+        "marker": "Eomesodermin",
+        "color": "BUV737",
+        "reactivity": "Mouse",
+        "detector": "UV14",
+        "clone": "X4-83",
+        "company": "BD Biosciences",
+        "catalog": "567170"
+    },
+    {
+        "marker": "Eomesodermin",
+        "color": "eFlour 660",
+        "reactivity": "Mouse",
+        "detector": "R2",
+        "clone": "Dan11mag",
+        "company": "Invitrogen",
+        "catalog": "50-4875-82"
+    },
+    {
+        "marker": "Eomesodermin",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "Dan11mag",
+        "company": "Invitrogen",
+        "catalog": "25-4875-82"
+    },
+    {
+        "marker": "Eomesodermin",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "Dan11mag",
+        "company": "Invitrogen",
+        "catalog": "46-4875-80"
+    },
+    {
+        "marker": "EpCAM",
+        "alt_name": "CD326",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "G8.8",
+        "company": "Biolegend",
+        "catalog": "118231"
+    },
+    {
+        "marker": "EpCam",
+        "alt_name": "CD326",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "G8.8",
+        "company": "Biolegend",
+        "catalog": "118215"
+    },
+    {
+        "marker": "F4/80",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "BM8",
+        "company": "BioLegend",
+        "catalog": "123127"
+    },
+    {
+        "marker": "F4/F80",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "BM8",
+        "company": "Biolegend",
+        "catalog": "123141"
+    },
+    {
+        "marker": "F4/F80",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "BM8.1",
+        "company": "Tonbo Biosciences",
+        "catalog": "60-4801-U100",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "FceRI alpha",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "1-Mar",
+        "company": "eBioscience",
+        "catalog": "11-5898-82",
+        "num_tubes_in_stock": 5
+    },
+    {
+        "marker": "FOXP3",
+        "color": "Alexa Fluor 532",
+        "reactivity": "Mouse",
+        "detector": "B3",
+        "clone": "FJK-16s",
+        "company": "Invitrogen",
+        "catalog": "58-5773-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "FOXP3",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "3G3",
+        "company": "Tonbo Biosciences",
+        "catalog": "35-5773-U100"
+    },
+    {
+        "marker": "gd TCR",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "eBioGL3",
+        "company": "eBioscience",
+        "catalog": "46-5711-82",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "Granzyme B",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "NGZB",
+        "company": "eBioscience",
+        "catalog": "11-8898-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Granzyme B",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "NGZB",
+        "company": "Invitrogen",
+        "catalog": "12-8898-82"
+    },
+    {
+        "marker": "Granzyme B",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "NGZB",
+        "company": "eBioscience",
+        "catalog": "25-8898-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "H/M pBTK/ITK (Y551/Y551)",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "M4G3LN",
+        "company": "eBioscience",
+        "catalog": "46-9015-42"
+    },
+    {
+        "marker": "H-2D(b)",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "KH95",
+        "company": "BD Biosciences",
+        "catalog": "553573",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "H2Kb",
+        "color": "APC/Fire 750",
+        "reactivity": "Mouse",
+        "clone": "25-D1.16",
+        "company": "Biolegend",
+        "catalog": "141613",
+        "num_tubes_in_stock": 2,
+        "comments": "bound to SIINFEKL"
+    },
+    {
+        "marker": "H-2Kb",
+        "color": "BUV805",
+        "reactivity": "Mouse",
+        "detector": "UV16",
+        "clone": "AF6-88.5",
+        "company": "BD Biosciences",
+        "catalog": "748821"
+    },
+    {
+        "marker": "H-2Kb/Db",
+        "color": "BUV496",
+        "reactivity": "Mouse",
+        "detector": "UV7",
+        "clone": "28-8-6",
+        "company": "BD Biosciences",
+        "catalog": "750133"
+    },
+    {
+        "marker": "I-A^b (Ab^b)",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "AF6-120.1",
+        "company": "Becton Dickinson",
+        "catalog": "06044D"
+    },
+    {
+        "marker": "I-Ab",
+        "color": "APC/Fire 750",
+        "reactivity": "Mouse",
+        "clone": "AF6-120.1",
+        "company": "Biolegend",
+        "catalog": "116423"
+    },
+    {
+        "marker": "I-Ab",
+        "alt_name": "MHC II",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "M5/114.15.2",
+        "company": "eBioscience",
+        "catalog": "15-5321-81"
+    },
+    {
+        "marker": "I-E^k",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "17-3-3",
+        "company": "Becton Dickinson",
+        "catalog": "558846"
+    },
+    {
+        "marker": "IFNy",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "XMG1.2",
+        "company": "BD Biosciences",
+        "catalog": "557649",
+        "num_tubes_in_stock": 5
+    },
+    {
+        "marker": "IFNy",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "XMG1.2",
+        "company": "eBioscience",
+        "catalog": "45-7311-82"
+    },
+    {
+        "marker": "IgD",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "11-26C",
+        "company": "eBioscience",
+        "catalog": "17-5993-80"
+    },
+    {
+        "marker": "IgE",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "R35-72",
+        "company": "BD Biosciences",
+        "catalog": "553415"
+    },
+    {
+        "marker": "IgG1",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "A85-1",
+        "company": "BD Biosciences",
+        "catalog": "560089",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "IgG1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "A85-1",
+        "company": "BD Biosciences",
+        "catalog": "553443",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "IkB zeta",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "LK2NAP",
+        "company": "eBioscience",
+        "catalog": "46-6801-80"
+    },
+    {
+        "marker": "IL-17a",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "eBio17B7",
+        "company": "eBioscience",
+        "catalog": "11-7177-81",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "IL-17A",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "17B7",
+        "company": "eBioscience",
+        "catalog": "25-7177-82"
+    },
+    {
+        "marker": "IL-17A",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "TC11-18H10.1",
+        "company": "Biolegend",
+        "catalog": "506921"
+    },
+    {
+        "marker": "IL-17A",
+        "color": "PE-Dazzle 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "TC11-18H10.1",
+        "company": "Biolegend",
+        "catalog": "506937"
+    },
+    {
+        "marker": "IL-2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "JES6-5H4",
+        "company": "eBioscience",
+        "catalog": "17-7021-82"
+    },
+    {
+        "marker": "IL-2",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "JES6-5H4",
+        "company": "eBioscience",
+        "catalog": "25-7021-82"
+    },
+    {
+        "marker": "IL-2",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "JES6-5H4",
+        "company": "eBioscience",
+        "catalog": "45-7021-82"
+    },
+    {
+        "marker": "IL-2 ",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "JES6-5H4",
+        "company": "Biolegend",
+        "catalog": "503824"
+    },
+    {
+        "marker": "IL-22",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "POLY5164",
+        "company": "Biolegend",
+        "catalog": "516409"
+    },
+    {
+        "marker": "IL-23R",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "12B2B64",
+        "company": "Biolegend",
+        "catalog": "150907"
+    },
+    {
+        "marker": "IL-33Ra",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "DIH4",
+        "company": "Biolegend",
+        "catalog": "146609"
+    },
+    {
+        "marker": "IL-4",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "BVD6-24G2",
+        "company": "eBioscience",
+        "catalog": "11-7042-71"
+    },
+    {
+        "marker": "IL-4",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "BVD6-24G2",
+        "company": "eBioscience",
+        "catalog": "25-7042-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Integrin Alpha 4 Beta 7",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "DATK32",
+        "company": "eBioscience",
+        "catalog": "46-5887-82",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "Integrin Beta 7",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "FIB504",
+        "company": "eBioscience",
+        "catalog": "11-5867-42"
+    },
+    {
+        "marker": "IRF4",
+        "color": "Alexa Fluor 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "IRF4.3E4",
+        "company": "Biolegend",
+        "catalog": "646410"
+    },
+    {
+        "marker": "IRF4",
+        "color": "Alexa Fluor 647",
+        "reactivity": "Mouse",
+        "detector": "R2",
+        "clone": "IRF4.3E4",
+        "company": "Biolegend",
+        "catalog": "646408"
+    },
+    {
+        "marker": "IRF4",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "IRF4.3E4",
+        "company": "Biolegend",
+        "catalog": "646404"
+    },
+    {
+        "marker": "IRF4",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "IRF4.3E4",
+        "company": "Biolegend",
+        "catalog": "646414"
+    },
+    {
+        "marker": "IRF4",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "IRF4.3E4",
+        "company": "Biolegend",
+        "catalog": "646146",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "IRF4",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "IRF4.3E4",
+        "company": "Biolegend",
+        "catalog": "646416"
+    },
+    {
+        "marker": "IRF4",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "3E4",
+        "company": "eBioscience",
+        "catalog": "46-9858-82"
+    },
+    {
+        "marker": "IRF8",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "V3GYWCH",
+        "company": "eBioscience",
+        "catalog": "46-9852-80"
+    },
+    {
+        "marker": "ITK",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "M4G3LN",
+        "company": "eBioscience",
+        "catalog": "17-9015-42"
+    },
+    {
+        "marker": "Ki-67",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "16A8",
+        "company": "Biolegend",
+        "catalog": "652405"
+    },
+    {
+        "marker": "KLRG1",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "2F1",
+        "company": "eBioscience",
+        "catalog": "17-5893-82",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "KLRG1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "2F1",
+        "company": "eBioscience",
+        "catalog": "11-5893-82"
+    },
+    {
+        "marker": "KLRG1",
+        "color": "PE/Fire 810",
+        "reactivity": "Mouse",
+        "detector": "YG10",
+        "clone": "2F1/KLRG1",
+        "company": "Biolegend",
+        "catalog": "138437"
+    },
+    {
+        "marker": "KLRG1",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "2F1",
+        "company": "Invitrogen",
+        "catalog": "25-5893-82"
+    },
+    {
+        "marker": "LFA-1",
+        "alt_name": "CD11a/CD18",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "H155-78",
+        "company": "Biolegend",
+        "catalog": "141012",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "LPAM-1",
+        "alt_name": "Integrin a4b7",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "DATK32",
+        "company": "Biolegend",
+        "catalog": "120607"
+    },
+    {
+        "marker": "Ly-49E/F",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "CM4",
+        "company": "eBioscience",
+        "catalog": "17-5848"
+    },
+    {
+        "marker": "Ly-49G2",
+        "alt_name": "LGL-1",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "2D11",
+        "company": "BD Biosciences",
+        "catalog": "555316"
+    },
+    {
+        "marker": "Ly-49H",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "3D10",
+        "company": "eBioscience",
+        "catalog": "17-5886-80",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Ly-49I",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "YLI-90",
+        "company": "eBioscience",
+        "catalog": "11-5895-81"
+    },
+    {
+        "marker": "Ly-6C",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "AL-21",
+        "company": "BD Biosciences",
+        "catalog": "553104"
+    },
+    {
+        "marker": "Ly-6C",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "AL-21",
+        "company": "BD Biosciences",
+        "catalog": "560525"
+    },
+    {
+        "marker": "Ly-6G",
+        "alt_name": "Gr-1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "RB6-8C5",
+        "company": "eBioscience",
+        "catalog": "53-5931-80"
+    },
+    {
+        "marker": "MHC I",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "AF6-88.5.5.3",
+        "company": "Invitrogen",
+        "catalog": "17-5958-80"
+    },
+    {
+        "marker": "MHC II",
+        "alt_name": "I-A/I-E",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "MS/114.15.2",
+        "company": "eBioscience",
+        "catalog": "17-5321-81"
+    },
+    {
+        "marker": "NK1.1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "PK136",
+        "company": "eBioscience",
+        "catalog": "11-5941-82"
+    },
+    {
+        "marker": "NK-1.1",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "PK136",
+        "company": "BD Biosciences",
+        "catalog": "552878",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "NKG2A/C/E",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "20d5",
+        "company": "eBioscience",
+        "catalog": "11-5896-81"
+    },
+    {
+        "marker": "NKG2D",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "CX5",
+        "company": "eBioscience",
+        "catalog": "17-5882-81"
+    },
+    {
+        "marker": "NKG2D",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "CX5",
+        "company": "eBioscience",
+        "catalog": "130211"
+    },
+    {
+        "marker": "NKG2D",
+        "alt_name": "CD314",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "CX5",
+        "company": "BD Biosciences",
+        "catalog": "562800"
+    },
+    {
+        "marker": "PD-1",
+        "alt_name": "CD279",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "J43",
+        "company": "eBioscience",
+        "catalog": "17-9985-82"
+    },
+    {
+        "marker": "PD-1",
+        "alt_name": "CD279",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "J43",
+        "company": "eBioscience",
+        "catalog": "11-9985-81"
+    },
+    {
+        "marker": "PD-1",
+        "alt_name": "CD279",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "29F.1A12",
+        "company": "Biolegend",
+        "catalog": "135216"
+    },
+    {
+        "marker": "PD-1",
+        "alt_name": "CD279",
+        "color": "Super Bright 780",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "J43",
+        "company": "Invitrogen",
+        "catalog": "78-9985-82"
+    },
+    {
+        "marker": "PD-L1",
+        "alt_name": "CD274",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "MIH5",
+        "company": "BD Biosciences",
+        "catalog": "564715"
+    },
+    {
+        "marker": "PD-L1",
+        "alt_name": "CD274",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "10F.9G2",
+        "company": "Tonbo Biosciences",
+        "catalog": "50-1243-U100"
+    },
+    {
+        "marker": "PD-L1",
+        "alt_name": "CD274",
+        "color": "PE-Dazzle 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "10F.9G2",
+        "company": "Biolegend",
+        "catalog": "124324"
+    },
+    {
+        "marker": "Perforin",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "MAK-D",
+        "company": "Invitrogen",
+        "catalog": "17-9392-80"
+    },
+    {
+        "marker": "Perforin",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "OMAK-D",
+        "company": "eBioscience",
+        "catalog": "11-9392-80"
+    },
+    {
+        "marker": "Perk 1/2",
+        "alt_name": "T202/Y204",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "MILAN8R",
+        "company": "eBioscience",
+        "catalog": "17-9109-42",
+        "num_tubes_in_stock": 4
+    },
+    {
+        "marker": "pLcK (Y505)",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "SRRCHA",
+        "company": "eBioscience",
+        "catalog": "46-9076-42"
+    },
+    {
+        "marker": "PLZF",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "detector": "YG1",
+        "clone": "Mags.21F7",
+        "company": "Invitrogen",
+        "catalog": "12-9320-82"
+    },
+    {
+        "marker": "RORyt",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "AFKJS-9",
+        "company": "Invitrogen",
+        "catalog": "17-6988-82"
+    },
+    {
+        "marker": "RORyt",
+        "color": "PE-CF594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "Q31-378",
+        "company": "BD Biosciences",
+        "catalog": "562684"
+    },
+    {
+        "marker": "RORyt",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "B2D",
+        "company": "Invitrogen",
+        "catalog": "46-6981-82"
+    },
+    {
+        "marker": "Runx3",
+        "color": "R718",
+        "reactivity": "Mouse",
+        "detector": "R4",
+        "clone": "R3-5G4",
+        "company": "BD Biosciences",
+        "catalog": "567641"
+    },
+    {
+        "marker": "RUNX3",
+        "color": "R718",
+        "reactivity": "Mouse",
+        "clone": "R3-5G4",
+        "company": "BD Biosciences",
+        "catalog": "567641"
+    },
+    {
+        "marker": "Sca-1",
+        "alt_name": "Ly-6A/E",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "D7",
+        "company": "eBioscience",
+        "catalog": "25-5981-81"
+    },
+    {
+        "marker": "ST2",
+        "alt_name": "IL-33R",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "RMST2-33",
+        "company": "eBioscience",
+        "catalog": "46-9333-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "T-bet",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "4B10",
+        "company": "Biolegend",
+        "catalog": "644815",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "T-bet",
+        "color": "BV785",
+        "reactivity": "Mouse",
+        "detector": "V15",
+        "clone": "4B10",
+        "company": "Biolegend",
+        "catalog": "644835"
+    },
+    {
+        "marker": "T-bet",
+        "color": "PE",
+        "reactivity": "Mouse/Human",
+        "detector": "YG1",
+        "clone": "4B10",
+        "company": "eBioscience",
+        "catalog": "12-5825-82"
+    },
+    {
+        "marker": "T-bet",
+        "color": "PE-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "YG7",
+        "clone": "4B10",
+        "company": "eBioscience",
+        "catalog": "45-5825-82"
+    },
+    {
+        "marker": "T-bet",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "4B10",
+        "company": "eBioscience",
+        "catalog": "25-5825-82"
+    },
+    {
+        "marker": "T-bet",
+        "color": "PE-Dazzle 594",
+        "reactivity": "Mouse",
+        "detector": "YG3",
+        "clone": "4B10",
+        "company": "Biolegend",
+        "catalog": "644827"
+    },
+    {
+        "marker": "TCF1/TCF7",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "S33-966",
+        "company": "BD Biosciences",
+        "catalog": "566692"
+    },
+    {
+        "marker": "TCR beta",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "H57-597",
+        "company": "Invitrogen",
+        "catalog": "45-5961-82"
+    },
+    {
+        "marker": "TCR Va2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "B20.1",
+        "company": "Invitrogen",
+        "catalog": "17-5812-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCR Va2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "B20.1",
+        "company": "Invitrogen",
+        "catalog": "17-5812-82"
+    },
+    {
+        "marker": "TCR Va2",
+        "color": "eFlour 450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "B20.1",
+        "company": "eBioscience",
+        "catalog": "48-5812-82"
+    },
+    {
+        "marker": "TCR Va2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "B20.1",
+        "company": "Biolegend",
+        "catalog": "127806"
+    },
+    {
+        "marker": "TCR Va3.2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "RR3-16",
+        "company": "BD Biosciences",
+        "catalog": "553219"
+    },
+    {
+        "marker": "TCR Vb8.1",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "MR5-2",
+        "company": "BD Biosciences",
+        "catalog": "553185",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "TCR Vy1.1/Cr4",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "2.11",
+        "company": "Biolegend",
+        "catalog": "141112"
+    },
+    {
+        "marker": "TCR Vy2",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "UC3-10A6",
+        "company": "BD Biosciences",
+        "catalog": "553226"
+    },
+    {
+        "marker": "TCR Vy2",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "UC3-10A6",
+        "company": "Invitrogen",
+        "catalog": "25-5828-82"
+    },
+    {
+        "marker": "TCR Vy3",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "536",
+        "company": "BD Biosciences",
+        "catalog": "553229"
+    },
+    {
+        "marker": "TCR yd",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "GL3",
+        "company": "eBioscience",
+        "catalog": "17-5711-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCR yd",
+        "color": "BV650",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "GL3",
+        "company": "BD Biosciences",
+        "catalog": "563993",
+        "comments": "Universally hated. The worst!!!"
+    },
+    {
+        "marker": "TCR yd",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "GL3",
+        "company": "BD Biosciences",
+        "catalog": "553177",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCR yd",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "UC7-13D5",
+        "company": "Biolegend",
+        "catalog": "107503"
+    },
+    {
+        "marker": "TCR yd",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "GL3",
+        "company": "eBioscience",
+        "catalog": "15-5711-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCR yd",
+        "color": "Pe-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "GL3",
+        "company": "Biolegend",
+        "catalog": "118123"
+    },
+    {
+        "marker": "TCRb",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "H57-597",
+        "company": "BD Biosciences",
+        "catalog": "553174"
+    },
+    {
+        "marker": "TCRb",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "MR9-4",
+        "company": "Invitrogen",
+        "catalog": "17-5794-80"
+    },
+    {
+        "marker": "TCRb",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "H57-597",
+        "company": "Biolegend",
+        "catalog": "109229"
+    },
+    {
+        "marker": "TCRb",
+        "color": "BV570",
+        "reactivity": "Mouse",
+        "detector": "V8",
+        "clone": "H57-597",
+        "company": "Biolegend",
+        "catalog": "109231",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCRb",
+        "color": "BV605",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "H57-597",
+        "company": "Biolegend",
+        "catalog": "109241",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCRb",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "H57-597",
+        "company": "eBioscience",
+        "catalog": "1-5961-85",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "TCRb",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "H57-597",
+        "company": "eBioscience",
+        "catalog": "15-5961-83",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TGF-b1",
+        "alt_name": "LAP",
+        "color": "BV421",
+        "reactivity": "Mouse",
+        "detector": "V1",
+        "clone": "TW7-16B4",
+        "company": "Biolegend",
+        "catalog": "141407"
+    },
+    {
+        "marker": "Thy1.1",
+        "alt_name": "CD90.1",
+        "color": "BV650",
+        "reactivity": "Mouse",
+        "detector": "V10",
+        "clone": "OX-7",
+        "company": "Biolegend",
+        "catalog": "202533"
+    },
+    {
+        "marker": "Thy1.1",
+        "alt_name": "CD90.1",
+        "color": "PE-Cy5",
+        "reactivity": "Mouse",
+        "detector": "YG5",
+        "clone": "HIS51",
+        "company": "eBioscience",
+        "catalog": "15-0900-82"
+    },
+    {
+        "marker": "Thy1.1",
+        "alt_name": "CD90.1",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "HIS51",
+        "company": "eBioscience",
+        "catalog": "25-0900-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Thy1.1",
+        "alt_name": "CD90.1",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "OX-7",
+        "company": "Biolegend",
+        "catalog": "202517"
+    },
+    {
+        "marker": "Thy1.2",
+        "alt_name": "CD90.2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "clone": "53-2.1",
+        "company": "BD Biosciences",
+        "catalog": "553007"
+    },
+    {
+        "marker": "Thy1.2",
+        "alt_name": "CD90.2",
+        "color": "APC",
+        "reactivity": "Mouse",
+        "detector": "R1",
+        "clone": "53-2.1",
+        "company": "eBioscience",
+        "catalog": "17-0902-82",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "Thy1.2",
+        "alt_name": "CD90.2",
+        "color": "BV711",
+        "reactivity": "Mouse",
+        "detector": "V13",
+        "clone": "30-H12",
+        "company": "Biolegend",
+        "catalog": "105349"
+    },
+    {
+        "marker": "Thy1.2",
+        "alt_name": "CD90.2",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "53-2.1",
+        "company": "Biolegend",
+        "catalog": "140309"
+    },
+    {
+        "marker": "TIGIT",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "GIGD7",
+        "company": "eBioscience",
+        "catalog": "46-9501-80"
+    },
+    {
+        "marker": "Tmem119",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "V3RT1G0sz",
+        "company": "Invitrogen",
+        "catalog": "25-6119-80"
+    },
+    {
+        "marker": "TNF",
+        "color": "PerCP-Cy5.5",
+        "reactivity": "Mouse",
+        "detector": "B9",
+        "clone": "MP6-XT22",
+        "company": "BD Biosciences",
+        "catalog": "560659"
+    },
+    {
+        "marker": "TNFa",
+        "color": "APC-Cy7",
+        "reactivity": "Mouse",
+        "clone": "MP6-XT22",
+        "company": "BD Biosciences",
+        "catalog": "560658",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TNFa",
+        "color": "BV510",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "MP6-XT22",
+        "company": "Biolegend",
+        "catalog": "506339"
+    },
+    {
+        "marker": "TNFa",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "MP6-XT22",
+        "company": "eBioscience",
+        "catalog": "25-7321-82"
+    },
+    {
+        "marker": "TNFa",
+        "color": "PE-Cy7",
+        "reactivity": "Mouse",
+        "detector": "YG9",
+        "clone": "MP6-XT22",
+        "company": "BD Biosciences",
+        "catalog": "557644"
+    },
+    {
+        "marker": "TNFa",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "MP6-XT22",
+        "company": "eBioscience",
+        "catalog": "46-7321-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Va2",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "B20.1",
+        "company": "Invitrogen",
+        "catalog": "46-5812-80",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "Vb6 TCR",
+        "color": "PerCP-eFlour710",
+        "reactivity": "Mouse",
+        "detector": "B10",
+        "clone": "RR4.7",
+        "company": "eBioscience",
+        "catalog": "46-5795-82"
+    },
+    {
+        "marker": "p-ITK (Y180)",
+        "alt_name": "p-BTK",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "N35-86",
+        "company": "BD Biosciences",
+        "catalog": "564847"
+    },
+    {
+        "marker": "Cleaved Caspase-3",
+        "alt_name": "CC3",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "D3E9",
+        "company": "Cell Signalling",
+        "catalog": "9603S"
+    },
+    {
+        "marker": "CD80",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "16-10A1",
+        "company": "eBioscience",
+        "catalog": "11-0801-81"
+    },
+    {
+        "marker": "CD107b",
+        "alt_name": "LAMP-2",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "ABL-93",
+        "company": "eBioscience",
+        "catalog": "53-1072-82"
+    },
+    {
+        "marker": "Ezh2",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "D2C9",
+        "company": "Cell Signalling",
+        "catalog": "30233S"
+    },
+    {
+        "marker": "Gata-3",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse/Human",
+        "detector": "B2",
+        "clone": "TWAJ",
+        "company": "eBioscience",
+        "catalog": "53-9966-42"
+    },
+    {
+        "marker": "Gata-3",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "16E10A23",
+        "company": "Biolegend",
+        "catalog": "653808"
+    },
+    {
+        "marker": "GFP",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "FM264G",
+        "company": "Biolegend",
+        "catalog": "338007"
+    },
+    {
+        "marker": "IFNy",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "XMG1.2",
+        "company": "Biolegend",
+        "catalog": "505815",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "IRF4",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "3.00E+04",
+        "company": "Biolegend",
+        "catalog": "646406",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "Ly-6G",
+        "color": "FITC",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "1A8",
+        "company": "BD Biosciences",
+        "catalog": "551460"
+    },
+    {
+        "marker": "PLZF",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse/Human",
+        "detector": "B2",
+        "clone": "Mags.21F7",
+        "company": "Invitrogen",
+        "catalog": "53-9320-82"
+    },
+    {
+        "marker": "p-NFkB",
+        "alt_name": "pS529",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "K10895.12.50",
+        "company": "BD Biosciences",
+        "catalog": "558421"
+    },
+    {
+        "marker": "Nur77",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "12.14",
+        "company": "Invitrogen",
+        "catalog": "53-5965-82"
+    },
+    {
+        "marker": "p-S6",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "N7-548",
+        "company": "BD Biosciences",
+        "catalog": "560434"
+    },
+    {
+        "marker": "TCF1 ",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "C63D9",
+        "company": "Cell Signalling",
+        "catalog": "6444S"
+    },
+    {
+        "marker": "TCR yd",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "GL3",
+        "company": "Biolegend",
+        "catalog": "118128"
+    },
+    {
+        "marker": "Tmem119",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "V3RT1G0sz",
+        "company": "Invitrogen",
+        "catalog": "53-6119-80"
+    },
+    {
+        "marker": "p-ZAP70",
+        "color": "Alexa Fluor 488",
+        "reactivity": "Mouse",
+        "detector": "B2",
+        "clone": "A16038B",
+        "company": "Biolegend",
+        "catalog": "693806"
+    },
+    {
+        "marker": "CD8a",
+        "color": "Spark Blue 550",
+        "reactivity": "Mouse",
+        "detector": "B3",
+        "clone": "53-6.7",
+        "company": "Biolegend",
+        "catalog": "100780"
+    },
+    {
+        "marker": "CD19",
+        "color": "Spark Blue 550",
+        "reactivity": "Mouse",
+        "detector": "B3",
+        "clone": "6D5",
+        "company": "Biolegend",
+        "catalog": "115566",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD4",
+        "color": "violetFluor 450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "GK1.5",
+        "company": "Tonbo Biosciences",
+        "catalog": "75-0041-U100"
+    },
+    {
+        "marker": "CD8a",
+        "color": "violetFluor 450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "53-6.7",
+        "company": "Tonbo Biosciences",
+        "catalog": "75-0081-U100"
+    },
+    {
+        "marker": "IL-6",
+        "color": "violetFluor 450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "MP5-20F3",
+        "company": "BD Biosciences",
+        "catalog": "561376"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "A20",
+        "company": "eBioscience",
+        "catalog": "48-0453-82"
+    },
+    {
+        "marker": "CD8a",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "53-6.7",
+        "company": "eBioscience",
+        "catalog": "48-0081-82"
+    },
+    {
+        "marker": "CD8b",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "H35-17.2",
+        "company": "Invitrogen",
+        "catalog": "48-0083-82"
+    },
+    {
+        "marker": "CD11B",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "M1/70",
+        "company": "eBioscience",
+        "catalog": "48-0112-82"
+    },
+    {
+        "marker": "CD16/32",
+        "alt_name": "Fc Binding",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "93",
+        "company": "eBioscience",
+        "catalog": "48-0161-80"
+    },
+    {
+        "marker": "CD24",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "M1/69",
+        "company": "eBioscience",
+        "catalog": "48-0242-82"
+    },
+    {
+        "marker": "CD44",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "IM7",
+        "company": "eBioscience",
+        "catalog": "48-0441-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD62L",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "MEL-14",
+        "company": "eBioscience",
+        "catalog": "48-0621-82"
+    },
+    {
+        "marker": "Thy1.1",
+        "alt_name": "CD90.1",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "HIS51",
+        "company": "eBioscience",
+        "catalog": "48-0900-82"
+    },
+    {
+        "marker": "CD122",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "TM-b1",
+        "company": "eBioscience",
+        "catalog": "48-1222-82"
+    },
+    {
+        "marker": "CD223",
+        "alt_name": "Lag-3",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "C9B7W",
+        "company": "eBioscience",
+        "catalog": "48-2231-82"
+    },
+    {
+        "marker": "F4/80",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "BM8",
+        "company": "eBioscience",
+        "catalog": "48-4801-82"
+    },
+    {
+        "marker": "GL7",
+        "color": "eFluor450",
+        "reactivity": "Mouse/Human",
+        "detector": "V3",
+        "clone": "GL-7",
+        "company": "eBioscience",
+        "catalog": "48-5902-82"
+    },
+    {
+        "marker": "IFNy",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "XMG1.2",
+        "company": "eBioscience",
+        "catalog": "48-7311-82"
+    },
+    {
+        "marker": "KLRG1",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "2F1",
+        "company": "eBioscience",
+        "catalog": "48-5893-82",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "TCR yd",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "GL3",
+        "company": "eBioscience",
+        "catalog": "48-5711-82"
+    },
+    {
+        "marker": "TCR Va2",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "B20.1",
+        "company": "eBioscience",
+        "catalog": "48-5812-82"
+    },
+    {
+        "marker": "TCR Vb5.1",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "MR9-4",
+        "company": "eBioscience",
+        "catalog": "48-5796-82"
+    },
+    {
+        "marker": "TCR BVb9",
+        "color": "eFluor450",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "MR10-2",
+        "company": "eBioscience",
+        "catalog": "48-5823-80"
+    },
+    {
+        "marker": "CD8a",
+        "color": "PacBlue",
+        "reactivity": "Mouse",
+        "detector": "V3",
+        "clone": "53-6.7",
+        "company": "Biolegend",
+        "catalog": "100728"
+    },
+    {
+        "marker": "CD4",
+        "color": "V500",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "RM4-5",
+        "company": "BD Biosciences",
+        "catalog": "560782"
+    },
+    {
+        "marker": "CD44",
+        "color": "V500",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "IM7",
+        "company": "BD Biosciences",
+        "catalog": "560780",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD45.2",
+        "color": "V500",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "104",
+        "company": "BD Biosciences",
+        "catalog": "562129",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD90.2",
+        "alt_name": "Thy1.2",
+        "color": "V500",
+        "reactivity": "Mouse",
+        "detector": "V7",
+        "clone": "53-2.1",
+        "company": "BD Biosciences",
+        "catalog": "561616",
+        "num_tubes_in_stock": 3
+    },
+    {
+        "marker": "CD4",
+        "color": "eVolve605",
+        "reactivity": "Mouse",
+        "clone": "RM4-5",
+        "company": "eBioscience",
+        "catalog": "83-0042-41"
+    },
+    {
+        "marker": "CD11b",
+        "color": "eVolve605",
+        "reactivity": "Mouse",
+        "clone": "M1/70",
+        "company": "eBioscience",
+        "catalog": "93-0112-41"
+    },
+    {
+        "marker": "CD62L",
+        "color": "eVolve605",
+        "reactivity": "Mouse",
+        "clone": "MEL-14",
+        "company": "eBioscience",
+        "catalog": "93-0621-41"
+    },
+    {
+        "marker": "BLIMP-1",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "C-21",
+        "company": "Santa Cruz Biotechnology",
+        "catalog": "sc-13206",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD8b",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "YTs156.7.7",
+        "company": "Biolegend",
+        "catalog": "126607"
+    },
+    {
+        "marker": "CD23",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "B3B4",
+        "company": "Becton Dickinson",
+        "catalog": "553139"
+    },
+    {
+        "marker": "CD44",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "\"Pgp-1",
+        "company": "Ly-24\"",
+        "catalog": "eBioscience",
+        "dilution": "12-0441-81",
+        "comments": "2"
+    },
+    {
+        "marker": "CD49d",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "R1-2",
+        "company": "Biolegend",
+        "catalog": "103608"
+    },
+    {
+        "marker": "CD90.1",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "HIS51",
+        "company": "eBioscience",
+        "catalog": "12-0900-83"
+    },
+    {
+        "marker": "CD122",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "TM-b1",
+        "company": "BD Biosciences",
+        "catalog": "553362",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD8a",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "53-6.7",
+        "company": "eBioscience",
+        "catalog": "12-0081-83"
+    },
+    {
+        "marker": "CD15",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "MC-480",
+        "company": "Biolegend",
+        "catalog": "125605"
+    },
+    {
+        "marker": "CD86",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "S7",
+        "company": "Becton Dickinson",
+        "catalog": "553692"
+    },
+    {
+        "marker": "CD135",
+        "alt_name": "Ly-72",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "A2F10.1",
+        "company": "Becton Dickinson",
+        "catalog": "553842"
+    },
+    {
+        "marker": "Bcl-6",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "BCL-DWN",
+        "company": "Invitrogen",
+        "catalog": "12-5453-82"
+    },
+    {
+        "marker": "CD11b",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "HL3",
+        "company": "BD Biosciences",
+        "catalog": "557401"
+    },
+    {
+        "marker": "Anti-Active Caspase 3",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "C92-605",
+        "company": "BD Biosciences",
+        "catalog": "561011"
+    },
+    {
+        "marker": "PDL1",
+        "alt_name": "B7-H1",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "MIH5",
+        "company": "eBioscience",
+        "catalog": "12-5982-81"
+    },
+    {
+        "marker": "BATF",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "MBM7C7",
+        "company": "eBioscience",
+        "catalog": "12-9860-41"
+    },
+    {
+        "marker": "Bcl-2",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "BCL/10C4",
+        "company": "Biolegend",
+        "catalog": "633507"
+    },
+    {
+        "marker": "CCR7",
+        "alt_name": "CD197",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "4B12",
+        "company": "eBioscience",
+        "catalog": "12-1971-63"
+    },
+    {
+        "marker": "CD1d",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "1B1",
+        "company": "eBioscience",
+        "catalog": "12-0011-81"
+    },
+    {
+        "marker": "CD3e",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "145-2C11",
+        "company": "eBioscience",
+        "catalog": "12-0031-83"
+    },
+    {
+        "marker": "CD4",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "H129.19",
+        "company": "BD Biosciences",
+        "catalog": "5536353"
+    },
+    {
+        "marker": "CD8b.2",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "53-5.8",
+        "company": "BD Biosciences",
+        "catalog": "553041",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD11.7",
+        "alt_name": "c-kit",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "ack45",
+        "company": "BD Biosciences",
+        "catalog": "553869"
+    },
+    {
+        "marker": "CD24",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "M1/69",
+        "company": "eBioscience",
+        "catalog": "12-0242-83"
+    },
+    {
+        "marker": "CD25",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "PC61.5",
+        "company": "eBioscience",
+        "catalog": "12-0251-82"
+    },
+    {
+        "marker": "CD27",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "LG.7F9",
+        "company": "eBioscience",
+        "catalog": "12-0271-83"
+    },
+    {
+        "marker": "CD27",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "LG.3A10",
+        "company": "BD Biosciences",
+        "catalog": "558754"
+    },
+    {
+        "marker": "CD34",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "RAM34",
+        "company": "RAM34",
+        "catalog": "12-0341-81"
+    },
+    {
+        "marker": "CD40",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "n/a",
+        "company": "Becton Dickinson",
+        "catalog": "553791"
+    },
+    {
+        "marker": "CD45.1",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "A20",
+        "company": "BD Biosciences",
+        "catalog": "553776",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD45R/B220",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "16A",
+        "company": "BD Biosciences",
+        "catalog": "553101",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD49b",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "HMa2",
+        "company": "Tonbo Biosciences",
+        "catalog": "50-049-U100"
+    },
+    {
+        "marker": "CD49d",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "R1-2",
+        "company": "eBioscience",
+        "catalog": "12-0492-81"
+    },
+    {
+        "marker": "CD62L",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "MEL-14",
+        "company": "BD Biosciences",
+        "catalog": "553151",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD69",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "H1.2F3",
+        "company": "BD Biosciences",
+        "catalog": "553237",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD69",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "H1.2F3",
+        "company": "Tonbo Biosciences",
+        "catalog": "50-0691-U100"
+    },
+    {
+        "marker": "CD86",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "Gl-1",
+        "company": "Tonbo Biosciences",
+        "catalog": "50-0862-U100"
+    },
+    {
+        "marker": "CD86",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "GL-1",
+        "company": "Becton Dickinson",
+        "catalog": "553692"
+    },
+    {
+        "marker": "CD95",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "MFL3",
+        "company": "eBioscience",
+        "catalog": "12-5911-81"
+    },
+    {
+        "marker": "CD103",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "2.00E+07",
+        "company": "eBioscience",
+        "catalog": "12-1031-83",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD103",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "2.00E+07",
+        "company": "Biolegend",
+        "catalog": "121405"
+    },
+    {
+        "marker": "CD107a",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "eBio1D4B",
+        "company": "eBioscience",
+        "catalog": "12-1071-83"
+    },
+    {
+        "marker": "CD107b",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "M3/84",
+        "company": "eBioscience",
+        "catalog": "12-5989-82"
+    },
+    {
+        "marker": "CD122",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "5H4",
+        "company": "eBioscience",
+        "catalog": "12-1221-83"
+    },
+    {
+        "marker": "CD123",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "5B11",
+        "company": "eBioscience",
+        "catalog": "12-1231-81"
+    },
+    {
+        "marker": "CD124",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "n/a",
+        "company": "BD Biosciences",
+        "catalog": "552509",
+        "num_tubes_in_stock": 2
+    },
+    {
+        "marker": "CD127",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "A7R34",
+        "company": "eBioscience",
+        "catalog": "12-1271-83"
+    },
+    {
+        "marker": "CD132",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "n/a",
+        "company": "BD Biosciences",
+        "catalog": "554457"
+    },
+    {
+        "marker": "CD134",
+        "color": "PE",
+        "reactivity": "Mouse",
+        "clone": "OX-86",
+        "company": "eBioscience",
+        "catalog": "12-134-81"
+    }
+]

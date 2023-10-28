@@ -13,6 +13,7 @@ export default class AntibodyHelper {
             .where('marker', '==', antibody.marker)
             .where('reactivity', '==', antibody.reactivity)
             .where('color', '==', antibody.color)
+            .where('catalog', '==', antibody.catalog)
             .where('company', '==', antibody.company);
         const results = await query.get();
         return !results.empty;
@@ -22,10 +23,12 @@ export default class AntibodyHelper {
         | {
               didAdd: true;
               doc: firestore.DocumentData;
+              status: 201;
           }
         | {
               didAdd: false;
               reasons: string[];
+              status: 400 | 409;
           }
     > {
         const verification = verifyAntibody(antibodyRequestData);
@@ -33,13 +36,21 @@ export default class AntibodyHelper {
             const antibody = antibodyRequestData as Antibody;
             const exists = await this.checkExists(antibody);
             if (exists) {
-                return { didAdd: false, reasons: ['Antibody already exists'] };
+                return {
+                    didAdd: false,
+                    reasons: ['Conflict, antibody already exists'],
+                    status: 409
+                };
             } else {
                 const docRef = await this.collectionRef.add(antibody);
-                return { didAdd: true, doc: docRef };
+                return { didAdd: true, doc: docRef, status: 201 };
             }
         } else {
-            return { didAdd: false, reasons: verification.reasons };
+            return {
+                didAdd: false,
+                reasons: verification.reasons,
+                status: 400
+            };
         }
     }
 }

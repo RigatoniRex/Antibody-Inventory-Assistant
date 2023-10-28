@@ -15,7 +15,7 @@ AntibodyRouter.use(asyncHandler(Authenticate));
 
 //get all antibodies as a condensed response.
 AntibodyRouter.get(
-    '/search',
+    '/',
     asyncHandler(async (req, res) => {
         try {
             const labHandler = res.locals.labHandler as LabHandler;
@@ -27,16 +27,28 @@ AntibodyRouter.get(
                     id: string;
                     [key: string]: any;
                 } //This interface allows for new properties to be added dynamically
-                const returnAntibody: ReturnAntibody = {
+                let returnAntibody: ReturnAntibody = {
                     id: antibodyDoc.id
                 };
-                //If fields are specified
-                if (req.body.fields?.count) {
+                if (req.body.fields && req.body.fields === '*') {
+                    //All fields
+                    const antibody = antibodyDoc.data();
+                    returnAntibody = {
+                        ...returnAntibody,
+                        ...antibody
+                    };
+                } else if (req.body.fields?.length) {
+                    //If fields are specified
                     req.body.fields.forEach((field: string) => {
                         returnAntibody[field] = antibodyDoc.get(field);
                     });
                 } else {
+                    // No fields, return the key fields
                     returnAntibody.marker = antibodyDoc.get('marker');
+                    returnAntibody.reactivity = antibodyDoc.get('reactivity');
+                    returnAntibody.color = antibodyDoc.get('color');
+                    returnAntibody.company = antibodyDoc.get('company');
+                    returnAntibody.catalog = antibodyDoc.get('catalog');
                 }
                 antibodies.push(returnAntibody);
             });
@@ -76,12 +88,12 @@ AntibodyRouter.post(
                 req.body.antibody
             );
             if (tryDocAdd.didAdd) {
-                res.status(201).send({
+                res.status(tryDocAdd.status).send({
                     msg: 'document created',
                     doc: tryDocAdd.doc.id
                 });
             } else {
-                res.status(400).json({
+                res.status(tryDocAdd.status).json({
                     reasons: tryDocAdd.reasons
                 });
             }

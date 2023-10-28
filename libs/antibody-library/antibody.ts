@@ -2,7 +2,7 @@ export interface Antibody {
     /**Marker */
     marker: string;
     /**Alternate Name */
-    alt_name: string;
+    alt_name?: string;
     /**Species Reactivity */
     reactivity: string;
     /**Fluorophore Color */
@@ -16,7 +16,7 @@ export interface Antibody {
     /**Dilution */
     dilution?: string;
     /**Peak Detector */
-    detector: string;
+    detector?: string;
     /**Isotype */
     isotype?: string;
     /**Location */
@@ -24,7 +24,7 @@ export interface Antibody {
     /**Number of tubes in stock */
     num_tubes_in_stock?: number;
     /**Comments */
-    comments: string;
+    comments?: string;
 }
 
 export class AntibodyCollection extends Array<Antibody> {
@@ -86,90 +86,36 @@ export function verifyAntibody(antibody: any): {
         output.reasons.push('Null or undefined object');
     }
     const conditions: boolean[] = [];
-    if (antibody.marker && isString(antibody.marker)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid marker type');
-    }
-    if (antibody.alt_name && isString(antibody.alt_name)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid alt_name type');
-    }
-    if (antibody.reactivity && isString(antibody.reactivity)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid reactivity type');
-    }
-    if (antibody.color && isString(antibody.color)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid color type');
-    }
-    if (antibody.clone && isString(antibody.clone)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid clone type');
-    }
-    if (antibody.company && isString(antibody.company)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid company type');
-    }
-    if (antibody.catalog && isString(antibody.catalog)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid catalog type');
-    }
-    if (antibody.dilution && isString(antibody.dilution)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid dilution type');
-    }
-    if (antibody.detector && isString(antibody.detector)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid detector type');
-    }
-    if (antibody.dilution === undefined ? true : isString(antibody.dilution)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid dilution type');
-    }
-    if (antibody.isotype === undefined ? true : isString(antibody.isotype)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid isotype type');
-    }
-    if (antibody.location === undefined ? true : isString(antibody.location)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid location type');
-    }
-    if (antibody.num_tubes_in_stock && isNumber(antibody.num_tubes_in_stock)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid num_tubes_in_stock type');
-    }
-    if (antibody.comments && isString(antibody.comments)) {
-        conditions.push(true);
-    } else {
-        conditions.push(false);
-        output.reasons.push('Invalid comments type');
-    }
+    const verify = (
+        name: string,
+        value: any,
+        type: 'string' | 'number',
+        required: boolean = true
+    ) => {
+        // If required, check exists
+        if (required && value === undefined) {
+            conditions.push(false);
+            output.reasons.push(`Missing ${name} value`);
+        } else if (value === undefined) {
+            conditions.push(true);
+        } else {
+            const isValidType = isType(value, type);
+            conditions.push(isValidType);
+            if (!isValidType) output.reasons.push(`Invalid ${name} type`);
+        }
+    };
+    verify('marker', antibody.marker, 'string');
+    verify('alt_name', antibody.alt_name, 'string', false);
+    verify('reactivity', antibody.reactivity, 'string');
+    verify('color', antibody.color, 'string');
+    verify('dilution', antibody.dilution, 'string', false);
+    verify('detector', antibody.detector, 'string', false);
+    verify('clone', antibody.clone, 'string');
+    verify('company', antibody.company, 'string');
+    verify('catalog', antibody.catalog, 'string');
+    verify('location', antibody.location, 'string', false);
+    verify('num_tubes_in_stock', antibody.num_tubes_in_stock, 'number', false);
+    verify('comments', antibody.comments, 'string', false);
     output.check = conditions.every((condition) => condition);
     return output;
 }
@@ -178,9 +124,20 @@ export function test(): false {
     return false;
 }
 
+function isType(value: any, type: 'string' | 'number') {
+    switch (type) {
+        case 'string':
+            return isString(value);
+        case 'number':
+            return isNumber(value);
+        default:
+            throw new Error('Type check not implemented');
+    }
+}
+
 function isString(value: any) {
-    return typeof value === 'string';
+    return value === '' || typeof value === 'string';
 }
 function isNumber(value: any) {
-    return typeof value === 'number';
+    return value === 0 || typeof value === 'number';
 }
