@@ -1,7 +1,7 @@
-import { LabHandler } from '../labHandler';
+import { LabHandler } from '../helpers/LabHandler';
 import * as express from 'express';
 import { Authenticate } from '../auth';
-import asyncHandler from 'express-async-handler'
+import asyncHandler from 'express-async-handler';
 
 const AntibodyRouter = express.Router();
 
@@ -14,96 +14,139 @@ const AntibodyRouter = express.Router();
 AntibodyRouter.use(asyncHandler(Authenticate));
 
 //get all antibodies as a condensed response.
-AntibodyRouter.get('/search', asyncHandler(async (req, res) => {
-    try {
-        const labHandler = res.locals.labHandler as LabHandler;
-        const antibodyDocs = await labHandler.antibodyCollectionRef.get();
-        const antibodies: any[] = [];
-        antibodyDocs.forEach((antibodyDoc) => {
-            interface ReturnAntibody {
-                id: string;
-                [key: string]: any;
-            } //This interface allows for new properties to be added dynamically
-            const returnAntibody: ReturnAntibody = {
-                id: antibodyDoc.id
-            };
-            //If fields are specified
-            if (req.body.fields?.count) {
-                req.body.fields.forEach((field: string) => {
-                    returnAntibody[field] = antibodyDoc.get(field);
-                });
-            } else {
-                returnAntibody.marker = antibodyDoc.get('marker');
-            }
-            antibodies.push(returnAntibody);
-        });
-        res.status(200).json(antibodies);
-    } catch (error) {
-        res.status(500).send(error);
-    }
-}));
+AntibodyRouter.get(
+    '/',
+    asyncHandler(async (req, res) => {
+        try {
+            const labHandler = res.locals.labHandler as LabHandler;
+            const antibodyDocs =
+                await labHandler.antibodyHelper.collectionRef.get();
+            const antibodies: any[] = [];
+            antibodyDocs.forEach((antibodyDoc) => {
+                interface ReturnAntibody {
+                    id: string;
+                    [key: string]: any;
+                } //This interface allows for new properties to be added dynamically
+                let returnAntibody: ReturnAntibody = {
+                    id: antibodyDoc.id
+                };
+                if (req.body.fields && req.body.fields === '*') {
+                    //All fields
+                    const antibody = antibodyDoc.data();
+                    returnAntibody = {
+                        ...returnAntibody,
+                        ...antibody
+                    };
+                } else if (req.body.fields?.length) {
+                    //If fields are specified
+                    req.body.fields.forEach((field: string) => {
+                        returnAntibody[field] = antibodyDoc.get(field);
+                    });
+                } else {
+                    // No fields, return the key fields
+                    returnAntibody.marker = antibodyDoc.get('marker');
+                    returnAntibody.reactivity = antibodyDoc.get('reactivity');
+                    returnAntibody.color = antibodyDoc.get('color');
+                    returnAntibody.company = antibodyDoc.get('company');
+                    returnAntibody.catalog = antibodyDoc.get('catalog');
+                }
+                antibodies.push(returnAntibody);
+            });
+            res.status(200).json(antibodies);
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    })
+);
 
 //Get antibody by id
-AntibodyRouter.get('/:id', asyncHandler(async (req, res) => {
-    try {
-        const labHandler = res.locals.labHandler as LabHandler;
-        const doc = await labHandler.antibodyCollectionRef
-            .doc(req.params.id)
-            .get();
-        if (doc.exists) {
-            res.status(200).json(doc.data());
-        } else {
-            res.sendStatus(404);
+AntibodyRouter.get(
+    '/:id',
+    asyncHandler(async (req, res) => {
+        try {
+            const labHandler = res.locals.labHandler as LabHandler;
+            const doc = await labHandler.antibodyHelper.collectionRef
+                .doc(req.params.id)
+                .get();
+            if (doc.exists) {
+                res.status(200).json(doc.data());
+            } else {
+                res.sendStatus(404);
+            }
+        } catch (error) {
+            res.status(500).send(error);
         }
-    } catch (error) {
-        res.status(500).send(error);
-    }
-}));
+    })
+);
 
-//TODO: add antibody
-AntibodyRouter.post('/', asyncHandler(async (req, res) => {
-    try {
-        const labHandler = res.locals.labHandler as LabHandler;
-        const doc = await labHandler.antibodyCollectionRef.add(
-            req.body.antibody
-        );
-        res.status(200).send({
-            msg: 'document added',
-            doc: doc.id
-        });
-    } catch (error) {
-        res.status(500).send(error);
-    }
-}));
+AntibodyRouter.post(
+    '/',
+    asyncHandler(async (req, res) => {
+        try {
+            const labHandler = res.locals.labHandler as LabHandler;
+            const tryDocAdd = await labHandler.antibodyHelper.addAntibody(
+                req.body.antibody
+            );
+            if (tryDocAdd.didAdd) {
+                res.status(tryDocAdd.status).send({
+                    msg: 'document created',
+                    doc: tryDocAdd.doc.id
+                });
+            } else {
+                res.status(tryDocAdd.status).json({
+                    reasons: tryDocAdd.reasons
+                });
+            }
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    })
+);
 
-//TODO: delete antibody
-AntibodyRouter.delete('/:id', asyncHandler(async (req, res) => {
-    try {
-        const labHandler = res.locals.labHandler as LabHandler;
-        const doc = labHandler.antibodyCollectionRef.doc(req.params.id);
-        await doc.delete();
-        res.status(200).send({
-            msg: 'document deleted',
-            doc: req.params.id
-        });
-    } catch (error) {
-        res.status(500).send(error);
-    }
-}));
+AntibodyRouter.delete(
+    '/:id',
+    asyncHandler(async (req, res) => {
+        try {
+            const labHandler = res.locals.labHandler as LabHandler;
+            const doc = labHandler.antibodyHelper.collectionRef.doc(
+                req.params.id
+            );
+            const antibody = await doc.get();
+            if (antibody.exists) {
+                await doc.delete();
+                res.status(200).send({
+                    msg: 'document deleted',
+                    doc: req.params.id
+                });
+            } else {
+                res.status(404).json({
+                    msg: 'antibody not found'
+                });
+            }
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    })
+);
 
 //update antibody
-AntibodyRouter.put('/:id', asyncHandler(async (req, res) => {
-    try {
-        const labHandler = res.locals.labHandler as LabHandler;
-        const doc = labHandler.antibodyCollectionRef.doc(req.params.id);
-        await doc.update(req.body.antibody);
-        res.status(200).send({
-            msg: 'document updated',
-            doc: req.params.id
-        });
-    } catch (error) {
-        res.status(500).send(error);
-    }
-}));
+AntibodyRouter.put(
+    '/:id',
+    asyncHandler(async (req, res) => {
+        try {
+            const labHandler = res.locals.labHandler as LabHandler;
+            const doc = labHandler.antibodyHelper.collectionRef.doc(
+                req.params.id
+            );
+            await doc.update(req.body.antibody);
+            res.status(200).send({
+                msg: 'document updated',
+                doc: req.params.id
+            });
+        } catch (error) {
+            res.status(500).send(error);
+        }
+    })
+);
 
 export default AntibodyRouter;

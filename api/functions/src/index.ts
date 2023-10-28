@@ -11,7 +11,7 @@ import cookieParser from 'cookie-parser';
 import AntibodyRouter from './routes/antibody';
 import LabRouter from './routes/lab';
 import { Authenticate } from './auth';
-import asyncHandler from 'express-async-handler'
+import asyncHandler from 'express-async-handler';
 
 export const app: Express = express();
 
