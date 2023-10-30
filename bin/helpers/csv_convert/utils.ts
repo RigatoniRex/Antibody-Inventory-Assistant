@@ -32,10 +32,12 @@ export async function postAntibody(
         const res = await axios.post(
             url,
             {
+                //Test Lab name
                 lab: 'Keaton',
                 antibody: antibody
             },
             {
+                //Test password
                 headers: {
                     authorization: 'test'
                 }

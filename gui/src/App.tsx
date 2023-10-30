@@ -12,6 +12,7 @@ import { RequireAuth } from './Components/Login/AuthRoute';
 
 import axios from 'axios';
 import { baseURL } from './baseurl';
+import SessionHelper from './Auth/SessionHelper';
 
 axios.defaults.baseURL = baseURL;
 axios.defaults.maxRedirects = 0;
@@ -21,6 +22,8 @@ axios.defaults.validateStatus = function (status) {
 
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
+    const [authorized, setAuthorized] = React.useState<boolean>(false);
+    const sessionHelper = new SessionHelper(setAuthorized);
     const antibodies: AntibodyCollection = React.useMemo(() => {
         return getAntibodies();
     }, []);
@@ -36,18 +39,31 @@ function App() {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <MenuBar setDarkMode={setDarkMode} />
                 <CssBaseline />
                 <HashRouter>
+                    <MenuBar
+                        setDarkMode={setDarkMode}
+                        authorized={authorized}
+                        sessionHelper={sessionHelper}
+                    />
                     <Routes>
-                        <Route
-                            path="/"
-                            element={
-                                <RequireAuth>
-                                    <SearchForm antibodies={antibodies} />
-                                </RequireAuth>
-                            }
-                        />
+                        {['/', '/home'].map((path) => {
+                            return (
+                                <Route
+                                    path={path}
+                                    key={path}
+                                    element={
+                                        <RequireAuth
+                                            sessionHelper={sessionHelper}
+                                        >
+                                            <SearchForm
+                                                antibodies={antibodies}
+                                            />
+                                        </RequireAuth>
+                                    }
+                                />
+                            );
+                        })}
                         <Route path="login" element={<LoginForm />} />
                         <Route
                             path="about"
