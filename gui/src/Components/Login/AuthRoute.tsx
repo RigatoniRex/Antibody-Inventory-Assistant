@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import CookieHelper from '../../Utils/CookieHelper';
+import SessionHelper from '../../Auth/SessionHelper';
 import { Navigate, useLocation } from 'react-router-dom';
 
 async function tryLogin() {
@@ -16,7 +16,13 @@ async function tryLogin() {
     }
 }
 
-export function RequireAuth({ children }: { children?: JSX.Element }) {
+export function RequireAuth({
+    sessionHelper,
+    children
+}: {
+    sessionHelper: SessionHelper;
+    children?: JSX.Element;
+}) {
     const [loggedIn, setLoggedIn] = React.useState(false);
     const [attemptingLogin, setAttemptingLogin] = React.useState(true);
     let location = useLocation();
@@ -25,12 +31,14 @@ export function RequireAuth({ children }: { children?: JSX.Element }) {
         if (attemptingLogin) {
             tryLogin().then((loggedIn) => {
                 setLoggedIn(loggedIn);
+                if (loggedIn) sessionHelper.login();
+                else sessionHelper.logout();
                 setAttemptingLogin(false);
             });
         }
-    }, [attemptingLogin]);
+    }, [attemptingLogin, sessionHelper]);
 
-    if (CookieHelper.getCookie('session')) {
+    if (SessionHelper.getCookie('session')) {
         setAttemptingLogin(true);
     }
     function loggedInComponent() {

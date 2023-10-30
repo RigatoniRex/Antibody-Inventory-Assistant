@@ -1,6 +1,5 @@
 import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions';
-import { firestore } from 'firebase-admin';
 import express, {
     NextFunction,
     Request,
@@ -12,6 +11,7 @@ import AntibodyRouter from './routes/antibody';
 import LabRouter from './routes/lab';
 import { Authenticate } from './auth';
 import asyncHandler from 'express-async-handler';
+import CookieHandler from './auth/CookieHandler';
 
 export const app: Express = express();
 
@@ -35,8 +35,12 @@ app.options('*', (_, res: Response) => {
 app.post('/login', asyncHandler(Authenticate), (_, res: Response) => {
     res.status(200).json('Logged In');
 });
+app.post('/logout', (_, res: Response) => {
+    CookieHandler.createCookie(res, 'session', '', new Date(1970, 1, 1));
+    res.status(200).json('Logged Out');
+});
 app.use('/antibody', AntibodyRouter);
 app.use('/lab', LabRouter);
 
-export const db = firestore();
+export const db = admin.firestore();
 export const api = functions.https.onRequest(app);

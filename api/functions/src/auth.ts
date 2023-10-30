@@ -1,9 +1,7 @@
 import * as crypto from 'crypto';
 import { NextFunction, Request, Response } from 'express';
-import { firestore } from 'firebase-admin';
-import { db } from '.';
-import { sessionsCollection } from '../config/database';
 import { LabHandler } from './helpers/LabHandler';
+import CookieHandler from './auth/CookieHandler';
 
 export default class Crypto {
     public static createHash(secret: string): string {
@@ -95,7 +93,7 @@ async function handleAuthorization(
             labHandler,
             expires
         );
-        CookieHandler.createCookie(res, sessionDoc.id, expires);
+        CookieHandler.createCookie(res, 'session', sessionDoc.id, expires);
         next();
     }
 }
@@ -108,54 +106,4 @@ export function verifyHeader(req: Request, res: Response): boolean {
         return false; //skip the call to next();
     }
     return true;
-}
-
-class CookieHandler {
-    public static createCookie(
-        res: Response,
-        sessionId: string,
-        expires: Date
-    ) {
-        res.cookie('session', sessionId, {
-            expires: expires,
-            sameSite: 'none',
-            secure: true,
-            httpOnly: true
-        });
-    }
-    public static async checkSession(
-        sessionId: string
-    ): Promise<LabHandler | null> {
-        const sessionSnapshot = await db
-            .collection(sessionsCollection)
-            .doc(sessionId)
-            .get();
-        const exists: boolean = sessionSnapshot.exists;
-
-        const expiresDt: Date = new Date(sessionSnapshot.get('expires'));
-        if (exists && expiresDt > new Date()) {
-            const lab = sessionSnapshot.get('lab');
-            if (lab) {
-                const labHandler = await LabHandler.create(lab);
-                if (labHandler.exists) {
-                    return labHandler;
-                }
-            }
-        }
-        return null;
-    }
-    public static createExpiresDate(): Date {
-        const expires = new Date(); //gets the current date time
-        expires.setDate(expires.getDate() + 30); //add 30 days.
-        return expires;
-    }
-    public static async createSession(
-        labHandler: LabHandler,
-        expires: Date
-    ): Promise<firestore.DocumentReference<firestore.DocumentData>> {
-        return await db.collection(sessionsCollection).add({
-            lab: labHandler.lab,
-            expires: expires.toUTCString()
-        });
-    }
 }

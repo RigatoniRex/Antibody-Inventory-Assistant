@@ -1,0 +1,13 @@
+{
+    "name": "csv_convert",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "axios": "1.6.0"
+    },
+    "devDependencies": {
+        "@types/node": "^7.0.5"
+    },
+    "author": "",
+    "license": "ISC"
+}
