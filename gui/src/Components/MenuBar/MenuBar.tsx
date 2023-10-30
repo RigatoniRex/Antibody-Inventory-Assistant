@@ -47,7 +47,6 @@ export function MenuBar(props: {
 
     const pages = [
         { text: 'Home', href: 'home' },
-        { text: 'Quick Search', href: '' },
         { text: 'Docs', href: 'docs' },
         { text: 'About', href: 'about' }
     ];
@@ -98,11 +97,9 @@ export function MenuBar(props: {
                 </Menu>
                 <Typography
                     variant="h6"
-                    component="a"
-                    href="/"
                     sx={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                    Bods v0.1.0
+                    Bods v0.1.0-alpha
                 </Typography>
                 {/* Provides empty space */}
                 <Box sx={{ flexGrow: 1 }}></Box>
