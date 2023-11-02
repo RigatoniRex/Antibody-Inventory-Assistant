@@ -36,7 +36,7 @@ app.post('/login', asyncHandler(Authenticate), (_, res: Response) => {
     res.status(200).json('Logged In');
 });
 app.post('/logout', (_, res: Response) => {
-    CookieHandler.createCookie(res, 'session', '', new Date(1970, 1, 1));
+    CookieHandler.createCookie(res, 'session', '', new Date(0));
     res.status(200).json('Logged Out');
 });
 app.use('/antibody', AntibodyRouter);
