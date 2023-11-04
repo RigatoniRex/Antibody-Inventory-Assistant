@@ -4,10 +4,9 @@
     "homepage": "https://rigatonirex.github.io/Antibody-Inventory-Assistant/",
     "private": true,
     "scripts": {
-        "start": "npm run buildLib && react-scripts start",
-        "build": "npm run buildLib && react-scripts build",
-        "test": "npm run buildLib && react-scripts test",
-        "buildLib": "npm run build --prefix ../libs/antibody-library"
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test"
     },
     "dependencies": {
         "@emotion/react": "^11.10.5",
