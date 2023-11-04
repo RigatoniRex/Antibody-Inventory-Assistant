@@ -1,6 +1,9 @@
 import { Box, Grid, Paper, SxProps, TextField, Theme } from '@mui/material';
 import React from 'react';
-import { Antibody, AntibodyCollection } from 'antibody-library/antibody';
+import {
+    Antibody,
+    AntibodyCollection
+} from '@rigatonirex/antibody-library/antibody';
 import { ComponentPaper } from './Helpers/ComponentPaper';
 import { MarkerSearch } from './Helpers/MarkerSearch';
 

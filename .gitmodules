@@ -1,0 +1,3 @@
+[submodule "libs/AIA-Antibody-Library"]
+	path = libs/AIA-Antibody-Library
+	url = https://github.com/RigatoniRex/AIA-Antibody-Library.git

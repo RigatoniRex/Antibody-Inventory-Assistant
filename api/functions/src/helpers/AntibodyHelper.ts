@@ -1,5 +1,8 @@
 import { firestore } from 'firebase-admin';
-import { Antibody, verifyAntibody } from 'antibody-library/antibody';
+import {
+    Antibody,
+    verifyAntibody
+} from '@rigatonirex/antibody-library/antibody';
 
 export default class AntibodyHelper {
     public readonly collectionRef: firestore.CollectionReference;

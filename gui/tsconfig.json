@@ -1,10 +1,5 @@
 {
     "include": ["src/custom.d.ts"],
-    "references": [
-        {
-            "path": "../libs/antibody-library"
-        }
-    ],
     "compilerOptions": {
         "jsx": "react",
         /* Visit https://aka.ms/tsconfig to read more about this file */

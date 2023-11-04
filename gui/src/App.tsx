@@ -1,7 +1,10 @@
 import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
-import { Antibody, AntibodyCollection } from 'antibody-library/antibody';
+import {
+    Antibody,
+    AntibodyCollection
+} from '@rigatonirex/antibody-library/antibody';
 import berg_antibodies from './test/berg_antibodies.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
