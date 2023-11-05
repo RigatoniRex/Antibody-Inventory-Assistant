@@ -1,14 +1,10 @@
+import { url } from './env';
 import { postAntibody } from './utils';
 import { readFileSync } from 'fs';
 
 const antibody_json = readFileSync('./antibodies.json', 'utf8');
 
 const antibodies: any[] = JSON.parse(antibody_json);
-
-// const url =
-//     'http://127.0.0.1:5000/antibody-inventory-assistant/us-central1/api/antibody';
-const url =
-    'https://us-central1-antibody-inventory-assistant.cloudfunctions.net/api';
 
 // Generate the request promises
 const promises = antibodies
