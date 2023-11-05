@@ -42,7 +42,8 @@ jobs:
       - name: Set Base URL
         run: |
           cd gui/src
-          echo 'export const baseURL = "https://us-central1-antibody-inventory-assistant.cloudfunctions.net/api"' > baseurl.ts
+          echo 'export const baseURL = "https://us-central1-antibody-inventory-assistant.cloudfunctions.net/api"' > public.env.ts
+          echo 'export const dev = false >> public.env.ts
           cd ../..
 
       - name: Build and Deploy

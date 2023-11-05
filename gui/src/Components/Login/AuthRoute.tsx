@@ -3,16 +3,16 @@ import React from 'react';
 import SessionHelper from '../../Auth/SessionHelper';
 import { Navigate, useLocation } from 'react-router-dom';
 
-async function tryLogin() {
+async function tryLogin(): Promise<
+    { success: true; lab: string } | { success: false }
+> {
     try {
-        const response = await axios.post(
-            '/login',
-            {},
-            { withCredentials: true }
-        );
-        return response.status === 200;
+        const response = await axios.post('/login', undefined, {
+            withCredentials: true
+        });
+        return { success: response.status === 200, lab: response.data.lab };
     } catch (error) {
-        return false;
+        return { success: false };
     }
 }
 
@@ -30,8 +30,8 @@ export function RequireAuth({
     React.useEffect(() => {
         if (attemptingLogin) {
             tryLogin().then((loggedIn) => {
-                setLoggedIn(loggedIn);
-                if (loggedIn) sessionHelper.login();
+                setLoggedIn(loggedIn.success);
+                if (loggedIn.success) sessionHelper.login(loggedIn.lab);
                 else sessionHelper.logout();
                 setAttemptingLogin(false);
             });

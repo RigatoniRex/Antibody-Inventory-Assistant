@@ -30,17 +30,22 @@ AntibodyRouter.get(
                 let returnAntibody: ReturnAntibody = {
                     id: antibodyDoc.id
                 };
-                if (req.body.fields && req.body.fields === '*') {
+                if (req.query.fields && req.query.fields === '*') {
                     //All fields
                     const antibody = antibodyDoc.data();
                     returnAntibody = {
                         ...returnAntibody,
                         ...antibody
                     };
-                } else if (req.body.fields?.length) {
+                } else if (
+                    req.query.fields &&
+                    Array.isArray(req.query.fields) &&
+                    req.query.fields.length
+                ) {
                     //If fields are specified
-                    req.body.fields.forEach((field: string) => {
-                        returnAntibody[field] = antibodyDoc.get(field);
+                    req.query.fields.forEach((field) => {
+                        if (typeof field === 'string')
+                            returnAntibody[field] = antibodyDoc.get(field);
                     });
                 } else {
                     // No fields, return the key fields

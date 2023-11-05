@@ -1,9 +1,14 @@
-import axios from "axios";
+import axios from 'axios';
 
 export default class SessionHelper {
     private setAuthorized: (value: boolean) => void;
-    constructor(setAuthorized: (value: boolean) => void) {
+    private setLab: (value: string) => void;
+    constructor(
+        setAuthorized: (value: boolean) => void,
+        setLab: (value: string) => void
+    ) {
         this.setAuthorized = setAuthorized;
+        this.setLab = setLab;
     }
     public static getCookie(name: string) {
         const regex = RegExp('(?:^|;\\s*)' + name + '=([^;]*)');
@@ -15,14 +20,12 @@ export default class SessionHelper {
             document.cookie = `${name}=; Max-Age=-99999999;`;
         }
     }
-    public login() {
+    public login(lab: string) {
         this.setAuthorized(true);
+        this.setLab(lab);
     }
     public logout() {
-        axios.post(
-            '/logout',
-            {},
-        );
+        axios.post('/logout', {});
         this.setAuthorized(false);
     }
 }

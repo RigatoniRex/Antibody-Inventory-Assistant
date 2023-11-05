@@ -14,7 +14,7 @@ import { LoginForm } from './Components/Login/Login';
 import { RequireAuth } from './Components/Login/AuthRoute';
 
 import axios from 'axios';
-import { baseURL } from './baseurl';
+import { baseURL, dev } from './public.env';
 import SessionHelper from './Auth/SessionHelper';
 
 axios.defaults.baseURL = baseURL;
@@ -26,10 +26,10 @@ axios.defaults.validateStatus = function (status) {
 function App() {
     const [darkMode, setDarkMode] = React.useState<boolean>(true);
     const [authorized, setAuthorized] = React.useState<boolean>(false);
-    const sessionHelper = new SessionHelper(setAuthorized);
-    const antibodies: AntibodyCollection = React.useMemo(() => {
-        return getAntibodies();
-    }, []);
+    const [lab, setLab] = React.useState('');
+    const sessionHelper = new SessionHelper(setAuthorized, setLab);
+    const [antibodies, setAntibodies] =
+        React.useState<AntibodyCollection | null>(null);
     const theme = React.useMemo(
         () =>
             createTheme({
@@ -39,6 +39,14 @@ function App() {
             }),
         [darkMode]
     );
+    React.useEffect(() => {
+        if (authorized && lab) {
+            getAntibodies(lab).then((antibodies) => setAntibodies(antibodies));
+        } else {
+            console.log(authorized);
+            console.log(lab);
+        }
+    }, [lab, authorized]);
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -67,7 +75,10 @@ function App() {
                                 />
                             );
                         })}
-                        <Route path="login" element={<LoginForm />} />
+                        <Route
+                            path="login"
+                            element={<LoginForm lab={lab} setLab={setLab} />}
+                        />
                         <Route
                             path="about"
                             element={
@@ -101,15 +112,26 @@ function App() {
     );
 }
 
-function getAntibodies(): AntibodyCollection {
-    const antibodiesJSON: Antibody[] = berg_antibodies;
-    const antibodyMapping = antibodiesJSON.map((antibody) => {
-        const newAntibody: Antibody = JSON.parse(
-            JSON.stringify(antibody)
-        ) as Antibody;
-        return newAntibody;
-    });
-    return new AntibodyCollection(antibodyMapping);
+async function getAntibodies(lab: string): Promise<AntibodyCollection> {
+    if (dev) {
+        const antibodiesJSON: Antibody[] = berg_antibodies;
+        const antibodyMapping = antibodiesJSON.map((antibody) => {
+            const newAntibody: Antibody = JSON.parse(
+                JSON.stringify(antibody)
+            ) as Antibody;
+            return newAntibody;
+        });
+        return new AntibodyCollection(antibodyMapping);
+    } else {
+        const response = await axios.get<Antibody[]>('/antibody', {
+            params: {
+                lab: lab,
+                fields: '*'
+            },
+            withCredentials: true
+        });
+        return new AntibodyCollection(response.data);
+    }
 }
 
 export default App;

@@ -9,9 +9,11 @@ import express, {
 import cookieParser from 'cookie-parser';
 import AntibodyRouter from './routes/antibody';
 import LabRouter from './routes/lab';
-import { Authenticate } from './auth';
+import { Authenticate, handleSession } from './auth';
 import asyncHandler from 'express-async-handler';
 import CookieHandler from './auth/CookieHandler';
+import { LabHandler } from './helpers/LabHandler';
+import { sessionsCollection } from '../config/database';
 
 export const app: Express = express();
 
@@ -32,13 +34,28 @@ app.use(cookieParser());
 app.options('*', (_, res: Response) => {
     res.sendStatus(200);
 });
-app.post('/login', asyncHandler(Authenticate), (_, res: Response) => {
-    res.status(200).json('Logged In');
-});
-app.post('/logout', (_, res: Response) => {
-    CookieHandler.createCookie(res, 'session', '', new Date(0));
-    res.status(200).json('Logged Out');
-});
+app.post(
+    '/login',
+    asyncHandler(Authenticate),
+    asyncHandler(handleSession),
+    (_, res: Response) => {
+        const labHandler = res.locals.labHandler as LabHandler;
+        res.status(200).json({ lab: labHandler.lab });
+    }
+);
+app.post(
+    '/logout',
+    (req: Request, _, next: NextFunction) => {
+        if (req.cookies.session)
+            //delete the session from the database
+            db.collection(sessionsCollection).doc(req.cookies.session).delete();
+        next();
+    },
+    (_, res: Response) => {
+        CookieHandler.createCookie(res, 'session', '', new Date(0));
+        res.status(200).send('Logged Out');
+    }
+);
 app.use('/antibody', AntibodyRouter);
 app.use('/lab', LabRouter);
 

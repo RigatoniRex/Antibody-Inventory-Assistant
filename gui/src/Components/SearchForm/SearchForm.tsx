@@ -6,9 +6,10 @@ import {
 } from '@rigatonirex/antibody-library/antibody';
 import { ComponentPaper } from './Helpers/ComponentPaper';
 import { MarkerSearch } from './Helpers/MarkerSearch';
+import SearchFormLoader from './SearchFormLoader';
 
 export function SearchForm(props: {
-    antibodies: AntibodyCollection;
+    antibodies: AntibodyCollection | null;
     sx?: SxProps<Theme>;
 }) {
     const [markerSelected, setMarkerSelected] = React.useState<string>('');
@@ -19,10 +20,13 @@ export function SearchForm(props: {
         Antibody | undefined
     >(undefined);
     const [filteredAntibodies, setFilteredAntibodies] =
-        React.useState<AntibodyCollection>(props.antibodies);
+        React.useState<AntibodyCollection>(
+            props.antibodies ?? new AntibodyCollection([])
+        );
 
     const markers: string[] = React.useMemo(() => {
-        return props.antibodies.getMarkers();
+        if (props.antibodies) return props.antibodies.getMarkers();
+        else return [];
     }, [props.antibodies]);
     const colors: string[] = React.useMemo(() => {
         return filteredAntibodies.getColors();
@@ -34,15 +38,19 @@ export function SearchForm(props: {
         return filteredAntibodies.getCompanies();
     }, [cloneSelected]);
     const handleMarkerChange = (selectedMarker: string) => {
-        setFilteredAntibodies(
-            selectedMarker
-                ? props.antibodies.filterOnSelection({ marker: selectedMarker })
-                : props.antibodies
-        );
-        setMarkerSelected(selectedMarker);
+        if (props.antibodies) {
+            setFilteredAntibodies(
+                selectedMarker
+                    ? props.antibodies.filterOnSelection({
+                          marker: selectedMarker
+                      })
+                    : props.antibodies
+            );
+            setMarkerSelected(selectedMarker);
+        }
     };
     const handleColorChange = (selectedColor: string) => {
-        if (selectedColor) {
+        if (props.antibodies && selectedColor) {
             setFilteredAntibodies(
                 props.antibodies.filterOnSelection({
                     marker: markerSelected,
@@ -53,7 +61,7 @@ export function SearchForm(props: {
         setColorSelected(selectedColor);
     };
     const handleCloneChange = (selectedClone: string) => {
-        if (selectedClone) {
+        if (props.antibodies && selectedClone) {
             setFilteredAntibodies(
                 props.antibodies.filterOnSelection({
                     marker: markerSelected,
@@ -65,17 +73,19 @@ export function SearchForm(props: {
         setCloneSelected(selectedClone);
     };
     const handleCompanyChange = (selectedCompany: string) => {
+        if (props.antibodies && selectedCompany) {
+            setAntibodySelected(
+                props.antibodies.findSelection(
+                    markerSelected,
+                    colorSelected,
+                    cloneSelected,
+                    selectedCompany
+                )
+            );
+        }
         setCompanySelected(selectedCompany);
-        setAntibodySelected(
-            props.antibodies.findSelection(
-                markerSelected,
-                colorSelected,
-                cloneSelected,
-                selectedCompany
-            )
-        );
     };
-    return (
+    return props.antibodies ? (
         <Box
             sx={{
                 ...props.sx,
@@ -88,7 +98,7 @@ export function SearchForm(props: {
             <Paper
                 elevation={20}
                 sx={{
-                    width: 0.6,
+                    width: { xs: 0.95, md: 0.95, lg: 0.6 },
                     alignItems: 'center',
                     textAlign: 'center',
                     ...props.sx,
@@ -176,5 +186,7 @@ export function SearchForm(props: {
                 </Grid>
             </Paper>
         </Box>
+    ) : (
+        <SearchFormLoader />
     );
 }

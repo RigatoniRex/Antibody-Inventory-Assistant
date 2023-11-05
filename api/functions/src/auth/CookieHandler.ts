@@ -21,20 +21,26 @@ export default class CookieHandler {
     public static async checkSession(
         sessionId: string
     ): Promise<LabHandler | null> {
-        const sessionSnapshot = await db
+        const sessionReference = db
             .collection(sessionsCollection)
-            .doc(sessionId)
-            .get();
+            .doc(sessionId);
+        const sessionSnapshot = await sessionReference.get();
         const exists: boolean = sessionSnapshot.exists;
 
         const expiresDt: Date = new Date(sessionSnapshot.get('expires'));
-        if (exists && expiresDt > new Date()) {
-            const lab = sessionSnapshot.get('lab');
-            if (lab) {
-                const labHandler = await LabHandler.create(lab);
-                if (labHandler.exists) {
-                    return labHandler;
+        if (exists) {
+            if (expiresDt > new Date()) {
+                //Not expired
+                const lab = sessionSnapshot.get('lab');
+                if (lab) {
+                    const labHandler = await LabHandler.create(lab);
+                    if (labHandler.exists) {
+                        return labHandler;
+                    }
                 }
+            } else {
+                // expired
+                sessionReference.delete();
             }
         }
         return null;

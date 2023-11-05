@@ -22,13 +22,16 @@ function TransitionRight(props: TransitionProps) {
     return <Slide {...props} direction="left" />;
 }
 
-export function LoginForm(props: { sx?: SxProps<Theme> }) {
+export function LoginForm(props: {
+    sx?: SxProps<Theme>;
+    lab: string;
+    setLab: React.Dispatch<React.SetStateAction<string>>;
+}) {
     const navigate = useNavigate();
     const [firstRender, setFirstRender] = React.useState(true);
     const [labAvailable, setLabAvailable] = React.useState<
         'available' | 'not available' | 'not set'
     >('not set');
-    const [lab, setLab] = React.useState('');
     const [password, setPassword] = React.useState('');
     const [checking, setChecking] = React.useState(false);
     const [validLab, setValidLab] = React.useState({
@@ -49,7 +52,7 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
     }, []);
 
     async function onSubmitLabClick() {
-        const invalidLab = !lab;
+        const invalidLab = !props.lab;
         const invalidPassword = !password && labAvailable !== 'not set';
         if (invalidLab || invalidPassword) {
             if (invalidLab) {
@@ -71,7 +74,9 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
         try {
             const response = await axios.get('/lab', { timeout: 5000 });
             const labs = response.data as { id: string; lab: string }[];
-            const matches = labs.find((labResponse) => labResponse.lab === lab);
+            const matches = labs.find(
+                (labResponse) => labResponse.lab === props.lab
+            );
             if (matches) {
                 setLabAvailable('available');
             } else {
@@ -86,12 +91,9 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
 
     async function onLoginClick() {
         try {
-            //Clear session
-            document.cookie =
-                'session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
             const login = await axios.post(
                 '/login',
-                { lab: lab },
+                { lab: props.lab },
                 {
                     headers: { Authorization: password },
                     withCredentials: true
@@ -126,11 +128,11 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
 
     async function onCreateClick() {
         const create = await axios.post('/lab', {
-            lab: lab,
+            lab: props.lab,
             password: password
         });
         if (create.status === 200) {
-            setSnackbarSuccess(`${lab} Lab Created!`);
+            setSnackbarSuccess(`${props.lab} Lab Created!`);
             setPassword('');
             setLabAvailable('available');
         } else {
@@ -150,7 +152,7 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
     }
 
     function handleLabChange(event: any) {
-        setLab(event.target.value);
+        props.setLab(event.target.value);
         setValidLab({
             value: true,
             reason: ''
@@ -174,7 +176,7 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
         setSnackBarSeverity('success');
     }
     function handleCancelClick() {
-        setLab('');
+        props.setLab('');
         setPassword('');
         setLabAvailable('not set');
     }
@@ -231,7 +233,7 @@ export function LoginForm(props: { sx?: SxProps<Theme> }) {
                         }}
                         autoComplete="off"
                         type={'search'}
-                        value={lab}
+                        value={props.lab}
                         sx={{ width: 250 }}
                         error={!validLab.value}
                         helperText={validLab.value ? '' : validLab.reason}

@@ -2,6 +2,8 @@ import * as crypto from 'crypto';
 import { NextFunction, Request, Response } from 'express';
 import { LabHandler } from './helpers/LabHandler';
 import CookieHandler from './auth/CookieHandler';
+import { db } from '.';
+import { sessionsCollection } from '../config/database';
 
 export default class Crypto {
     public static createHash(secret: string): string {
@@ -31,7 +33,8 @@ export async function Authenticate(
 
 async function handlePassword(req: Request, res: Response, next: NextFunction) {
     if (verifyHeader(req, res)) {
-        const labHandler = await LabHandler.create(req.body.lab as string);
+        const lab: string = req.body.lab ?? req.query.lab;
+        const labHandler = await LabHandler.create(lab);
         if (labHandler.exists) {
             if (req.headers.authorization) {
                 handleAuthorization(
@@ -87,18 +90,39 @@ async function handleAuthorization(
         });
     } else {
         res.locals.labHandler = labHandler;
-        //User logged in, create session for them and add cookie to response.
-        const expires = CookieHandler.createExpiresDate();
-        const sessionDoc = await CookieHandler.createSession(
-            labHandler,
-            expires
-        );
-        CookieHandler.createCookie(res, 'session', sessionDoc.id, expires);
         next();
     }
 }
+
+export async function handleSession(
+    req: Request,
+    res: Response,
+    next: NextFunction
+) {
+    if (req.cookies.session) {
+        //Get the session document
+        const sessionDoc = await db
+            .collection(sessionsCollection)
+            .doc(req.cookies.session)
+            .get();
+        //If the document doesn't exist create a new session for the client.
+        if (!sessionDoc.exists) {
+            //Create a new session for the login
+            const labHandler = res.locals.labHandler as LabHandler;
+            //User logged in, create session for them and add cookie to response.
+            const expires = CookieHandler.createExpiresDate();
+            const sessionDoc = await CookieHandler.createSession(
+                labHandler,
+                expires
+            );
+            CookieHandler.createCookie(res, 'session', sessionDoc.id, expires);
+        }
+    }
+    next();
+}
+
 export function verifyHeader(req: Request, res: Response): boolean {
-    if (!req.body.lab && !req.cookies?.session) {
+    if (!req.body.lab && !req.query.lab) {
         res.status(400).send({
             msg: 'Bad Request',
             rsn: 'Lab Missing'
