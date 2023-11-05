@@ -4,6 +4,7 @@ node_modules/
 # file types to ignore
 *.json
 *.csv
+env.ts
 
 # Except
 !package.json

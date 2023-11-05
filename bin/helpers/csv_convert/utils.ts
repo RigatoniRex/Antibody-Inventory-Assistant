@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { lab, password } from './env';
 
 /**
  * Converts antibody csv line into an antibody object
@@ -33,13 +34,13 @@ export async function postAntibody(
             url,
             {
                 //Test Lab name
-                lab: 'Keaton',
+                lab: lab,
                 antibody: antibody
             },
             {
                 //Test password
                 headers: {
-                    authorization: 'test'
+                    authorization: password
                 }
             }
         );
