@@ -41,7 +41,8 @@ export async function postAntibody(
                 //Test password
                 headers: {
                     authorization: password
-                }
+                },
+                withCredentials: true
             }
         );
         return {
