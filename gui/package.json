@@ -1,6 +1,6 @@
 {
     "name": "antibody-inventory-assistant",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://rigatonirex.github.io/Antibody-Inventory-Assistant/",
     "private": true,
     "scripts": {

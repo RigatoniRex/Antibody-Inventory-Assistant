@@ -27,5 +27,6 @@ export default class SessionHelper {
     public logout() {
         axios.post('/logout', {});
         this.setAuthorized(false);
+        this.setLab('');
     }
 }
