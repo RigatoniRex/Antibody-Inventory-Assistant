@@ -1,4 +1,14 @@
-import { Box, Grid, Paper, SxProps, TextField, Theme } from '@mui/material';
+import {
+    Box,
+    Button,
+    Grid,
+    Paper,
+    SxProps,
+    TextField,
+    Theme,
+    Tooltip,
+    useTheme
+} from '@mui/material';
 import React from 'react';
 import {
     Antibody,
@@ -7,6 +17,7 @@ import {
 import { ComponentPaper } from './Helpers/ComponentPaper';
 import { MarkerSearch } from './Helpers/MarkerSearch';
 import SearchFormLoader from './SearchFormLoader';
+import ManipulateButtons from './Helpers/ManipulateButtons';
 
 export function SearchForm(props: {
     antibodies: AntibodyCollection | null;
@@ -82,6 +93,8 @@ export function SearchForm(props: {
                     selectedCompany
                 )
             );
+        } else {
+            setAntibodySelected(undefined);
         }
         setCompanySelected(selectedCompany);
     };
@@ -106,11 +119,13 @@ export function SearchForm(props: {
                     paddingRight: 10,
                     paddingBottom: 10,
                     display: 'flex',
-                    flexFlow: 'column'
+                    flexFlow: 'column',
+                    userSelect: 'none'
                 }}
             >
-                <h1>SearchForm</h1>
+                <h1>Bods Manipulate</h1>
                 <hr style={{ width: '100%' }} />
+                <ManipulateButtons antibodySelected={antibodySelected} />
                 <Grid container spacing={2} height={500}>
                     <Grid item xs={2} height={1}>
                         <MarkerSearch

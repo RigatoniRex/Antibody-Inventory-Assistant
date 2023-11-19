@@ -5,7 +5,7 @@ import {
     Antibody,
     AntibodyCollection
 } from '@rigatonirex/antibody-library/antibody';
-import berg_antibodies from './test/berg_antibodies.json';
+
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
 import { CssBaseline } from '@mui/material';
