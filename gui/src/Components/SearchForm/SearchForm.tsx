@@ -1,14 +1,4 @@
-import {
-    Box,
-    Button,
-    Grid,
-    Paper,
-    SxProps,
-    TextField,
-    Theme,
-    Tooltip,
-    useTheme
-} from '@mui/material';
+import { Box, Grid, Paper, SxProps, TextField, Theme } from '@mui/material';
 import React from 'react';
 import {
     Antibody,
@@ -18,9 +8,11 @@ import { ComponentPaper } from './Helpers/ComponentPaper';
 import { MarkerSearch } from './Helpers/MarkerSearch';
 import SearchFormLoader from './SearchFormLoader';
 import ManipulateButtons from './Helpers/ManipulateButtons';
+import AntibodyEndpoint from '../../api/AntibodyEndpoint';
 
 export function SearchForm(props: {
     antibodies: AntibodyCollection | null;
+    antibody_endpoint: AntibodyEndpoint;
     sx?: SxProps<Theme>;
 }) {
     const [markerSelected, setMarkerSelected] = React.useState<string>('');
@@ -34,19 +26,21 @@ export function SearchForm(props: {
         React.useState<AntibodyCollection>(
             props.antibodies ?? new AntibodyCollection([])
         );
-
     const markers: string[] = React.useMemo(() => {
         if (props.antibodies) return props.antibodies.getMarkers();
         else return [];
     }, [props.antibodies]);
     const colors: string[] = React.useMemo(() => {
         return filteredAntibodies.getColors();
+        //eslint-disable-next-line
     }, [markerSelected]);
     const clones: string[] = React.useMemo(() => {
         return filteredAntibodies.getClones();
+        //eslint-disable-next-line
     }, [colorSelected]);
     const companies: string[] = React.useMemo(() => {
         return filteredAntibodies.getCompanies();
+        //eslint-disable-next-line
     }, [cloneSelected]);
     const handleMarkerChange = (selectedMarker: string) => {
         if (props.antibodies) {
@@ -125,7 +119,10 @@ export function SearchForm(props: {
             >
                 <h1>Bods Manipulate</h1>
                 <hr style={{ width: '100%' }} />
-                <ManipulateButtons antibodySelected={antibodySelected} />
+                <ManipulateButtons
+                    antibodySelected={antibodySelected}
+                    antibody_endpoint={props.antibody_endpoint}
+                />
                 <Grid container spacing={2} height={500}>
                     <Grid item xs={2} height={1}>
                         <MarkerSearch

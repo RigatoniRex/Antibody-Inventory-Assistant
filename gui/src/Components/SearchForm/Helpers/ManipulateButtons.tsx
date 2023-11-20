@@ -6,6 +6,8 @@ import EditIcon from '@mui/icons-material/Edit';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Antibody } from '@rigatonirex/antibody-library/antibody';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
+import AntibodyEndpoint from '../../../api/AntibodyEndpoint';
+import ConfirmDialog from '../../ConfirmDialog/ConfigDialog';
 
 type ColorType =
     | 'inherit'
@@ -31,8 +33,11 @@ function GetButtonStyle(isAntibodySelected: boolean, isDarkTheme: boolean) {
 
 export default function ManipulateButtons(props: {
     antibodySelected: Antibody | undefined;
+    antibody_endpoint: AntibodyEndpoint;
 }) {
     const isDarkTheme = useTheme().palette.mode === 'dark';
+    const [openDeleteConfirm, setOpenDeleteConfirm] =
+        React.useState<boolean>(false);
     return (
         <Box
             sx={{
@@ -95,6 +100,24 @@ export default function ManipulateButtons(props: {
                         isDarkTheme
                     )}
                     icon={RemoveIcon}
+                    onClick={() => {
+                        setOpenDeleteConfirm(true);
+                    }}
+                />
+                <ConfirmDialog
+                    open={openDeleteConfirm}
+                    confirmText="Are you sure that you want to delete?"
+                    onConfirm={() => {
+                        if (props.antibodySelected) {
+                            props.antibody_endpoint.deleteAntibody(
+                                props.antibodySelected.id
+                            );
+                        }
+                        setOpenDeleteConfirm(false);
+                    }}
+                    onCancel={() => {
+                        setOpenDeleteConfirm(false);
+                    }}
                 />
             </Box>
         </Box>

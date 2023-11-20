@@ -25,10 +25,11 @@ export function SelectableList(props: {
 
     React.useEffect(() => {
         handleIndexChange();
+        //eslint-disable-next-line
     }, [selectedIndex]);
 
     const handleListItemClick = (
-        event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+        _event: React.MouseEvent<HTMLDivElement, MouseEvent>,
         index: number
     ) => {
         if (selectedIndex === index) {

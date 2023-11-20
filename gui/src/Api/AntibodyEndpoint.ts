@@ -2,57 +2,49 @@ import {
     Antibody,
     AntibodyCollection
 } from '@rigatonirex/antibody-library/antibody';
-import axios, { isAxiosError } from 'axios';
-import { dev } from '../public.env';
-import berg_antibodies from '../test/berg_antibodies.json';
+import axios from 'axios';
 
-class AntibodyEndpoint {
+export default class AntibodyEndpoint {
     private antibodies: AntibodyCollection | null;
     private setAntibodies: (antibodies: AntibodyCollection) => void;
+    public readonly lab: string;
     constructor(
+        lab: string,
         antibodies: AntibodyCollection | null,
         setAntibodies: React.Dispatch<
             React.SetStateAction<AntibodyCollection | null>
         >
     ) {
+        this.lab = lab;
         this.antibodies = antibodies;
         this.setAntibodies = setAntibodies;
     }
-    public async getAll(
-        lab: string,
-        password?: string
-    ): Promise<AntibodyCollection> {
+    public async getAll(password?: string): Promise<AntibodyCollection> {
         const response = await axios.get<Antibody[]>('/antibody', {
             headers: { Authorization: password },
             params: {
-                lab: lab,
+                lab: this.lab,
                 fields: '*'
             },
             withCredentials: true
         });
         return new AntibodyCollection(response.data);
     }
-    public async updateAntibodiesState(
-        lab: string,
-        password?: string
-    ): Promise<void> {
-        const antibodies = await this.getAll(lab, password);
-        this.setAntibodies(antibodies);
+    public async updateAntibodiesState(password?: string): Promise<void> {
+        try {
+            const antibodies = await this.getAll(password);
+            if (antibodies) {
+                this.setAntibodies(antibodies);
+            }
+        } catch (error) {}
     }
-    public async deleteAntibody(
-        lab: string,
-        antibody_id: string,
-        password?: string
-    ) {
+    public async deleteAntibody(antibody_id: string, password?: string) {
         try {
             const response = await axios.delete<{ msg: string; doc: string }>(
-                '/antibody',
+                `/antibody/${antibody_id}`,
                 {
                     headers: { Authorization: password },
-                    data: { lab: lab },
-                    params: {
-                        id: antibody_id
-                    },
+                    data: { lab: this.lab },
                     withCredentials: true
                 }
             );
