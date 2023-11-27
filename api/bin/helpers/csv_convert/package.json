@@ -5,6 +5,9 @@
     "dependencies": {
         "axios": "1.6.0"
     },
+    "scripts": {
+        "post": "ts-node post_antibodies.ts"
+    },
     "devDependencies": {
         "@types/node": "^7.0.5"
     },

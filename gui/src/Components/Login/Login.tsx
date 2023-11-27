@@ -302,10 +302,12 @@ export function LoginForm(props: {
                 autoHideDuration={5000}
                 onClose={handleSnackbarClose}
                 TransitionComponent={TransitionRight}
+                anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
             >
                 <Alert
                     onClose={handleSnackbarClose}
                     severity={snackBarSeverity}
+                    variant="filled"
                     sx={{ width: '100%' }}
                 >
                     {snackBarMessage}

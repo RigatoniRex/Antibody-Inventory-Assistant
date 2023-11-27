@@ -9,14 +9,15 @@
         "shell": "npm run build && firebase functions:shell",
         "start": "npm run shell",
         "deploy": "firebase deploy --force --only functions",
-        "logs": "firebase functions:log"
+        "logs": "firebase functions:log",
+        "add-test-records": "npm run post --prefix ../bin/helpers/csv_convert"
     },
     "engines": {
         "node": "16"
     },
     "main": "lib/src/index.js",
     "dependencies": {
-        "@rigatonirex/antibody-library": "^1.0.1",
+        "@rigatonirex/antibody-library": "^1.1.4",
         "cookie-parser": "1.4.6",
         "cors": "2.8.5",
         "express": "^4.18.2",

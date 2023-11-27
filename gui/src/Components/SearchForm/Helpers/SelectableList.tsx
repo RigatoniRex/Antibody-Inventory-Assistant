@@ -5,36 +5,24 @@ export function SelectableList(props: {
     items: any[];
     text_sx?: SxProps;
     list_sx?: SxProps;
-    setSelectedItem?: React.Dispatch<React.SetStateAction<any>>;
+    onItemSelect?: (item: any) => void;
+    clearSelected?: boolean;
 }) {
     const [selectedIndex, setSelectedIndex] = React.useState<number>(-1);
 
-    const handleIndexChange = () => {
-        //Update the parent if requested (prop was passed in)
-        if (props.setSelectedItem) {
-            const item =
-                selectedIndex >= 0 ? props.items[selectedIndex] ?? '' : '';
-            props.setSelectedItem(item);
-        }
-    };
-
-    //Clears selection on items change
     React.useEffect(() => {
-        setSelectedIndex(-1);
-    }, [props.items]);
-
-    React.useEffect(() => {
-        handleIndexChange();
-    }, [selectedIndex]);
-
-    const handleListItemClick = (
-        event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-        index: number
-    ) => {
-        if (selectedIndex === index) {
+        if (props.clearSelected) {
             setSelectedIndex(-1);
-        } else {
-            setSelectedIndex(index);
+        }
+    }, [props.clearSelected]);
+
+    const handleListItemClick = (index: number) => {
+        const _index = selectedIndex === index ? -1 : index;
+        setSelectedIndex(_index);
+        //Update the parent if requested (prop was passed in)
+        if (props.onItemSelect) {
+            const item = _index >= 0 ? props.items[_index] ?? '' : '';
+            props.onItemSelect(item);
         }
     };
 
@@ -45,7 +33,9 @@ export function SelectableList(props: {
                     <ListItemButton
                         key={i}
                         selected={selectedIndex === i}
-                        onClick={(event) => handleListItemClick(event, i)}
+                        sx={{}}
+                        onClick={() => handleListItemClick(i)}
+                        classes={{ selected: '{backgroundColor:"red"}' }}
                     >
                         <ListItemText
                             primary={item}
