@@ -191,12 +191,14 @@ export function SearchForm(props: {
                         <TextField
                             margin={'normal'}
                             fullWidth
-                            disabled
+                            disabled={antibodySelected === undefined}
                             label="Antibody Selected"
-                            id="outlined-multiline-static"
                             multiline
                             sx={{ maxHeight: 1, height: 1 }}
                             rows={18}
+                            InputProps={{
+                                readOnly: antibodySelected !== undefined
+                            }}
                             value={
                                 antibodySelected
                                     ? JSON.stringify(antibodySelected, null, 4)

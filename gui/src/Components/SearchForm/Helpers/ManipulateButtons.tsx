@@ -1,5 +1,13 @@
 import React from 'react';
-import { Box, Button, SvgIconTypeMap, Tooltip, useTheme } from '@mui/material';
+import {
+    Alert,
+    Box,
+    Button,
+    Snackbar,
+    SvgIconTypeMap,
+    Tooltip,
+    useTheme
+} from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 import EditIcon from '@mui/icons-material/Edit';
@@ -12,6 +20,7 @@ import { OverridableComponent } from '@mui/material/OverridableComponent';
 import AntibodyEndpoint from '../../../Api/AntibodyEndpoint';
 import ConfirmDialog from '../../Dialogs/ConfigDialog';
 import AddAntibodyDialog from '../../Dialogs/AddAntibodyDialog';
+import { isAxiosError } from 'axios';
 
 type ColorType =
     | 'inherit'
@@ -41,10 +50,28 @@ export default function ManipulateButtons(props: {
     doClear: () => void;
 }) {
     const isDarkTheme = useTheme().palette.mode === 'dark';
+    const [openSnackBar, setOpenSnackBar] = React.useState<boolean>(false);
+    const [snackBarMessage, setSnackBarMessage] = React.useState<string>('');
+    const [snackBarSeverity, setSnackBarSeverity] = React.useState<
+        'error' | 'warning' | 'info' | 'success'
+    >('success');
+    const [snackBarAutoHideDuration, setSnackBarAutoHideDuration] =
+        React.useState<number | undefined>(undefined);
     const [openDeleteConfirm, setOpenDeleteConfirm] =
         React.useState<boolean>(false);
     const [openAddAntibody, setOpenAddAntibody] =
         React.useState<boolean>(false);
+
+    function doOpenSnackBar(
+        msg: string,
+        severity: 'error' | 'warning' | 'info' | 'success' = 'success',
+        autoHideDuration?: number
+    ) {
+        setSnackBarMessage(msg);
+        setOpenSnackBar(true);
+        setSnackBarSeverity(severity);
+        setSnackBarAutoHideDuration(autoHideDuration);
+    }
     return (
         <Box
             sx={{
@@ -75,7 +102,30 @@ export default function ManipulateButtons(props: {
                 <AddAntibodyDialog
                     open={openAddAntibody}
                     onConfirm={(antibody: Antibody) => {
-                        props.antibody_endpoint.addAntibody(antibody);
+                        props.antibody_endpoint
+                            .addAntibody(antibody)
+                            .then(() => {
+                                doOpenSnackBar(
+                                    'Antibody Added!',
+                                    'success',
+                                    2000
+                                );
+                            })
+                            .catch((error) => {
+                                if (isAxiosError(error)) {
+                                    doOpenSnackBar(
+                                        `${
+                                            error.response?.statusText ??
+                                            'ERROR'
+                                        }: ${
+                                            error.response?.data.rsn ??
+                                            error.message
+                                        }`,
+                                        'error',
+                                        4000
+                                    );
+                                }
+                            });
                         setOpenAddAntibody(false);
                     }}
                     onCancel={() => {
@@ -146,9 +196,30 @@ export default function ManipulateButtons(props: {
                     confirmText="Are you sure that you want to delete?"
                     onConfirm={() => {
                         if (props.antibodySelected) {
-                            props.antibody_endpoint.deleteAntibody(
-                                props.antibodySelected.id
-                            );
+                            props.antibody_endpoint
+                                .deleteAntibody(props.antibodySelected.id)
+                                .then(() => {
+                                    doOpenSnackBar(
+                                        'Antibody Deleted!',
+                                        'success',
+                                        2000
+                                    );
+                                })
+                                .catch((error) => {
+                                    if (isAxiosError(error)) {
+                                        doOpenSnackBar(
+                                            `${
+                                                error.response?.statusText ??
+                                                'ERROR'
+                                            }: ${
+                                                error.response?.data.rsn ??
+                                                error.message
+                                            }`,
+                                            'error',
+                                            4000
+                                        );
+                                    }
+                                });
                         }
                         setOpenDeleteConfirm(false);
                         props.doClear();
@@ -158,6 +229,25 @@ export default function ManipulateButtons(props: {
                     }}
                 />
             </Box>
+            <Snackbar
+                open={openSnackBar}
+                autoHideDuration={snackBarAutoHideDuration}
+                onClose={() => {
+                    setOpenSnackBar(false);
+                }}
+                anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+            >
+                <Alert
+                    severity={snackBarSeverity}
+                    sx={{
+                        fontSize: 16,
+                        width: '100%'
+                    }}
+                    variant="filled"
+                >
+                    {snackBarMessage}
+                </Alert>
+            </Snackbar>
         </Box>
     );
 }
