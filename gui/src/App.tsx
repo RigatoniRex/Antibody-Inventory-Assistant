@@ -1,7 +1,7 @@
 import './App.css';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import React from 'react';
-import { AntibodyCollection } from '@rigatonirex/antibody-library/antibody';
+import { AntibodyRecordCollection } from '@rigatonirex/antibody-library/antibody';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { MenuBar } from './Components/MenuBar/MenuBar';
@@ -14,6 +14,7 @@ import axios from 'axios';
 import { baseURL } from './public.env';
 import SessionHelper from './Auth/SessionHelper';
 import AntibodyEndpoint from './Api/AntibodyEndpoint';
+import { usePanel } from './Helpers/PanelHook';
 
 axios.defaults.baseURL = baseURL;
 axios.defaults.maxRedirects = 0;
@@ -27,7 +28,8 @@ function App() {
     const [lab, setLab] = React.useState<string>('');
     const sessionHelper = new SessionHelper(setAuthorized, setLab);
     const [antibodies, setAntibodies] =
-        React.useState<AntibodyCollection | null>(null);
+        React.useState<AntibodyRecordCollection | null>(null);
+    const panel = usePanel();
     const antibody_endpoint = new AntibodyEndpoint(
         lab,
         antibodies,
@@ -45,12 +47,15 @@ function App() {
     React.useEffect(() => {
         if (authorized && lab) {
             antibody_endpoint.updateAntibodiesState();
-        } else {
-            console.log(authorized);
-            console.log(lab);
         }
         // eslint-disable-next-line
     }, [lab, authorized]);
+
+    React.useEffect(() => {
+        if (antibodies) {
+            panel.update(antibodies);
+        }
+    }, [panel, antibodies]);
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />

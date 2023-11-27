@@ -46,7 +46,7 @@ export function RequireAuth({
             console.log('checking session');
             return <div>Checking Session! 🧐</div>;
         } else if (loggedIn) {
-            console.log('logged in');
+            // console.log('logged in');
             return children ?? null;
         } else {
             console.log('navigate');

@@ -143,11 +143,18 @@ AntibodyRouter.put(
             const doc = labHandler.antibodyHelper.collectionRef.doc(
                 req.params.id
             );
-            await doc.update(req.body.antibody);
-            res.status(200).send({
-                msg: 'document updated',
-                doc: req.params.id
-            });
+            const antibody = await doc.get();
+            if (antibody.exists) {
+                await doc.update(req.body.antibody);
+                res.status(200).send({
+                    msg: 'document updated',
+                    doc: req.params.id
+                });
+            } else {
+                res.status(404).json({
+                    msg: 'antibody not found'
+                });
+            }
         } catch (error) {
             res.status(500).send(error);
         }

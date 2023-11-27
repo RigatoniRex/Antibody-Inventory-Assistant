@@ -1,26 +1,27 @@
 import {
     Antibody,
-    AntibodyCollection
+    AntibodyRecord,
+    AntibodyRecordCollection
 } from '@rigatonirex/antibody-library/antibody';
 import axios from 'axios';
 
 export default class AntibodyEndpoint {
-    private antibodies: AntibodyCollection | null;
-    private setAntibodies: (antibodies: AntibodyCollection) => void;
+    private antibodies: AntibodyRecordCollection | null;
+    private setAntibodies: (antibodies: AntibodyRecordCollection) => void;
     public readonly lab: string;
     constructor(
         lab: string,
-        antibodies: AntibodyCollection | null,
+        antibodies: AntibodyRecordCollection | null,
         setAntibodies: React.Dispatch<
-            React.SetStateAction<AntibodyCollection | null>
+            React.SetStateAction<AntibodyRecordCollection | null>
         >
     ) {
         this.lab = lab;
         this.antibodies = antibodies;
         this.setAntibodies = setAntibodies;
     }
-    public async getAll(password?: string): Promise<AntibodyCollection> {
-        const response = await axios.get<Antibody[]>('/antibody', {
+    public async getAll(password?: string): Promise<AntibodyRecordCollection> {
+        const response = await axios.get<AntibodyRecord[]>('/antibody', {
             headers: { Authorization: password },
             params: {
                 lab: this.lab,
@@ -28,7 +29,7 @@ export default class AntibodyEndpoint {
             },
             withCredentials: true
         });
-        return new AntibodyCollection(response.data);
+        return new AntibodyRecordCollection(response.data);
     }
     public async updateAntibodiesState(password?: string): Promise<void> {
         try {
@@ -53,12 +54,73 @@ export default class AntibodyEndpoint {
                 //* It is necessary when using a react set state method, since it compares the object GUID
                 //? Ref: https://react.dev/learn/updating-arrays-in-state#removing-from-an-array
                 this.setAntibodies(
-                    new AntibodyCollection(
+                    new AntibodyRecordCollection(
                         this.antibodies.filter(
                             (antibody) => antibody.id !== antibody_id
                         )
                     )
                 );
+            }
+            return response;
+        } catch (error) {
+            console.error(error);
+            throw error;
+        }
+    }
+    public async modifyAntibody(
+        antibody_id: string,
+        newAntibody: AntibodyRecord,
+        password?: string
+    ) {
+        try {
+            const response = await axios.put<{ msg: string; doc: string }>(
+                `/antibody/${antibody_id}`,
+                { lab: this.lab, antibody: newAntibody },
+                {
+                    headers: { Authorization: password },
+                    withCredentials: true
+                }
+            );
+            if (this.antibodies) {
+                //* This operation updates a specific object within the array
+                //* It is necessary when using a react set state method, since it compares the object GUID
+                //? Ref: https://react.dev/learn/updating-arrays-in-state#updating-objects-inside-arrays
+                const updatedAntibodies = new AntibodyRecordCollection(
+                    this.antibodies.map((antibody) => {
+                        if (antibody.id === antibody_id) {
+                            return { ...newAntibody };
+                        } else {
+                            return antibody;
+                        }
+                    })
+                );
+                this.setAntibodies(updatedAntibodies);
+            }
+            return response;
+        } catch (error) {
+            console.error(error);
+            throw error;
+        }
+    }
+    public async addAntibody(newAntibody: Antibody, password?: string) {
+        try {
+            const response = await axios.post<{ msg: string; doc: string }>(
+                `/antibody`,
+                { lab: this.lab, antibody: newAntibody },
+                {
+                    headers: { Authorization: password },
+                    withCredentials: true
+                }
+            );
+            if (this.antibodies) {
+                //* This operation adds an object to the array
+                //* It is necessary when using a react set state method, since it compares the object GUID
+                //? Ref: https://react.dev/learn/updating-arrays-in-state#adding-to-an-array
+                const updatedAntibodies = new AntibodyRecordCollection([
+                    ...this.antibodies,
+                    { ...newAntibody, id: response.data.doc }
+                ]);
+                this.setAntibodies(updatedAntibodies);
             }
             return response;
         } catch (error) {

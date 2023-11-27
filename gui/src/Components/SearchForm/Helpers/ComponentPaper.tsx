@@ -5,10 +5,9 @@ import { SelectableList } from './SelectableList';
 export function ComponentPaper(props: {
     children?: any;
     sx?: SxProps;
-    text_sx?: SxProps;
-    list_sx?: SxProps;
     items: any[];
-    setSelectedItem?: React.Dispatch<React.SetStateAction<any>>;
+    onItemSelect?: (item: any) => void;
+    clearSelected?: boolean;
     title: string;
 }) {
     return (
@@ -37,7 +36,8 @@ export function ComponentPaper(props: {
                 {props.children}
                 <SelectableList
                     items={props.items}
-                    setSelectedItem={props.setSelectedItem}
+                    onItemSelect={props.onItemSelect}
+                    clearSelected={props.clearSelected}
                 />
             </Paper>
         </Box>

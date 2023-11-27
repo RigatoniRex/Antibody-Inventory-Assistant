@@ -3,11 +3,15 @@ import { Box, Button, SvgIconTypeMap, Tooltip, useTheme } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 import EditIcon from '@mui/icons-material/Edit';
-import RemoveIcon from '@mui/icons-material/Remove';
-import { Antibody } from '@rigatonirex/antibody-library/antibody';
+import DeleteIcon from '@mui/icons-material/Delete';
+import {
+    Antibody,
+    AntibodyRecord
+} from '@rigatonirex/antibody-library/antibody';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
-import AntibodyEndpoint from '../../../api/AntibodyEndpoint';
-import ConfirmDialog from '../../ConfirmDialog/ConfigDialog';
+import AntibodyEndpoint from '../../../Api/AntibodyEndpoint';
+import ConfirmDialog from '../../Dialogs/ConfigDialog';
+import AddAntibodyDialog from '../../Dialogs/AddAntibodyDialog';
 
 type ColorType =
     | 'inherit'
@@ -32,11 +36,14 @@ function GetButtonStyle(isAntibodySelected: boolean, isDarkTheme: boolean) {
 }
 
 export default function ManipulateButtons(props: {
-    antibodySelected: Antibody | undefined;
+    antibodySelected: AntibodyRecord | undefined;
     antibody_endpoint: AntibodyEndpoint;
+    doClear: () => void;
 }) {
     const isDarkTheme = useTheme().palette.mode === 'dark';
     const [openDeleteConfirm, setOpenDeleteConfirm] =
+        React.useState<boolean>(false);
+    const [openAddAntibody, setOpenAddAntibody] =
         React.useState<boolean>(false);
     return (
         <Box
@@ -60,7 +67,20 @@ export default function ManipulateButtons(props: {
                 <ManipulateButton
                     tooltipTitle="Add New Antibody"
                     variant={isDarkTheme ? 'outlined' : 'contained'}
+                    onClick={() => {
+                        setOpenAddAntibody(true);
+                    }}
                     icon={AddIcon}
+                />
+                <AddAntibodyDialog
+                    open={openAddAntibody}
+                    onConfirm={(antibody: Antibody) => {
+                        props.antibody_endpoint.addAntibody(antibody);
+                        setOpenAddAntibody(false);
+                    }}
+                    onCancel={() => {
+                        setOpenAddAntibody(false);
+                    }}
                 />
             </Box>
             <Box
@@ -73,7 +93,9 @@ export default function ManipulateButtons(props: {
             >
                 <ManipulateButton
                     tooltipTitle="Add Antibody to Panel"
-                    disabled={props.antibodySelected === undefined}
+                    // disabled={props.antibodySelected === undefined}
+                    disabled
+                    disabledTooltipTitle="This feature is coming soon!"
                     color="secondary"
                     variant={GetButtonStyle(
                         props.antibodySelected !== undefined,
@@ -83,23 +105,38 @@ export default function ManipulateButtons(props: {
                 />
                 <ManipulateButton
                     tooltipTitle="Edit Antibody"
-                    disabled={props.antibodySelected === undefined}
+                    // disabled={props.antibodySelected === undefined}
+                    disabled
+                    disabledTooltipTitle="This feature is coming soon!"
                     color="warning"
                     variant={GetButtonStyle(
                         props.antibodySelected !== undefined,
                         isDarkTheme
                     )}
                     icon={EditIcon}
+                    onClick={() => {
+                        //TODO: Add Edit Functionality
+                        // if (props.antibodySelected) {
+                        //     props.antibody_endpoint.modifyAntibody(
+                        //         props.antibodySelected.id,
+                        //         {
+                        //             ...props.antibodySelected,
+                        //             reactivity: 'Human'
+                        //         }
+                        //     );
+                        // }
+                    }}
                 />
                 <ManipulateButton
                     tooltipTitle="Delete Antibody"
                     disabled={props.antibodySelected === undefined}
+                    disabledTooltipTitle="Select an antibody to delete"
                     color="error"
                     variant={GetButtonStyle(
                         props.antibodySelected !== undefined,
                         isDarkTheme
                     )}
-                    icon={RemoveIcon}
+                    icon={DeleteIcon}
                     onClick={() => {
                         setOpenDeleteConfirm(true);
                     }}
@@ -114,6 +151,7 @@ export default function ManipulateButtons(props: {
                             );
                         }
                         setOpenDeleteConfirm(false);
+                        props.doClear();
                     }}
                     onCancel={() => {
                         setOpenDeleteConfirm(false);
@@ -126,6 +164,7 @@ export default function ManipulateButtons(props: {
 
 function ManipulateButton(props: {
     tooltipTitle: string;
+    disabledTooltipTitle?: string;
     icon: Icon;
     disabled?: boolean;
     variant?: 'text' | 'outlined' | 'contained' | undefined;
@@ -134,19 +173,23 @@ function ManipulateButton(props: {
 }) {
     return (
         <Tooltip
-            title={props.tooltipTitle}
+            title={
+                props.disabled ? props.disabledTooltipTitle : props.tooltipTitle
+            }
             placement="bottom"
             disableInteractive
             arrow
         >
-            <Button
-                disabled={props.disabled}
-                color={props.color}
-                variant={props.variant}
-                onClick={props.onClick}
-            >
-                <props.icon />
-            </Button>
+            <span>
+                <Button
+                    disabled={props.disabled}
+                    color={props.color}
+                    variant={props.variant}
+                    onClick={props.onClick}
+                >
+                    <props.icon />
+                </Button>
+            </span>
         </Tooltip>
     );
 }
