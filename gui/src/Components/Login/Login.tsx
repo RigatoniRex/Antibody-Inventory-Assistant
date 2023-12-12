@@ -99,6 +99,10 @@ export function LoginForm(props: {
                     withCredentials: true
                 }
             );
+            //wait 100 ms to allow cookie session to set
+            await new Promise((resolve) => {
+                setTimeout(resolve, 200);
+            });
             if (login.status === 200) {
                 navigate('/');
             } else {
