@@ -99,6 +99,11 @@ export async function handleSession(
     res: Response,
     next: NextFunction
 ) {
+    //Create a new session for the login
+    const labHandler = res.locals.labHandler as LabHandler;
+    //User logged in, create session for them and add cookie to response.
+    const expires = CookieHandler.createExpiresDate();
+    const sessionDoc = await CookieHandler.createSession(labHandler, expires);
     if (req.cookies.session) {
         //Get the session document
         const sessionDoc = await db
@@ -107,16 +112,10 @@ export async function handleSession(
             .get();
         //If the document doesn't exist create a new session for the client.
         if (!sessionDoc.exists) {
-            //Create a new session for the login
-            const labHandler = res.locals.labHandler as LabHandler;
-            //User logged in, create session for them and add cookie to response.
-            const expires = CookieHandler.createExpiresDate();
-            const sessionDoc = await CookieHandler.createSession(
-                labHandler,
-                expires
-            );
             CookieHandler.createCookie(res, 'session', sessionDoc.id, expires);
         }
+    } else {
+        CookieHandler.createCookie(res, 'session', sessionDoc.id, expires);
     }
     next();
 }

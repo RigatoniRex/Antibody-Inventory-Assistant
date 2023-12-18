@@ -99,7 +99,7 @@ export function MenuBar(props: {
                     variant="h6"
                     sx={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                    Bods v0.1.2-alpha
+                    Bods v0.1.3-alpha
                 </Typography>
                 {/* Provides empty space */}
                 <Box sx={{ flexGrow: 1 }}></Box>
